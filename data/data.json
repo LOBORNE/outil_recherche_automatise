@@ -1,5 +1,104 @@
 [
   {
+    "id": "f745ed1f772b",
+    "title": "Revalorisation du programme ADVENIR dès avril 2026",
+    "summary": "À partir du 1er avril 2026, les montants des primes ADVENIR ont été revalorisés pour les copropriétés : jusqu'à 1 000 € HT par borne individuelle. Le programme continue de soutenir l'installation de bornes en habitat collectif et les entreprises via les parkings ouverts au public et les infrastructures partagées.",
+    "url": "https://www.les-energies-renouvelables.eu/conseils/borne-de-recharge-irve/les-aides-et-subventions-pour-linstallation-de-bornes-de-recharge/",
+    "source": "ECOinfos",
+    "category": "borne",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "cb921e9c2569",
+    "title": "Nouvelle aide pour les bornes poids lourds en aires logistiques",
+    "summary": "Depuis novembre 2025, ADVENIR propose une nouvelle prime pour les points de recharge poids lourds ouverts au public dans les aires logistiques, couvrant jusqu'à 50% du coût HT pour les déploiements <500 kVA et jusqu'à 960 000 € HT pour les projets supérieurs.",
+    "url": "https://www.myelectricity.fr/tout-savoir-aides-borne-recharge/",
+    "source": "MyElectricity",
+    "category": "borne",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "00ddc3432eec",
+    "title": "Vinci Autoroutes : 284 nouveaux points de charge en 2025",
+    "summary": "Vinci Autoroutes a déployé 284 nouveaux points de charge en 2025, portant le total à plus de 2 400 points sur le réseau autoroutier français. De nouveaux déploiements sont annoncés pour 2026 sur plusieurs aires des autoroutes A10 et A11.",
+    "url": "https://radio.vinci-autoroutes.com/article/longs-trajets-en-electrique-le-reseau-de-recharge-se-densifie-sur-autoroute-17845",
+    "source": "Vinci Autoroutes",
+    "category": "borne",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "3b08591af702",
+    "title": "BMW iX3 2026 : charge ultra-rapide 400 kW et 800 km d'autonomie",
+    "summary": "BMW lance en mars 2026 le nouvel iX3 basé sur la plateforme révolutionnaire Neue Klasse. Ce modèle offre plus de 800 km d'autonomie WLTP et une charge ultra-rapide à 400 kW permettant de récupérer des centaines de kilomètres en moins de 15 minutes. L'énergie volumétrique des batteries augmente de 30 % grâce à une nouvelle chimie développée en interne.",
+    "url": "https://www.go-electra.com/en/newsroom/new-electric-cars-2026/",
+    "source": "Go Electra",
+    "category": "technologie",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "ca83987f7e76",
+    "title": "Up&Charge : borne de recharge par induction en phase pilote",
+    "summary": "La startup française Up&Charge lance la phase pilote de sa borne Plug&Play de recharge par induction dès octobre 2026. Cette technologie sans fil simplifie la recharge et réduit les pertes énergétiques de 6 à 28 % comparées aux systèmes câblés, offrant une solution économique pour les entreprises et collectivités.",
+    "url": "https://www.auto-infos.fr/article/voitures-electriques-up-charge-fait-de-la-recharge-par-induction-une-realite-demonstration.273157",
+    "source": "Auto Infos",
+    "category": "technologie",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "854b98bbd786",
+    "title": "Standardisation complète du CCS en Europe en 2026",
+    "summary": "En 2026, le standard CHAdeMO asiatique a presque entièrement disparu au profit du connecteur Combo CCS, devenu la norme absolue en Europe. Les nouveaux hubs ultra-rapides délivrent des puissances dépassant les 350 kW, tandis que les véhicules adoptent massivement l'architecture 800-900 volts pour encaisser des pics de charge phénoménaux.",
+    "url": "https://avegreen.fr/recharge-rapide-des-vehicules-electriques-tout-ce-quil-faut-savoir/",
+    "source": "Avegreen",
+    "category": "technologie",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "8264d70f0b46",
+    "title": "Renault Mégane E-Tech 2026 : nouvelles batteries AESC et charge améliorée",
+    "summary": "La Renault Mégane E-Tech 2026 reçoit des batteries AESC produites en France remplaçant les anciennes batteries LG, avec une capacité potentielle de 87 kWh permettant plus de 600 km d'autonomie WLTP. La compacte bénéficie également d'un chargeur à induction compatible Qi2 (Magsafe) pour une recharge plus rapide des accessoires.",
+    "url": "https://www.automobile-propre.com/articles/renault-megane-e-tech-2026-ce-quil-faut-savoir-sur-la-compacte-electrique-restylee-aux-500-km-dautonomie/",
+    "source": "Automobile Propre",
+    "category": "technologie",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "e483dd977958",
+    "title": "Revalorisation barèmes ADVENIR copropriétés depuis avril 2026",
+    "summary": "Les barèmes du programme ADVENIR ont été revalorisés à compter du 1er avril 2026, avec des plafonds renforcés pour les installations individuelles, partagées et les infrastructures collectives, notamment pour les parkings extérieurs.",
+    "url": "https://www.les-energies-renouvelables.eu/conseils/borne-de-recharge-irve/reglementation-borne-de-recharge-loi-lom/",
+    "source": "ECOInfos",
+    "category": "reglementation",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "65d6d72a2d55",
+    "title": "Norme EN ISO 15118 obligatoire depuis janvier 2026",
+    "summary": "À compter du 8 janvier 2026, tous les points de recharge ouverts au public installés ou rénovés doivent être conformes à la série de normes EN ISO 15118, qui encadre la communication entre le véhicule et l'infrastructure de recharge.",
+    "url": "https://www.avere-france.org/ce-qui-change-en-2026-pour-la-mobilite-electrique/",
+    "source": "Avere-France",
+    "category": "reglementation",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "2c99ff3f59e8",
+    "title": "Renforcement des obligations et contrôles en entreprise 2026",
+    "summary": "En 2026, les contrôles renforcés commencent à s'appliquer : les bâtiments non résidentiels de plus de 20 places doivent être conformes aux obligations LOM, avec des sanctions de 7 500€ par an et par parking non conforme.",
+    "url": "https://www.btp-consultants.fr/blog/expertise/norme-installation-bornes-recharge-vehicule-electrique-irve/",
+    "source": "BTP Consultants",
+    "category": "reglementation",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "d71357e9aae0",
+    "title": "Suppression du crédit d'impôt borne 2026 et fin URSSAF favorable",
+    "summary": "Le crédit d'impôt borne a été supprimé au 1er janvier 2026 pour les maisons individuelles. En revanche, la réglementation URSSAF reste favorable pour les recharges en entreprise jusqu'au 31 décembre 2027.",
+    "url": "https://www.freshmile.com/articles/reglementation-urssaf-et-avantages-en-nature-pour-la-recharge-ve-en-entreprise/",
+    "source": "Freshmile",
+    "category": "reglementation",
+    "date_found": "2026-07-01"
+  },
+  {
     "id": "1253ea410225",
     "title": "Plan d'électrification du gouvernement : 30 000 bornes sur autoroutes d'ici 2035",
     "summary": "Le gouvernement français a présenté le 23 avril 2026 un plan d'électrification en 22 mesures doté de 10 milliards d'euros par an d'ici 2030, visant à déployer 30 000 points de recharge sur les grands axes routiers et environ 8 000 pour les poids lourds sur 560 aires.",
