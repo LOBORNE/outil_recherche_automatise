@@ -106,11 +106,39 @@ const today = new Date().toISOString().slice(0, 10);
 
 const systemPrompt = `Tu es un assistant de veille technologique francophone, spécialisé dans les infrastructures de recharge pour véhicules électriques et les technologies de charge associées.`;
 
-const userPrompt = `Recherche sur le web les actualités des 7 à 10 derniers jours (nous sommes le ${today}) concernant :
-- Les bornes de recharge (nouveaux déploiements, nouveaux modèles, réseaux de recharge, opérateurs)
-- Les nouvelles technologies de recharge (charge ultra-rapide, charge par induction, batteries, nouveaux standards/connecteurs)
-- Les entreprises du secteur (levées de fonds, partenariats, lancements, résultats financiers)
-- La réglementation liée (normes, subventions, obligations légales)
+// On découpe la veille en plusieurs thèmes. Chaque thème = un appel API
+// séparé, espacé dans le temps, pour rester sous la limite de tokens/minute.
+const THEMES = [
+  {
+    category: "borne",
+    focus:
+      "les bornes de recharge : nouveaux déploiements, nouveaux modèles de bornes, réseaux de recharge, opérateurs de recharge",
+  },
+  {
+    category: "technologie",
+    focus:
+      "les nouvelles technologies de recharge : charge ultra-rapide, charge par induction, batteries, nouveaux standards et connecteurs",
+  },
+  {
+    category: "entreprise",
+    focus:
+      "les entreprises du secteur de la recharge : levées de fonds, partenariats, lancements de produits, résultats financiers",
+  },
+  {
+    category: "reglementation",
+    focus:
+      "la réglementation liée à la recharge de véhicules électriques : normes, subventions, obligations légales, décisions publiques",
+  },
+];
+
+// Délai entre deux appels (en millisecondes). 90 s laisse largement le temps
+// à la fenêtre de rate limit d'une minute de se réinitialiser.
+const DELAY_BETWEEN_CALLS_MS = 90_000;
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+function buildPrompt(focus) {
+  return `Recherche sur le web les actualités des 7 à 10 derniers jours (nous sommes le ${today}) concernant ${focus}.
 
 Réponds UNIQUEMENT avec un tableau JSON valide, sans texte avant ou après, sans balises markdown. Chaque élément doit avoir exactement ces champs :
 [
@@ -118,18 +146,18 @@ Réponds UNIQUEMENT avec un tableau JSON valide, sans texte avant ou après, san
     "title": "titre court et clair",
     "summary": "résumé factuel en 2-3 phrases, en français",
     "url": "URL directe et réelle de la source (trouvée via la recherche web)",
-    "source": "nom du site ou média",
-    "category": "borne" | "technologie" | "entreprise" | "reglementation"
+    "source": "nom du site ou média"
   }
 ]
 
 Consignes :
 - N'invente jamais d'URL : n'inclus que des sources réellement trouvées par la recherche web.
 - Privilégie la diversité des sujets et des sources plutôt que plusieurs articles sur le même événement.
-- Maximum 15 éléments.
+- Maximum 5 éléments.
 - Si tu ne trouves rien de pertinent, réponds avec un tableau vide [].`;
+}
 
-async function fetchNews() {
+async function fetchTheme(theme) {
   const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: {
@@ -139,11 +167,11 @@ async function fetchNews() {
     },
     body: JSON.stringify({
       model: MODEL,
-      max_tokens: 16000,
+      max_tokens: 4096,
       system: systemPrompt,
-      messages: [{ role: "user", content: userPrompt }],
+      messages: [{ role: "user", content: buildPrompt(theme.focus) }],
       tools: [
-        { type: "web_search_20250305", name: "web_search", max_uses: 5 },
+        { type: "web_search_20250305", name: "web_search", max_uses: 3 },
       ],
     }),
   });
@@ -157,7 +185,7 @@ async function fetchNews() {
 
   if (data.stop_reason === "max_tokens") {
     console.warn(
-      "Attention : la réponse a été coupée (max_tokens atteint). Le JSON peut être incomplet."
+      `[${theme.category}] Réponse coupée (max_tokens). JSON possiblement incomplet.`
     );
   }
 
@@ -166,13 +194,40 @@ async function fetchNews() {
     .map((block) => block.text)
     .join("\n");
 
+  let items;
   try {
-    return extractJsonArray(textBlocks);
+    items = extractJsonArray(textBlocks);
   } catch (err) {
-    console.error("Impossible de parser le JSON renvoyé. Extrait de la réponse :");
-    console.error(textBlocks.slice(-1500));
-    throw err;
+    console.error(`[${theme.category}] JSON illisible. Extrait :`);
+    console.error(textBlocks.slice(-1000));
+    return []; // on n'interrompt pas toute la veille pour un thème raté
   }
+
+  // On rattache la catégorie du thème à chaque élément.
+  return items.map((it) => ({ ...it, category: theme.category }));
+}
+
+// Récupère tous les thèmes séquentiellement, avec une pause entre chacun.
+async function fetchNews() {
+  const all = [];
+  for (let i = 0; i < THEMES.length; i++) {
+    const theme = THEMES[i];
+    console.log(`Recherche du thème : ${theme.category}...`);
+    try {
+      const items = await fetchTheme(theme);
+      console.log(`  → ${items.length} résultat(s) pour ${theme.category}`);
+      all.push(...items);
+    } catch (err) {
+      console.error(`  → Échec du thème ${theme.category} : ${err.message}`);
+    }
+
+    // Pause avant le thème suivant (sauf après le dernier).
+    if (i < THEMES.length - 1) {
+      console.log(`  … pause de ${DELAY_BETWEEN_CALLS_MS / 1000}s avant le thème suivant`);
+      await sleep(DELAY_BETWEEN_CALLS_MS);
+    }
+  }
+  return all;
 }
 
 // ---------- Programme principal ----------
