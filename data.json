@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1253ea410225",
+    "title": "Plan d'électrification du gouvernement : 30 000 bornes sur autoroutes d'ici 2035",
+    "summary": "Le gouvernement français a présenté le 23 avril 2026 un plan d'électrification en 22 mesures doté de 10 milliards d'euros par an d'ici 2030, visant à déployer 30 000 points de recharge sur les grands axes routiers et environ 8 000 pour les poids lourds sur 560 aires.",
+    "url": "https://www.economie.gouv.fr/actualites/presentation-du-plan-delectrification-des-usages",
+    "source": "economie.gouv.fr",
+    "category": "borne",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "71bc9c44e1c1",
+    "title": "Le Plein devient le meilleur réseau de recharge en France en 2026",
+    "summary": "Selon le classement Chargemap 2026, Le Plein signe une ascension spectaculaire en montant à la première place du classement général des réseaux de recharge français, distingué pour son expérience utilisateur simple et fiable.",
+    "url": "https://www.automobile-propre.com/articles/recharge-electrique-quels-sont-les-meilleurs-reseaux-en-france-en-2026-selon-chargemap/",
+    "source": "Automobile Propre",
+    "category": "borne",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "b5d391723020",
+    "title": "France : 185 500 points de recharge publics au début 2026",
+    "summary": "Au début de 2026, la France compte 185 501 points de recharge ouverts au public répartis sur 53 837 stations, avec une concentration importante en Île-de-France (32 484 points) et une évolution vers la recharge rapide dans les collectivités.",
+    "url": "https://www.borne-electrique.com/ou-en-est-le-deploiement-des-bornes-de-recharge-en-2026",
+    "source": "Borne-Électrique.com",
+    "category": "borne",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "7ddfcb7b927b",
+    "title": "16 % des immeubles collectifs équipés en bornes de recharge",
+    "summary": "Au premier trimestre 2026, 41 175 immeubles collectifs français ont validé le déploiement d'une infrastructure de recharge (16 % de ceux disposant d'un parking), en hausse de 17 % par rapport à l'année précédente.",
+    "url": "https://www.automobile-propre.com/articles/infrastructures-de-recharge-en-copropriete-ou-en-sommes-nous-en-france-en-2026/",
+    "source": "Automobile Propre",
+    "category": "borne",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "18beb2f8deab",
+    "title": "Bornes à très haute puissance 600 kW déployées en Europe en 2026",
+    "summary": "L'année 2026 marque l'émergence de bornes à très haute puissance (jusqu'à 600 kW) et de stations de grande capacité en Europe, avec des opérateurs comme Electra développant des installations adaptées aux usages intensifs et aux flottes professionnelles.",
+    "url": "https://chargemap.com/fr-fr/blog/articles/recharge-electrique-europe-analyse-2026",
+    "source": "Chargemap",
+    "category": "borne",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "9ecc20d20eca",
+    "title": "Electra lance sa carte de recharge universelle à moins de 5 euros",
+    "summary": "Electra, leader français de la recharge ultra rapide, devient fournisseur de services de mobilité (eMSP) en lançant le 29 juin 2026 une carte RFID universelle à 4,99€ donnant accès à plus de 800 000 points de recharge en Europe. Cette carte est gratuite pour les abonnés Electra+ Essential et Smart.",
+    "url": "https://www.presse-citron.net/voiture-electrique-electra-lance-carte-recharge-universelle-moins-5-euros/",
+    "source": "Presse-Citron",
+    "category": "entreprise",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "5925a31e700c",
+    "title": "Marché mondial de la recharge atteindra 238,82 milliards USD d'ici 2033",
+    "summary": "Selon Grand View Research (22 juin 2026), le marché global des infrastructures de recharge automobile électrique atteindra 238,82 milliards USD en 2033 avec un taux de croissance annuel composé de 25%, contre 40,22 milliards USD en 2025.",
+    "url": "https://www.theautochannel.com/news/2026/06/22/1683568-ev-charging-infrastructure-market-projected-to-reach-usd-238-82.html",
+    "source": "The Auto Channel",
+    "category": "entreprise",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "eb73b91ede59",
+    "title": "ChargePoint annonce sa nouvelle borne Express Solo et croissance de 4% des revenus",
+    "summary": "ChargePoint (3 juin 2026) a lancé la borne Express Solo, présentée comme la plus rapide du marché pour les véhicules de masse. Les revenus ont augmenté de 4% à 102 millions USD au dernier trimestre avec une croissance de 7% des revenus d'abonnement.",
+    "url": "https://greenstocknews.com/stocks/ev-charging-stocks",
+    "source": "Green Stock News",
+    "category": "entreprise",
+    "date_found": "2026-07-01"
+  },
+  {
+    "id": "439e19724ca1",
+    "title": "Infrastructure de recharge aux États-Unis : croissance de 1 400 bornes rapides en mai 2026",
+    "summary": "Le réseau américain de recharge rapide a connu en mai 2026 une croissance record de plus de 1 400 points rapides, portant le total à près de 75 000 bornes. Tesla reste le leader avec 37 736 ports mais sa part de marché diminue à 51%.",
+    "url": "https://evchargingstations.com/chargingnews/dc-fast-charging-june-2026/",
+    "source": "EV Charging Stations",
+    "category": "entreprise",
+    "date_found": "2026-07-01"
+  }
+]
