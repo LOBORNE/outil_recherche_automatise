@@ -157,6 +157,7 @@ Consignes :
 - Si tu ne trouves rien de pertinent, réponds avec un tableau vide [].`;
 }
 
+const waitMs = 30_000;
 async function fetchTheme(theme, attempt = 1) {
   const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
@@ -180,9 +181,8 @@ async function fetchTheme(theme, attempt = 1) {
     const errText = await response.text();
     // En cas de 429, on attend puis on réessaie une fois.
     if (response.status === 429 && attempt <= 2) {
-      const waitMs = 120_000;
       console.warn(
-        `  [${theme.category}] 429 reçu, nouvelle tentative dans ${waitMs / 1000}s (essai ${attempt + 1})`
+        `  [${theme.category}] erreur 429 reçu, nouvelle tentative dans ${waitMs / 1000}s (essai ${attempt + 1})`
       );
       await sleep(waitMs);
       return fetchTheme(theme, attempt + 1);
