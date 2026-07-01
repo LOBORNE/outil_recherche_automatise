@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Veille — Bornes de recharge & mobilité électrique</title>
+<style>
+  :root {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --border: #334155;
+    --text: #e2e8f0;
+    --muted: #94a3b8;
+    --accent: #38bdf8;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 2rem 1.5rem;
+  }
+  .wrap { max-width: 780px; margin: 0 auto; }
+  h1 { font-size: 1.5rem; margin: 0 0 0.25rem; }
+  .subtitle { color: var(--muted); margin-bottom: 1.5rem; font-size: 0.9rem; }
+  .filters { display: flex; gap: 0.5rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+  select, input {
+    background: var(--card);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.55rem 0.7rem;
+    font-size: 0.9rem;
+  }
+  input { flex: 1; min-width: 180px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+  .card h3 { margin: 0.2rem 0 0.5rem; font-size: 1.05rem; line-height: 1.35; }
+  .card a { color: var(--accent); text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+  .meta { color: var(--muted); font-size: 0.78rem; }
+  .tag {
+    display: inline-block;
+    background: rgba(56, 189, 248, 0.15);
+    color: var(--accent);
+    border-radius: 6px;
+    padding: 0.15rem 0.55rem;
+    font-size: 0.72rem;
+    margin: 0.3rem 0.4rem 0.3rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .summary { color: var(--text); font-size: 0.92rem; line-height: 1.5; margin: 0.4rem 0 0; }
+  .empty { color: var(--muted); text-align: center; padding: 3rem 0; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>🔌 Veille — Bornes de recharge &amp; mobilité électrique</h1>
+    <div class="subtitle" id="subtitle">Mise à jour automatique chaque semaine</div>
+
+    <div class="filters">
+      <select id="category"><option value="">Toutes catégories</option></select>
+      <input id="search" type="text" placeholder="Rechercher un mot-clé..." />
+    </div>
+
+    <div id="list"></div>
+  </div>
+
+<script>
+let allData = [];
+
+const CATEGORY_LABELS = {
+  borne: "Borne",
+  technologie: "Technologie",
+  entreprise: "Entreprise",
+  reglementation: "Réglementation",
+};
+
+async function load() {
+  try {
+    const res = await fetch("./data.json", { cache: "no-store" });
+    allData = await res.json();
+  } catch (e) {
+    allData = [];
+  }
+
+  allData.sort((a, b) => (b.date_found || "").localeCompare(a.date_found || ""));
+
+  const subtitle = document.getElementById("subtitle");
+  if (allData.length > 0) {
+    subtitle.textContent = `${allData.length} actualité(s) suivie(s) — dernière mise à jour : ${allData[0].date_found}`;
+  }
+
+  const categories = [...new Set(allData.map((d) => d.category).filter(Boolean))];
+  const select = document.getElementById("category");
+  categories.forEach((c) => {
+    const opt = document.createElement("option");
+    opt.value = c;
+    opt.textContent = CATEGORY_LABELS[c] || c;
+    select.appendChild(opt);
+  });
+
+  render();
+}
+
+function render() {
+  const cat = document.getElementById("category").value;
+  const q = document.getElementById("search").value.toLowerCase().trim();
+
+  const filtered = allData.filter((d) => {
+    const matchCat = !cat || d.category === cat;
+    const haystack = `${d.title} ${d.summary}`.toLowerCase();
+    const matchQuery = !q || haystack.includes(q);
+    return matchCat && matchQuery;
+  });
+
+  const list = document.getElementById("list");
+
+  if (filtered.length === 0) {
+    list.innerHTML = '<div class="empty">Aucun résultat pour ce filtre.</div>';
+    return;
+  }
+
+  list.innerHTML = filtered
+    .map(
+      (d) => `
+      <div class="card">
+        <div class="meta">${d.date_found || ""} · ${d.source || ""}</div>
+        <h3><a href="${d.url}" target="_blank" rel="noopener">${d.title}</a></h3>
+        ${d.category ? `<span class="tag">${CATEGORY_LABELS[d.category] || d.category}</span>` : ""}
+        <p class="summary">${d.summary || ""}</p>
+      </div>`
+    )
+    .join("");
+}
+
+document.getElementById("category").addEventListener("change", render);
+document.getElementById("search").addEventListener("input", render);
+
+load();
+</script>
+</body>
+</html>

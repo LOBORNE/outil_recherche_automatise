@@ -1,0 +1,11 @@
+{
+  "name": "veille-recharge",
+  "version": "1.0.0",
+  "description": "Veille automatisée hebdomadaire sur les bornes de recharge et technologies de charge VE",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "collect": "node scripts/collect.mjs",
+    "send-email": "node scripts/send-email.mjs"
+  }
+}

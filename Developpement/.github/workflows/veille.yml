@@ -1,0 +1,51 @@
+name: Veille bornes de recharge
+
+on:
+  schedule:
+    # Chaque lundi à 7h UTC (8h ou 9h heure de Paris selon l'heure d'été)
+    - cron: "0 7 * * 1"
+  workflow_dispatch: {}  # permet de le déclencher manuellement depuis l'onglet Actions
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Collecter les actualités
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/collect.mjs
+
+      - name: Committer les nouvelles données
+        run: |
+          git config user.name "veille-bot"
+          git config user.email "veille-bot@users.noreply.github.com"
+          git add data/data.json
+          git diff --cached --quiet || git commit -m "Veille: mise à jour du $(date +'%Y-%m-%d')"
+          git push
+
+      - name: Préparer le site (copie des données)
+        run: cp data/data.json site/data.json
+
+      - name: Déployer sur GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+
+      - name: Envoyer l'email des nouveautés
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TO_EMAIL: ${{ secrets.TO_EMAIL }}
+          PAGE_URL: ${{ secrets.PAGE_URL }}
+        run: node scripts/send-email.mjs
