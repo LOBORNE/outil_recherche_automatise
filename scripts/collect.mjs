@@ -78,11 +78,26 @@ function extractJsonArray(text) {
 
   // Si jamais il y a du texte autour, on isole le premier tableau JSON trouvé.
   const start = cleaned.indexOf("[");
-  const end = cleaned.lastIndexOf("]");
-  if (start !== -1 && end !== -1 && end > start) {
+  let end = cleaned.lastIndexOf("]");
+  if (start === -1) throw new Error("Aucun tableau JSON trouvé dans la réponse.");
+
+  if (end !== -1 && end > start) {
     cleaned = cleaned.slice(start, end + 1);
+  } else {
+    cleaned = cleaned.slice(start);
   }
-  return JSON.parse(cleaned);
+
+  try {
+    return JSON.parse(cleaned);
+  } catch (err) {
+    // Réponse probablement tronquée (max_tokens atteint) : on essaie de
+    // récupérer les éléments complets en coupant au dernier "}," valide.
+    console.warn("JSON invalide, tentative de récupération partielle...");
+    const lastCompleteObject = cleaned.lastIndexOf("},");
+    if (lastCompleteObject === -1) throw err;
+    const salvaged = cleaned.slice(0, lastCompleteObject + 1) + "]";
+    return JSON.parse(salvaged);
+  }
 }
 
 // ---------- Appel à l'API Claude ----------
@@ -124,7 +139,7 @@ async function fetchNews() {
     },
     body: JSON.stringify({
       model: MODEL,
-      max_tokens: 4096,
+      max_tokens: 16000,
       system: systemPrompt,
       messages: [{ role: "user", content: userPrompt }],
       tools: [{ type: "web_search_20250305", name: "web_search" }],
@@ -138,12 +153,24 @@ async function fetchNews() {
 
   const data = await response.json();
 
+  if (data.stop_reason === "max_tokens") {
+    console.warn(
+      "Attention : la réponse a été coupée (max_tokens atteint). Le JSON peut être incomplet."
+    );
+  }
+
   const textBlocks = (data.content || [])
     .filter((block) => block.type === "text")
     .map((block) => block.text)
     .join("\n");
 
-  return extractJsonArray(textBlocks);
+  try {
+    return extractJsonArray(textBlocks);
+  } catch (err) {
+    console.error("Impossible de parser le JSON renvoyé. Extrait de la réponse :");
+    console.error(textBlocks.slice(-1500));
+    throw err;
+  }
 }
 
 // ---------- Programme principal ----------
