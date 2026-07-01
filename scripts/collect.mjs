@@ -25,10 +25,9 @@ if (!ANTHROPIC_API_KEY) {
 
 // Si tu veux changer le modèle utilisé, vérifie le nom exact sur
 // https://docs.claude.com/en/docs/about-claude/models
-const MODEL = "claude-sonnet-5";
+const MODEL = "claude-haiku-4-5-20251001";
 
 // ---------- Utilitaires ----------
-
 function normalizeUrl(url) {
   try {
     const u = new URL(url);
