@@ -16,7 +16,7 @@ Chaque semaine :
 
 ### 1. Placer le projet
 
-Copie ce dossier `veille-recharge/` à la racine de ton repo (par ex. dans `projets-loborne/`), ou utilise-le comme repo dédié — les deux fonctionnent, il est autonome.
+Copie ce dossier `veille/` à la racine de ton repo (par ex. dans `projets/`), ou utilise-le comme repo dédié — les deux fonctionnent, il est autonome.
 
 ### 2. Secrets GitHub à configurer
 
@@ -26,7 +26,8 @@ Dans **Settings → Secrets and variables → Actions** du repo, ajoute :
 |---|---|
 | `ANTHROPIC_API_KEY` | Ta clé API Anthropic (console.anthropic.com) |
 | `RESEND_API_KEY` | Clé API Resend pour l'envoi d'email (voir ci-dessous) |
-| `TO_EMAIL` | L'adresse email qui doit recevoir la notification |
+| `TO_EMAIL` | L'adresses email qui doivent recevoir la notification séparé par une virgule |
+| `FROM_EMAIL` | veille@send.loborne.com |
 | `PAGE_URL` | L'URL de la page GitHub Pages une fois activée (ex: `https://<user>.github.io/<repo>/`) — optionnel, juste pour le lien dans l'email |
 
 ### 3. Créer un compte Resend (envoi d'email)
@@ -73,10 +74,3 @@ veille-recharge/
 │   └── index.html                 # page consultable (GitHub Pages)
 └── package.json
 ```
-
-## Pistes d'amélioration (pour Claude Code)
-
-- Ajuster la fréquence (`cron` dans le workflow) ou les catégories recherchées (prompt dans `collect.mjs`).
-- Affiner le seuil de similarité des titres dans `titleSimilarity()` si des doublons passent encore, ou au contraire si des actus distinctes sont filtrées à tort.
-- Ajouter un flux RSS en plus de la page HTML.
-- Archiver/purger les entrées de plus de N mois dans `data.json`.
