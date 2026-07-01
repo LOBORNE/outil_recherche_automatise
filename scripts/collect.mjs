@@ -28,6 +28,7 @@ if (!ANTHROPIC_API_KEY) {
 const MODEL = "claude-haiku-4-5-20251001";
 
 // ---------- Utilitaires ----------
+
 function normalizeUrl(url) {
   try {
     const u = new URL(url);
@@ -130,9 +131,9 @@ const THEMES = [
   },
 ];
 
-// Délai entre deux appels (en millisecondes). 90 s laisse largement le temps
-// à la fenêtre de rate limit d'une minute de se réinitialiser.
-const DELAY_BETWEEN_CALLS_MS = 90_000;
+// Délai entre deux appels (en millisecondes). La limite de tokens/minute
+// étant basse, on espace largement pour laisser la fenêtre glissante se vider.
+const DELAY_BETWEEN_CALLS_MS = 120_000;
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -156,7 +157,7 @@ Consignes :
 - Si tu ne trouves rien de pertinent, réponds avec un tableau vide [].`;
 }
 
-async function fetchTheme(theme) {
+async function fetchTheme(theme, attempt = 1) {
   const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: {
@@ -177,6 +178,15 @@ async function fetchTheme(theme) {
 
   if (!response.ok) {
     const errText = await response.text();
+    // En cas de 429, on attend puis on réessaie une fois.
+    if (response.status === 429 && attempt <= 2) {
+      const waitMs = 120_000;
+      console.warn(
+        `  [${theme.category}] 429 reçu, nouvelle tentative dans ${waitMs / 1000}s (essai ${attempt + 1})`
+      );
+      await sleep(waitMs);
+      return fetchTheme(theme, attempt + 1);
+    }
     throw new Error(`Erreur API Claude (${response.status}): ${errText}`);
   }
 

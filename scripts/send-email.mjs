@@ -14,14 +14,23 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const NEW_ENTRIES_PATH = path.join(__dirname, "..", "data", "new-entries.json");
 
 const RESEND_API_KEY = process.env.RESEND_API_KEY;
-const TO_EMAIL = process.env.TO_EMAIL;
 const FROM_EMAIL = process.env.FROM_EMAIL || "onboarding@resend.dev";
 const PAGE_URL = process.env.PAGE_URL || "";
 
-if (!RESEND_API_KEY || !TO_EMAIL) {
-  console.log("RESEND_API_KEY ou TO_EMAIL manquant : email non envoyé.");
+// TO_EMAIL peut contenir une ou plusieurs adresses séparées par des virgules,
+// ex: "toi@example.com,hugo@example.com"
+const TO_EMAILS = (process.env.TO_EMAIL || "")
+  .split(",")
+  .map((e) => e.trim())
+  .filter((e) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)); // ne garde que les adresses valides
+
+if (!RESEND_API_KEY || TO_EMAILS.length === 0) {
+  console.log("RESEND_API_KEY manquant ou aucune adresse email valide : email non envoyé.");
   process.exit(0);
 }
+
+console.log(`Destinataires : ${TO_EMAILS.join(", ")}`);
+console.log(`Expéditeur : ${FROM_EMAIL}`);
 
 let newEntries = [];
 try {
@@ -62,7 +71,7 @@ const res = await fetch("https://api.resend.com/emails", {
   },
   body: JSON.stringify({
     from: FROM_EMAIL,
-    to: TO_EMAIL,
+    to: TO_EMAILS,
     subject: `Veille recharge VE — ${newEntries.length} nouveauté(s)`,
     html,
   }),
