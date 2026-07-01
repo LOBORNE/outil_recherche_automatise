@@ -27,7 +27,7 @@ Dans **Settings → Secrets and variables → Actions** du repo, ajoute :
 | `ANTHROPIC_API_KEY` | Ta clé API Anthropic (console.anthropic.com) |
 | `RESEND_API_KEY` | Clé API Resend pour l'envoi d'email (voir ci-dessous) |
 | `TO_EMAIL` | L'adresses email qui doivent recevoir la notification séparé par une virgule |
-| `FROM_EMAIL` | veille@send.loborne.com |
+| `FROM_EMAIL` | Depuis quel mail (pas forcement existant) |
 | `PAGE_URL` | L'URL de la page GitHub Pages une fois activée (ex: `https://<user>.github.io/<repo>/`) — optionnel, juste pour le lien dans l'email |
 
 ### 3. Créer un compte Resend (envoi d'email)
