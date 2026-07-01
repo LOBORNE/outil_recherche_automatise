@@ -171,7 +171,7 @@ async function fetchTheme(theme) {
       system: systemPrompt,
       messages: [{ role: "user", content: buildPrompt(theme.focus) }],
       tools: [
-        { type: "web_search_20250305", name: "web_search", max_uses: 3 },
+        { type: "web_search_20250305", name: "web_search", max_uses: 2 },
       ],
     }),
   });
