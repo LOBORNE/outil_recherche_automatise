@@ -1,5 +1,59 @@
 [
   {
+    "id": "d4294be46680",
+    "title": "Évolution des opérateurs et services de recharge en 2026",
+    "summary": "En 2026, les principales améliorations concernent la transparence des prix, les paiements simplifiés par carte bancaire sans badge obligatoire, et une meilleure interopérabilité entre réseaux. Les opérateurs majeurs incluent TotalEnergies, IONITY, Fastned, Electra et Tesla selon les zones.",
+    "url": "https://driveco.com/reglementation-2026-recharge-publique-conducteurs/",
+    "source": "Driveco",
+    "category": "borne",
+    "date_found": "2026-07-02"
+  },
+  {
+    "id": "4b70797ccae5",
+    "title": "Autoroutes : 4 650 points de recharge rapide (50+ kW) au 1er mars 2026",
+    "summary": "Avec plus de 90 % des aires de services équipées d'au moins une solution de recharge rapide, le réseau autoroutier français s'est considérablement densifié. Les paiements et applications des opérateurs permettent désormais d'anticiper les trajets longue distance.",
+    "url": "https://www.ecomotorsnews.com/conseils/ete-2026-comment-bien-preparer-son-passage-a-la-borne-de-recharge-sur-autoroute",
+    "source": "Ecomotors News",
+    "category": "borne",
+    "date_found": "2026-07-02"
+  },
+  {
+    "id": "fbd5cc99e49f",
+    "title": "Batteries semi-solides commercialisées et progrès vers les SSB 2026",
+    "summary": "Les batteries à semi-conducteurs (SSB) deviennent réalité commerciale en 2026 avec une densité énergétique 50 à 80% supérieure. NIO commercialise déjà des packs 150 kWh avec cellules semi-solides offrant 930 km d'autonomie, tandis que Gotion Hi-Tech prépare une ligne de 12 GWh pour 2025.",
+    "url": "https://www.bonnenbatteries.com/fr/solid-state-batteries-advances-challenges-future-use-cases/",
+    "source": "Bonne Batteries",
+    "category": "technologie",
+    "date_found": "2026-07-02"
+  },
+  {
+    "id": "9246a41f45bf",
+    "title": "Déploiement des bornes ultra-rapides MCS (Megawatt Charging System)",
+    "summary": "Le gouvernement investit 50 millions d'euros pour déployer 180 bornes ultra-rapides MCS sur le territoire métropolitain dès juin 2026. Ces hubs permettent la recharge d'un 44 tonnes en 45 minutes pendant la pause réglementaire du chauffeur, transformant la mobilité des transports.",
+    "url": "https://branche.elmy.fr/marche/aides-dispositifs/plan-electrification-usages-professionnels-2026/",
+    "source": "Elmy - Branche électrique",
+    "category": "technologie",
+    "date_found": "2026-07-02"
+  },
+  {
+    "id": "28858b7a1536",
+    "title": "Recharge par induction en cours de déploiement et normalisation",
+    "summary": "La recharge sans fil par induction se développe chez la plupart des constructeurs en 2026, supprimant le besoin de brancher le véhicule. Cette technologie utilise le courant alternatif 230V convertit en transmission sans fil, puis reconverti en courant continu 400-800V dans le véhicule.",
+    "url": "https://izi-by-edf.fr/blog/recharge-voiture-electrique-induction/",
+    "source": "IZI by EDF",
+    "category": "technologie",
+    "date_found": "2026-07-02"
+  },
+  {
+    "id": "fa30118efdcf",
+    "title": "Atteinte de 192 000 points de recharge en France et hausse d'utilisation",
+    "summary": "La France compte 192 008 points de recharge ouverts au public fin mars 2026, en hausse de 17% annuelle. Le taux de disponibilité atteint 90% et la consommation moyenne par point a bondi de 62% entre mars 2025 et 2026, signe d'une adoption croissante.",
+    "url": "https://isiohm.fr/actualites/voiture-electrique-recharge/",
+    "source": "ISIOHM",
+    "category": "technologie",
+    "date_found": "2026-07-02"
+  },
+  {
     "id": "d7d65bbb7a77",
     "title": "Plan d'électrification du réseau routier français jusqu'en 2035",
     "summary": "Le gouvernement français a annoncé le 17 avril 2026 une stratégie pour multiplier par cinq le nombre de bornes de recharge sur les grands axes routiers d'ici 2035, avec un objectif de 30 000 points de recharge répartis sur 900 aires. Le plan prévoit aussi le déploiement d'un premier réseau majeur de bornes pour poids lourds avec environ 8 000 points de charge.",
