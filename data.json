@@ -1,5 +1,86 @@
 [
   {
+    "id": "d7d65bbb7a77",
+    "title": "Plan d'électrification du réseau routier français jusqu'en 2035",
+    "summary": "Le gouvernement français a annoncé le 17 avril 2026 une stratégie pour multiplier par cinq le nombre de bornes de recharge sur les grands axes routiers d'ici 2035, avec un objectif de 30 000 points de recharge répartis sur 900 aires. Le plan prévoit aussi le déploiement d'un premier réseau majeur de bornes pour poids lourds avec environ 8 000 points de charge.",
+    "url": "https://www.ecologie.gouv.fr/presse/plan-electrification-bornes-tous-grands-trajets-dici-2035",
+    "source": "Ministères Transition écologique et Transports",
+    "category": "borne",
+    "date_found": "2026-07-02"
+  },
+  {
+    "id": "b428d96a736b",
+    "title": "Nouvelles obligations réglementaires pour les bornes au 1er septembre 2026",
+    "summary": "À partir du 1er septembre 2026, des exigences renforcées s'appliquent aux bornes publiques : instruments de mesure obligatoires, câbles remplaçables, affichage transparent des tarifs et stations de 400 kW minimum tous les 60 km sur les grands axes européens.",
+    "url": "https://www.wattandgo.com/recharge-electrique-2026",
+    "source": "Watt and Go",
+    "category": "borne",
+    "date_found": "2026-07-02"
+  },
+  {
+    "id": "fff0968cbd87",
+    "title": "Déploiement accéléré des bornes publiques en France : 160 000 en juin 2026",
+    "summary": "La France compte plus de 160 000 bornes publiques en juin 2026 avec un objectif de 400 000 points de recharge publics d'ici 2030. Les écarts tarifaires entre opérateurs restent importants, atteignant 0,50 €/kWh selon les réseaux et les zones géographiques.",
+    "url": "https://www.clubic.com/guide-achat-604174-meilleure-carte-de-recharge-pour-voiture-electrique-2026-comparatif-complet-et-guide-d-achat.html",
+    "source": "Clubic",
+    "category": "borne",
+    "date_found": "2026-07-02"
+  },
+  {
+    "id": "c2997850356a",
+    "title": "Recharge sans fil : technologies de recharge par induction courantes dès 2026",
+    "summary": "Les technologies de recharge par induction pourraient devenir courantes en 2026, permettant de recharger les véhicules sans les brancher. La startup française Up&Charge lance sa phase pilote d'une borne de recharge par induction dès l'automne pour les entreprises et collectivités.",
+    "url": "https://auto-loisirs.fr/en-2026-ou-recharger-sa-voiture-electrique-sans-plomber-la-facture/",
+    "source": "Auto-Loisirs",
+    "category": "technologie",
+    "date_found": "2026-07-02"
+  },
+  {
+    "id": "9f4ee9e11a35",
+    "title": "Routes électriques avec recharge par induction dynamique testées à Paris et Versailles",
+    "summary": "Une technologie de recharge par induction dynamique est testée à Paris et Versailles dans le cadre du projet européen INCIT-EV. En roulant sur 30 mètres de piste équipée, il est possible de récupérer 2 km d'autonomie, avec une capacité de 90 kW à Versailles.",
+    "url": "https://media.roole.fr/transition/voiture-propre/voitures-electriques-une-route-de-recharge-par-induction-est-testee-a-paris",
+    "source": "Roole",
+    "category": "technologie",
+    "date_found": "2026-07-02"
+  },
+  {
+    "id": "7712a594f68a",
+    "title": "Bornes ultra-rapides 400 kW : 150 km d'autonomie en 15 minutes",
+    "summary": "Les bornes ultra-rapides de 400 kW permettent de récupérer 150 km d'autonomie en seulement 15 minutes, transformant l'expérience des longs trajets. En 2026, la France compte 192 008 points de recharge publics avec un taux de disponibilité de 90%.",
+    "url": "https://www.manouvellevoiture.com/actualites/quelle-voiture-electrique-choisir-en-2026-guide-complet-par-usage",
+    "source": "Ma Nouvelle Voiture",
+    "category": "technologie",
+    "date_found": "2026-07-02"
+  },
+  {
+    "id": "1f6c9cb32044",
+    "title": "L'État devra passer toutes ses flottes à l'électrique dès 2027",
+    "summary": "La circulaire 6535/SG du 9 juin 2026 signée par le Premier ministre impose que 100% des véhicules particuliers et utilitaires légers acquis par les services de l'État et établissements publics devront être électriques à compter du 1er janvier 2027, dès que les conditions d'exploitation le permettent. Cette obligation s'étend aux véhicules des membres du gouvernement et préfets.",
+    "url": "https://www.avem.fr/2026/06/30/letat-devra-passer-toutes-ses-flottes-a-lelectrique-des-2027/",
+    "source": "AVEM",
+    "category": "reglementation",
+    "date_found": "2026-07-02"
+  },
+  {
+    "id": "bb86f94fac53",
+    "title": "Réforme CEE VUL électriques 2026 : nouvelles primes au 1er juin",
+    "summary": "Entrée en vigueur le 1er juin 2026, la réforme des certificats d'économies d'énergie pour véhicules utilitaires légers remodèle les primes avec des multiplicateurs (×3, ×5, ×7) selon le poids, un critère obligatoire d'assemblage en Espace Économique Européen, et une prime maximale pouvant atteindre 9 700 € pour un grand fourgon.",
+    "url": "https://www.cartecarburant.com/blog-cartes-carburant/reglementation/reforme-cee-vul-electriques-2026-ce-qui-change-au-1er-juin/",
+    "source": "Carte Carburant",
+    "category": "reglementation",
+    "date_found": "2026-07-02"
+  },
+  {
+    "id": "28f02b8256a6",
+    "title": "Transparence tarifaire et paiement par carte obligatoires sur bornes publiques depuis 2026",
+    "summary": "Le Règlement AFIR impose depuis 2026 que chaque borne affiche le tarif en €/kWh avant le démarrage et que le paiement par carte bancaire soit possible sur les stations rapides de 50 kW minimum, éliminant l'obligation du badge propriétaire.",
+    "url": "https://ohm-energie.com/blog/prix-recharge-voiture-electrique-borne-publique",
+    "source": "OHM Energie",
+    "category": "reglementation",
+    "date_found": "2026-07-02"
+  },
+  {
     "id": "f745ed1f772b",
     "title": "Revalorisation du programme ADVENIR dès avril 2026",
     "summary": "À partir du 1er avril 2026, les montants des primes ADVENIR ont été revalorisés pour les copropriétés : jusqu'à 1 000 € HT par borne individuelle. Le programme continue de soutenir l'installation de bornes en habitat collectif et les entreprises via les parkings ouverts au public et les infrastructures partagées.",
