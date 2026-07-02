@@ -46,6 +46,7 @@ jobs:
       - name: Envoyer l'email des nouveautés
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
           TO_EMAIL: ${{ secrets.TO_EMAIL }}
           PAGE_URL: ${{ secrets.PAGE_URL }}
         run: node scripts/send-email.mjs
