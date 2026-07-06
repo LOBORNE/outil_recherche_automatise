@@ -1,5 +1,86 @@
 [
   {
+    "id": "38fb27c7a10d",
+    "title": "Electra lance une application unifiée intégrant 800 000 bornes européennes",
+    "summary": "L'opérateur français Electra a mis à jour son application mobile pour intégrer l'ensemble du parc de recharge européen, regroupant plus de 800 000 points de tous opérateurs confondus. Les utilisateurs peuvent trier par critères prioritaires et une nouvelle carte de recharge physique est proposée à 4,99 euros.",
+    "url": "https://www.cridutroll.fr/800-000-bornes-en-un-clic-finie-la-galere-des-ve-en-vacances-2026/",
+    "source": "Cri du Troll",
+    "category": "borne",
+    "date_found": "2026-07-06"
+  },
+  {
+    "id": "fdcc6f382c88",
+    "title": "Wallbox, Hager et Schneider dominent le marché français des bornes domestiques",
+    "summary": "Le marché des bornes de recharge domestiques en 2026 est dominé par Wallbox, Hager et Schneider qui proposent des modèles éprouvés et conformes aux exigences françaises. La wallbox 7,4 kW monophasée représente le choix le plus pertinent pour un compromis entre confort, coût et simplicité.",
+    "url": "https://www.les-energies-renouvelables.eu/conseils/borne-de-recharge-irve/comparatif/",
+    "source": "ECOinfos",
+    "category": "borne",
+    "date_found": "2026-07-06"
+  },
+  {
+    "id": "8650b0b7fa57",
+    "title": "Norme ISO 15118-2 rendue obligatoire pour les bornes publiques depuis janvier 2026",
+    "summary": "Depuis janvier 2026, toute borne publique neuve ou rénovée doit être conforme à ISO 15118-2, rendant le Plug & Charge obligatoire. Cette norme permettra une authentification automatique et sans badge pour l'accès aux stations de recharge.",
+    "url": "https://www.belinus.com/post/liste-des-technologies-de-charge-ev-en-2026",
+    "source": "Belinus",
+    "category": "borne",
+    "date_found": "2026-07-06"
+  },
+  {
+    "id": "46e918797c9f",
+    "title": "Recharge par induction dynamique testée en Essonne sur autoroute",
+    "summary": "Un consortium mené par Vinci Autoroutes expérimente depuis septembre 2025 la recharge par induction sans contact sur 1,5 kilomètre de l'autoroute A10 en Essonne. Selon l'Université Gustave-Eiffel, la puissance transférée de 200 kW en moyenne permet de recharger en circulant, offrant jusqu'à 2-3 km d'autonomie gagnés par kilomètre parcouru pour les véhicules légers.",
+    "url": "https://france3-regions.franceinfo.fr/paris-ile-de-france/essonne/recharger-sa-voiture-tout-en-roulant-grace-a-l-induction-une-premiere-mondiale-on-vous-explique-ce-qu-est-une-route-electrique-3237688.html",
+    "source": "France 3 Régions",
+    "category": "technologie",
+    "date_found": "2026-07-06"
+  },
+  {
+    "id": "e6583b9de3b0",
+    "title": "Recherche suédoise : induction 500 kW avec 98% d'efficience",
+    "summary": "Des chercheurs de l'Université de Chalmers en Suède ont développé une technologie d'induction capable d'atteindre une efficience quasi-parfaite avec une charge jusqu'à 500 kW, équivalente aux meilleures solutions actuelles par câble. Le projet utilise des composants existants et pourrait être commercialisé rapidement.",
+    "url": "https://www.automobile-propre.com/recharge-induction-voitures-electriques-records/",
+    "source": "Automobile Propre",
+    "category": "technologie",
+    "date_found": "2026-07-06"
+  },
+  {
+    "id": "5910e40799e8",
+    "title": "Walmart dépasse les 600 points de charge rapide",
+    "summary": "Walmart a atteint 612 points de recharge en fin juin 2026, ajoutant 12 nouvelles stations en juin. Le réseau s'est étendu à 17 états, avec l'Illinois et la Caroline du Nord rejoignant en juin. La société déploie des terminaux de paiement par carte bancaire sur ses chargeurs.",
+    "url": "https://evchargingstations.com/chargingnews/walmart-ev-charging-july-2026/",
+    "source": "EV Charging Stations With Tom Moloughney",
+    "category": "entreprise",
+    "date_found": "2026-07-06"
+  },
+  {
+    "id": "175781816cc8",
+    "title": "Francis Energy franchit le cap des 100 points Supercharger",
+    "summary": "Francis Energy a célébré un jalon de 100 points Supercharger installés dans 17 sites en Oklahoma dans le cadre du programme Tesla Supercharger for Business.",
+    "url": "https://evchargingstations.com/charging-news/",
+    "source": "EV Charging Stations With Tom Moloughney",
+    "category": "entreprise",
+    "date_found": "2026-07-06"
+  },
+  {
+    "id": "549d0e7ef1ad",
+    "title": "Obligations légales renforcées pour les parkings d'entreprise en 2026",
+    "summary": "Les entreprises dotées de parkings de plus de 20 places doivent disposer de bornes opérationnelles depuis 2025, avec équipement obligatoire avant juillet 2026. Les amendes administratives pour non-conformité peuvent atteindre 45 000 euros par an. Les parkings de plus de 200 places doivent disposer d'au moins 5 % de bornes opérationnelles.",
+    "url": "https://jcsm.fr/blog/borne-recharge-entreprise-obligations-2026",
+    "source": "JCSM",
+    "category": "reglementation",
+    "date_found": "2026-07-06"
+  },
+  {
+    "id": "5fc9699601aa",
+    "title": "Changement du malus au poids pour les véhicules électriques à partir du 1er juillet 2026",
+    "summary": "À partir du 1er juillet 2026, seuls les véhicules électriques ayant une faible empreinte carbone (écoscorés) resteront exonérés du malus au poids. Les autres véhicules électriques bénéficieront d'un abattement de 600 kg. Cette mesure renforce l'encadrement de l'aide aux véhicules électriques.",
+    "url": "https://www.avere-france.org/fiscalite-aides-et-incitations-a-lelectrification-des-personnes-morales/",
+    "source": "Avere-France",
+    "category": "reglementation",
+    "date_found": "2026-07-06"
+  },
+  {
     "id": "d4294be46680",
     "title": "Évolution des opérateurs et services de recharge en 2026",
     "summary": "En 2026, les principales améliorations concernent la transparence des prix, les paiements simplifiés par carte bancaire sans badge obligatoire, et une meilleure interopérabilité entre réseaux. Les opérateurs majeurs incluent TotalEnergies, IONITY, Fastned, Electra et Tesla selon les zones.",
