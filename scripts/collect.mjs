@@ -284,14 +284,23 @@ async function main() {
     });
   }
 
+  const MAX_ENTRIES = 100;
+
   const updated = [...newEntries, ...existing];
+  updated.sort((a, b) => (b.date_found || "").localeCompare(a.date_found || ""));
+
+  const trimmed = updated.slice(0, MAX_ENTRIES);
+  const removedCount = updated.length - trimmed.length;
 
   fs.mkdirSync(path.dirname(DATA_PATH), { recursive: true });
-  fs.writeFileSync(DATA_PATH, JSON.stringify(updated, null, 2));
+  fs.writeFileSync(DATA_PATH, JSON.stringify(trimmed, null, 2));
   fs.writeFileSync(NEW_ENTRIES_PATH, JSON.stringify(newEntries, null, 2));
 
   console.log(`${newEntries.length} nouvelle(s) entrée(s) ajoutée(s).`);
-  console.log(`Total dans data.json : ${updated.length}`);
+  if (removedCount > 0) {
+    console.log(`${removedCount} ancienne(s) entrée(s) supprimée(s) (limite de ${MAX_ENTRIES} atteinte).`);
+  }
+  console.log(`Total dans data.json : ${trimmed.length}`);
 }
 
 main();

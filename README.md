@@ -8,8 +8,8 @@ Veille automatisée hebdomadaire (GitHub Actions) sur :
 
 Chaque semaine :
 1. Un script interroge l'API Claude (avec recherche web) et récupère les actualités récentes.
-2. Les résultats sont dédoublonnés (par URL et par similarité de titre) par rapport à ce qui a déjà été collecté, puis ajoutés à `data/data.json`.
-3. Une page web (`site/index.html`, filtrable par catégorie et mot-clé) est publiée sur GitHub Pages.
+2. Les résultats sont dédoublonnés (par URL et par similarité de titre) par rapport à ce qui a déjà été collecté, puis ajoutés à `data/data.json`. Au-delà de 100 entrées, les plus anciennes sont automatiquement supprimées.
+3. Une page web (`site/index.html`, filtrable par catégorie et mot-clé) est publiée sur GitHub Pages. Les entrées jamais consultées sur ce navigateur apparaissent dans une section "Nouveautés" séparée (suivi via `localStorage`, propre à chaque navigateur).
 4. Un email récapitulatif est envoyé, listant uniquement les nouveautés de la semaine.
 
 ## Mise en place
