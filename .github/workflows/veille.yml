@@ -1,11 +1,6 @@
 name: Veille bornes de recharge
 
 on:
-  schedule:
-    # Chaque lundi à 7h17 UTC (8h17 ou 9h17 heure de Paris selon l'heure d'été)
-    # Minute décalée (17 au lieu de 0) pour éviter la file d'attente au top de l'heure,
-    # période de forte charge où GitHub Actions retarde le plus les schedules.
-    - cron: "17 7 * * 1"
   workflow_dispatch: {}  # permet de le déclencher manuellement depuis l'onglet Actions
 
 permissions:
