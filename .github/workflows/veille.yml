@@ -1,6 +1,9 @@
 name: Veille bornes de recharge
 
 on:
+  schedule:
+    # Chaque lundi à 7h17 UTC (8h17 ou 9h17 heure de Paris selon l'heure d'été)
+    - cron: "17 7 * * 1"
   workflow_dispatch: {}  # permet de le déclencher manuellement depuis l'onglet Actions
 
 permissions:
