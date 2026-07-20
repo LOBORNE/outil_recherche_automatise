@@ -58,6 +58,20 @@
   }
   .summary { color: var(--text); font-size: 0.92rem; line-height: 1.5; margin: 0.4rem 0 0; }
   .empty { color: var(--muted); text-align: center; padding: 3rem 0; }
+  .section-title {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    margin: 1.5rem 0 0.75rem;
+  }
+  .section-title:first-child { margin-top: 0; }
+  .card-new { border-color: var(--accent); }
+  .tag-new {
+    background: rgba(56, 189, 248, 0.25);
+    color: var(--accent);
+    font-weight: 600;
+  }
 </style>
 </head>
 <body>
@@ -75,6 +89,9 @@
 
 <script>
 let allData = [];
+let seenIds = new Set();
+
+const SEEN_KEY = "veille_seen_ids";
 
 const CATEGORY_LABELS = {
   borne: "Borne",
@@ -82,6 +99,22 @@ const CATEGORY_LABELS = {
   entreprise: "Entreprise",
   reglementation: "Réglementation",
 };
+
+function loadSeenIds() {
+  try {
+    return new Set(JSON.parse(localStorage.getItem(SEEN_KEY) || "[]"));
+  } catch {
+    return new Set();
+  }
+}
+
+function saveSeenIds(ids) {
+  try {
+    localStorage.setItem(SEEN_KEY, JSON.stringify([...ids]));
+  } catch {
+    // localStorage indisponible (navigation privée, etc.) : on ignore.
+  }
+}
 
 async function load() {
   try {
@@ -92,6 +125,7 @@ async function load() {
   }
 
   allData.sort((a, b) => (b.date_found || "").localeCompare(a.date_found || ""));
+  seenIds = loadSeenIds();
 
   const subtitle = document.getElementById("subtitle");
   if (allData.length > 0) {
@@ -108,6 +142,11 @@ async function load() {
   });
 
   render();
+
+  // Une fois affichées, les nouveautés de cette visite sont marquées "vues"
+  // pour la prochaine fois (et les entrées supprimées de data.json sont
+  // naturellement oubliées ici aussi).
+  saveSeenIds(new Set(allData.map((d) => d.id)));
 }
 
 function render() {
@@ -128,17 +167,31 @@ function render() {
     return;
   }
 
-  list.innerHTML = filtered
-    .map(
-      (d) => `
-      <div class="card">
+  const renderCard = (d) => {
+    const isNew = !seenIds.has(d.id);
+    return `
+      <div class="card${isNew ? " card-new" : ""}">
         <div class="meta">${d.date_found || ""} · ${d.source || ""}</div>
-        <h3><a href="${d.url}" target="_blank" rel="noopener">${d.title}</a></h3>
+        <h3>${isNew ? '<span class="tag tag-new">Nouveau</span> ' : ""}<a href="${d.url}" target="_blank" rel="noopener">${d.title}</a></h3>
         ${d.category ? `<span class="tag">${CATEGORY_LABELS[d.category] || d.category}</span>` : ""}
         <p class="summary">${d.summary || ""}</p>
-      </div>`
-    )
-    .join("");
+      </div>`;
+  };
+
+  const unseen = filtered.filter((d) => !seenIds.has(d.id));
+  const seen = filtered.filter((d) => seenIds.has(d.id));
+
+  let html = "";
+  if (unseen.length > 0) {
+    html += `<div class="section-title">Nouveautés (${unseen.length})</div>`;
+    html += unseen.map(renderCard).join("");
+  }
+  if (seen.length > 0) {
+    html += `<div class="section-title">Déjà vues</div>`;
+    html += seen.map(renderCard).join("");
+  }
+
+  list.innerHTML = html;
 }
 
 document.getElementById("category").addEventListener("change", render);
