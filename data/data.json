@@ -1,5 +1,50 @@
 [
   {
+    "id": "3a9d48c8f140",
+    "title": "Victoriaville augmente son réseau de recharge avec 60 nouveaux connecteurs",
+    "summary": "La ville de Victoriaville bonifie son infrastructure avec l'ajout de 60 nouveaux connecteurs de recharge, dont 12 connecteurs de charge rapide (niveau 3). Ces installations prévues en 2026-2027 répondent à la demande croissante de véhicules électriques.",
+    "url": "https://monvicto.com/2026/07/07/le-reseau-de-bornes-de-recharge-pour-vehicules-electriques-sagrandira-a-victoriaville/",
+    "source": "Mon Victo",
+    "category": "borne",
+    "date_found": "2026-07-21"
+  },
+  {
+    "id": "c8457dfe43a5",
+    "title": "La France vise 30 000 bornes de recharge sur les grands axes d'ici 2035",
+    "summary": "Le gouvernement français a annoncé en avril 2026 une stratégie nationale pour déployer 30 000 points de recharge sur autoroutes et routes nationales d'ici 2035, destinés aux véhicules légers et aux poids lourds, transformant la recharge en infrastructure nationale.",
+    "url": "https://www.aet-energy.fr/2026/06/03/bornes-de-recharge-electrique-la-france-accelere-sur-les-grands-axes/",
+    "source": "AE-T",
+    "category": "borne",
+    "date_found": "2026-07-21"
+  },
+  {
+    "id": "bbcfcb6b2439",
+    "title": "Impact énergétique du leasing social avec architecture 800V",
+    "summary": "La troisième vague du leasing social lancée le 16 juillet 2026 introduit 50 000 véhicules électriques supplémentaires équipés d'architecture 800 volts. Cette demande additionnelle de 127,5 GWh annuels soulève des questions sur la capacité du réseau français et la concentration sur des plages horaires spécifiques.",
+    "url": "https://lenergeek.com/2026/07/18/recharge-electrique-ultra-rapide/",
+    "source": "L'EnerGeek",
+    "category": "technologie",
+    "date_found": "2026-07-21"
+  },
+  {
+    "id": "bba429c861cc",
+    "title": "Expansion des bornes ultra-rapides sur autoroutes françaises",
+    "summary": "Le réseau de recharge ultra-rapide sur autoroutes se développe massivement en 2026, avec plusieurs projets prévoyant l'installation de dizaines de milliers de bornes à très haute puissance. Ces infrastructures permettent de récupérer 150 km d'autonomie en 15 minutes sur véhicules compatibles.",
+    "url": "https://les-perles-du-net.fr/la-montee-en-puissance-des-points-de-recharge-tres-haute-puissance-sur-autoroute-en-2026/",
+    "source": "Les Perles du Net",
+    "category": "technologie",
+    "date_found": "2026-07-21"
+  },
+  {
+    "id": "85f9640040f3",
+    "title": "Généralisation de l'architecture 800V pour la recharge ultra-rapide",
+    "summary": "Les constructeurs déploient massivement des systèmes fonctionnant sous 800 volts (voire 900V pour les segments premium) pour remplacer les anciens systèmes 400 volts. Cette tension doublée permet d'encaisser des pics de charge phénoménaux et de passer de 10 à 80% en moins de 30 minutes.",
+    "url": "https://borne-recharge-electrique-byadlan.fr/2026/01/14/nouvelles-voitures-electriques-2026/",
+    "source": "AD LAN",
+    "category": "technologie",
+    "date_found": "2026-07-21"
+  },
+  {
     "id": "38fb27c7a10d",
     "title": "Electra lance une application unifiée intégrant 800 000 bornes européennes",
     "summary": "L'opérateur français Electra a mis à jour son application mobile pour intégrer l'ensemble du parc de recharge européen, regroupant plus de 800 000 points de tous opérateurs confondus. Les utilisateurs peuvent trier par critères prioritaires et une nouvelle carte de recharge physique est proposée à 4,99 euros.",
