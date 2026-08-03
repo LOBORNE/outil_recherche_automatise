@@ -1,5 +1,68 @@
 [
   {
+    "id": "1802c622b585",
+    "title": "Record historique de fréquentation des bornes de recharge en juillet-août",
+    "summary": "La fréquentation des bornes publiques atteint des records avec plus de 33 sessions mensuelles par point en moyenne. L'été 2026 s'annonce critique avec une augmentation attendue de 71% durant les mois de juillet-août, similaire à 2025, générant des risques d'engorgement.",
+    "url": "https://www.automag.fr/vehicules-electriques/bornes-recharge-france.html",
+    "source": "Automag",
+    "category": "borne",
+    "date_found": "2026-08-03"
+  },
+  {
+    "id": "de3fac9b6ca8",
+    "title": "Technologies 800V et bornes connectées deviennent standard en 2026",
+    "summary": "Les bornes connectées avec pilotage intelligent sont devenues le standard en 2026. La technologie 800V permet une recharge ultra-rapide (10-80% en moins de 30 minutes) et améliore l'efficience énergétique sur certains modèles de véhicules.",
+    "url": "https://www.quelleenergie.fr/economies-energie/borne-recharge",
+    "source": "Quelle Energie",
+    "category": "borne",
+    "date_found": "2026-08-03"
+  },
+  {
+    "id": "a11a1857d523",
+    "title": "Chargepoly lève 23 millions d'euros pour l'électrification des transports lourds",
+    "summary": "La startup française Chargepoly a levé 23 millions d'euros pour accélérer l'électrification du transport lourd avec ses solutions de recharge. Cette levée de fonds marque un investissement majeur dans l'infrastructure de charge pour poids lourds.",
+    "url": "https://www.avem.fr/",
+    "source": "AVEM - Association pour l'Avenir du Véhicule Electro-Mobile",
+    "category": "entreprise",
+    "date_found": "2026-08-03"
+  },
+  {
+    "id": "2dca17a10917",
+    "title": "StarCharge annonce un partenariat stratégique avec SolarJuice au SNEC 2026",
+    "summary": "StarCharge, leader mondial des solutions de recharge, a présenté au salon SNEC 2026 un écosystème énergétique intégré et annoncé un partenariat stratégique avec l'entreprise australienne SolarJuice pour accélérer la transition énergétique mondiale.",
+    "url": "http://www.prnewswire.com/news-releases/starcharge-devoile-ses-solutions-energetiques-de-nouvelle-generation-et-son-partenariat-strategique-anz-au-snec-2026-302792184.html",
+    "source": "PRNewswire",
+    "category": "entreprise",
+    "date_found": "2026-08-03"
+  },
+  {
+    "id": "793cb8708ce3",
+    "title": "DBT crée une plateforme de recharge ultra-rapide avec 50 millions d'euros d'investissement",
+    "summary": "Le groupe DBT, expert français des infrastructures de recharge, a conclu un partenariat avec Amundi Transition Énergétique et la Banque des Territoires pour construire 300 bornes ultra-rapides en trois ans via sa filiale Réseau Recharge Rapide.",
+    "url": "https://www.cfnewsinfra.net/Les-Alertes-de-CFNEWS-INFRA/Une-nouvelle-plateforme-pour-la-recharge-electrique-en-France-487073",
+    "source": "CFNEWSINFRA",
+    "category": "entreprise",
+    "date_found": "2026-08-03"
+  },
+  {
+    "id": "0edcd8370601",
+    "title": "Prime CEE remplace le bonus écologique : jusqu'à 5 700 € en 2026",
+    "summary": "Le bonus écologique a été remplacé par la prime Coup de Pouce Véhicules Particuliers Électriques financée via les Certificats d'Économies d'Énergie. En 2026, cette aide peut atteindre jusqu'à 5 700 € selon les revenus du foyer et la qualité environnementale du véhicule.",
+    "url": "https://www.aide-sociale.fr/bonus-ecologique/",
+    "source": "Aide Sociale",
+    "category": "reglementation",
+    "date_found": "2026-08-03"
+  },
+  {
+    "id": "011b01901bfc",
+    "title": "Prime Advenir 2026 : jusqu'à 50 % du coût d'installation de bornes",
+    "summary": "La prime ADVENIR continue en 2026 de financer une partie du coût d'installation de points de charge, couvrant jusqu'à 50 % du coût total des travaux selon les conditions d'éligibilité. Les demandes s'effectuent via le portail advenir.mobi.",
+    "url": "https://www.automobile-propre.com/dossiers-categories/cout-aides-et-taxes/",
+    "source": "Automobile-Propre",
+    "category": "reglementation",
+    "date_found": "2026-08-03"
+  },
+  {
     "id": "3d915e22e769",
     "title": "Crédits d'impôt pour bornes domestiques supprimés en 2026",
     "summary": "Le crédit d'impôt pour l'installation d'une borne de recharge à domicile n'est plus en vigueur en 2026. Les particuliers ayant engagé des travaux avant fin 2025 peuvent en bénéficier sous conditions, mais aucune nouvelle demande n'est acceptée.",
