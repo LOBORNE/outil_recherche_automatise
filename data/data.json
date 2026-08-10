@@ -1,5 +1,59 @@
 [
   {
+    "id": "b25494176ce9",
+    "title": "86 nouvelles bornes de recharge électrique à Nice",
+    "summary": "La Métropole Nice Côte d'Azur a ouvert 86 nouveaux points de charge publics le 17 juillet 2026, suite au retrait du service d'autopartage Mobilize Share. Cette expansion répond à la forte demande avec plus de 410 000 sessions de recharge effectuées en 2025 sur le réseau « Prise de Nice ».",
+    "url": "https://www.nicecotedazur.org/actualites/86-nouvelles-bornes-de-recharge-electrique-sur-le-reseau-prisedenice/",
+    "source": "Métropole Nice Côte d'Azur",
+    "category": "borne",
+    "date_found": "2026-08-10"
+  },
+  {
+    "id": "deec2e07f69c",
+    "title": "Classement 2026 des meilleurs réseaux de recharge en France",
+    "summary": "Selon Chargemap, qui s'appuie sur plus de 433 000 avis utilisateurs, « Le Plein » arrive en première position en 2026, suivi par des réseaux comme Mobilize Fast Charge et Fastned. Le classement montre une maturité croissante du marché français avec une expérience utilisateur devenue critère déterminant.",
+    "url": "https://chargemap.com/fr-fr/blog/articles/classement-2026-meilleurs-reseaux-recharge",
+    "source": "Chargemap",
+    "category": "borne",
+    "date_found": "2026-08-10"
+  },
+  {
+    "id": "a9411109e23e",
+    "title": "Baromètre Advenir Q2 2026 : hausse de la fréquentation des bornes de recharge",
+    "summary": "L'Observatoire de la recharge a publié le 6 août 2026 son bilan du deuxième trimestre 2026. Le baromètre montre une progression continue de la fréquentation des points de charge français, mesurant l'énergie délivrée et les habitudes de recharge des utilisateurs.",
+    "url": "https://www.automobile-propre.com/articles/recharge-des-voitures-electriques-la-frequentation-des-bornes-poursuit-sa-hausse-en-2026/",
+    "source": "Automobile Propre",
+    "category": "entreprise",
+    "date_found": "2026-08-10"
+  },
+  {
+    "id": "b60914abdaf7",
+    "title": "Hausse des tarifs d'électricité du 1er août 2026 : impact sur la recharge à domicile",
+    "summary": "Au 1er août 2026, le tarif réglementé de l'électricité augmente de 2,5%, affectant le coût de recharge à domicile. Parallèlement, la CRE élargit l'option Heures creuses aux abonnements de 3 kVA pour inciter les consommateurs à décaler leurs usages.",
+    "url": "https://media.roole.fr/transition/voiture-propre/voiture-electrique-quel-impact-aura-la-hausse-de-lelectricite-du-1-aout-sur-votre-recharge",
+    "source": "Roole",
+    "category": "entreprise",
+    "date_found": "2026-08-10"
+  },
+  {
+    "id": "4ecfd0c52339",
+    "title": "Uber multiplie les partenariats de recharge : accords avec Electra et Allego",
+    "summary": "Uber a conclu deux partenariats stratégiques en 2026 : un accord fin février avec le réseau Electra et un partenariat en mars avec Allego, destinés à proposer des tarifs préférentiels en itinérance pour ses chauffeurs VTC.",
+    "url": "https://www.flotauto.com/uber-recharge-partenariats/",
+    "source": "Flotauto",
+    "category": "entreprise",
+    "date_found": "2026-08-10"
+  },
+  {
+    "id": "fa990d8ce62c",
+    "title": "Bonus transformé en prime 'coup de pouce' avec mécanisme CEE",
+    "summary": "Depuis juillet 2025, le bonus écologique traditionnel a été remplacé par une prime 'coup de pouce' basée sur les Certificats d'Économies d'Énergie (CEE). Cette nouvelle aide est recentrée en fonction des revenus du foyer et privilégie les véhicules moins polluants et plus légers.",
+    "url": "https://francevolt.com/aides-mobilite-electrique-subventions-2026/",
+    "source": "FranceVolt",
+    "category": "reglementation",
+    "date_found": "2026-08-10"
+  },
+  {
     "id": "1802c622b585",
     "title": "Record historique de fréquentation des bornes de recharge en juillet-août",
     "summary": "La fréquentation des bornes publiques atteint des records avec plus de 33 sessions mensuelles par point en moyenne. L'été 2026 s'annonce critique avec une augmentation attendue de 71% durant les mois de juillet-août, similaire à 2025, générant des risques d'engorgement.",
