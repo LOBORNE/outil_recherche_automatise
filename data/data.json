@@ -1,5 +1,113 @@
 [
   {
+    "id": "fd802b762d7a",
+    "title": "France franchit les 200 000 bornes de recharge publiques",
+    "summary": "Fin juillet 2026, la France a dépassé le cap des 200 000 points de charge ouverts au public. Ce seuil marque un tournant symbolique atteint trois ans après le passage des 100 000 bornes en mai 2023.",
+    "url": "https://media.roole.fr/transition/voiture-propre/recharge-electrique-la-france-franchit-le-cap-des-200-000-bornes-publiques",
+    "source": "Roole",
+    "category": "borne",
+    "date_found": "2026-08-17"
+  },
+  {
+    "id": "40f81fcda980",
+    "title": "Saturation des bornes autoroutières le 15 août 2026",
+    "summary": "Les bornes de recharge pour voitures électriques ont été saturées sur les autoroutes françaises le 15 août avec jusqu'à 20 minutes d'attente. Des agents ont été déployés pour conseiller aux conducteurs de charger à 80% afin de libérer les places plus rapidement.",
+    "url": "https://stephanelarue.com/voitures-electriques-bornes-recharge-saturees-15-aout-2026/",
+    "source": "StéphaneLarue.com",
+    "category": "borne",
+    "date_found": "2026-08-17"
+  },
+  {
+    "id": "dde2564b76b6",
+    "title": "Engagement des opérateurs pour 240 000 bornes supplémentaires d'ici 2030",
+    "summary": "Le 28 juillet 2026, le président de la République a annoncé l'engagement des principaux opérateurs français pour installer 240 000 bornes supplémentaires d'ici 2030. L'objectif est de porter le réseau national à près de 650 000 points de recharge.",
+    "url": "https://www.innovation24.news/2026/08/03/bornes-de-recharge-electrique-la-france-et-leurope-accelerent-le-deploiement-pour-accompagner-la-transition-vers-la-mobilite-electrique/",
+    "source": "Innovation24.news",
+    "category": "borne",
+    "date_found": "2026-08-17"
+  },
+  {
+    "id": "9adafb3cd2bb",
+    "title": "Pics d'affluence records aux bornes sur les autoroutes",
+    "summary": "Le 13 août 2026, des pics d'affluence records ont été enregistrés sur les bornes d'autoroutes avec une demande qui explose lors des grands départs en vacances. Le réseau français compte près de 200 000 points de recharge accessibles au public mais seules quelques milliers sont sur autoroutes.",
+    "url": "https://www.auto-mag.fr/actualites/recharge-voitures-electriques-des-pics-daffluence-records-aux-bornes-electriques",
+    "source": "AUTO MAG",
+    "category": "borne",
+    "date_found": "2026-08-17"
+  },
+  {
+    "id": "fb91ef7203fc",
+    "title": "Standard SAE J2954 actualisé pour la charge par induction en 2026",
+    "summary": "Le standard SAE J2954, publié début 2026, couvre désormais les applications statiques, quasi-dynamiques et dynamiques de recharge par induction pour véhicules électriques. Cette normalisation doit permettre l'interopérabilité entre n'importe quel véhicule compatible et les infrastructures de recharge sans fil.",
+    "url": "https://www.tesla-mag.com/recharge-sans-fil-pour-vehicules-electriques-ou-en-est-la-technologie-en-2026/",
+    "source": "Tesla Mag",
+    "category": "technologie",
+    "date_found": "2026-08-17"
+  },
+  {
+    "id": "c8516f8feeb4",
+    "title": "EVgo ouvre une station de recharge flagship à Détroit et prévoit plus de 100 stations d'ici fin 2026",
+    "summary": "EVgo, l'un des plus grands réseaux publics de recharge rapide américains, a inauguré sa nouvelle station flagship de recharge à Détroit en partenariat avec le détaillant Meijer. Avec plus de 40 stations flagship actuellement ouvertes, l'entreprise table sur un déploiement de plus de 100 stations d'ici la fin de 2026.",
+    "url": "https://www.globenewswire.com/news-release/2026/08/11/3342605/0/en/evgo-and-gm-enhance-the-charging-experience-with-new-flagship-sites.html",
+    "source": "Globe Newswire",
+    "category": "entreprise",
+    "date_found": "2026-08-17"
+  },
+  {
+    "id": "94dd44095f82",
+    "title": "EVgo annonce des plans pour ses propres Superchargeurs V4 en partenariat avec Tesla",
+    "summary": "EVgo a annoncé des plans pour installer ses propres « EVgo Superchargers » compatibles NACS à travers le pays, renforçant ses capacités de recharge rapide. Le partenariat stratégique avec Tesla et l'ajout de 500 nouveaux points de recharge aux centres commerciaux Brixmor font partie de cette expansion.",
+    "url": "https://chargedevs.com/",
+    "source": "Charged EVs",
+    "category": "entreprise",
+    "date_found": "2026-08-17"
+  },
+  {
+    "id": "b56f6441de48",
+    "title": "Ionna accélère son déploiement avec un objectif de 30 000 points de recharge haute vitesse d'ici 2030",
+    "summary": "Le réseau de recharge soutenu par des constructeurs automobiles Ionna accélère son expansion aux États-Unis, visant 30 000 baies de recharge haute vitesse d'ici 2030. Cette approche reflète une tendance où les constructeurs traitent la recharge fiable comme partie intégrante de l'expérience d'achat et de possession du véhicule.",
+    "url": "https://electrificationcoalition.org/ev-news-august-2026/",
+    "source": "Electrification Coalition",
+    "category": "entreprise",
+    "date_found": "2026-08-17"
+  },
+  {
+    "id": "806adb8c1adf",
+    "title": "BYD prévoit une recharge ultra-rapide de 1 000 kW tandis que Huawei déploie 100 000 stations",
+    "summary": "Les constructeurs asiatiques accélèrent le déploiement de l'infrastructure de recharge : BYD prépare des capacités de 1 000 kW et Huawei procède au lancement de 100 000 stations de recharge ultra-rapide. Ces développements s'inscrivent dans une tendance globale de croissance du marché, projeté à 120,85 milliards de dollars d'ici 2033.",
+    "url": "https://www.globenewswire.com/news-release/2026/08/04/3338537/28124/en/EV-Charging-Station-Market-to-Reach-120-85-Billion-by-2033-Driven-by-High-Power-Infrastructure-and-Grid-Modernization.html",
+    "source": "Globe Newswire",
+    "category": "entreprise",
+    "date_found": "2026-08-17"
+  },
+  {
+    "id": "d4ea34a2c142",
+    "title": "Orange EV sécurise 100 millions de dollars pour le camionnage électrique et la recharge intégrée aux batteries",
+    "summary": "Orange EV a levé 100 millions de dollars pour financer ses solutions de camionnage électrique avec recharge intégrée aux systèmes de stockage d'énergie (ESS). Cette levée de fonds soutient l'expansion du fournisseur dans le secteur critique du transport lourd électrifié.",
+    "url": "https://www.evinfrastructurenews.com/latest-news",
+    "source": "EV Infrastructure News",
+    "category": "entreprise",
+    "date_found": "2026-08-17"
+  },
+  {
+    "id": "a6314a69b803",
+    "title": "Suppression du crédit d'impôt pour les bornes de recharge en 2026",
+    "summary": "Le crédit d'impôt permettant un bonus jusqu'à 500 € par borne pour l'installation de bornes de recharge est supprimé dès 2026 pour les dépenses après le 31 décembre 2025. Les aides sont désormais limitées au programme Advenir et aux aides locales.",
+    "url": "https://www.electro-mob.com/loi-de-finances-2026-ce-qui-change-pour-les-bornes-de-recharge",
+    "source": "ElectroMob",
+    "category": "reglementation",
+    "date_found": "2026-08-17"
+  },
+  {
+    "id": "b9823590b4b5",
+    "title": "Obligations strictes pour les parkings : 5 % minimum de bornes de recharge",
+    "summary": "Depuis le 1er janvier 2025 et renforcé en 2026, tout bâtiment tertiaire avec un parking de plus de 20 places doit proposer au moins 5 % de places équipées de bornes de recharge. Cette obligation s'applique aux bureaux, commerces et entrepôts.",
+    "url": "https://www.annumoteurs.net/bornes-de-recharge-en-entreprise-ce-que-la-loi-impose-vraiment-en-2026/",
+    "source": "Annu Moteurs",
+    "category": "reglementation",
+    "date_found": "2026-08-17"
+  },
+  {
     "id": "b25494176ce9",
     "title": "86 nouvelles bornes de recharge électrique à Nice",
     "summary": "La Métropole Nice Côte d'Azur a ouvert 86 nouveaux points de charge publics le 17 juillet 2026, suite au retrait du service d'autopartage Mobilize Share. Cette expansion répond à la forte demande avec plus de 410 000 sessions de recharge effectuées en 2025 sur le réseau « Prise de Nice ».",
