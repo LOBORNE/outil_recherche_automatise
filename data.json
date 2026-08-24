@@ -1,5 +1,59 @@
 [
   {
+    "id": "0cfebcad661b",
+    "title": "Émergence du Vehicle-to-Grid (V2G) dans les infrastructures 2026",
+    "summary": "La technologie Vehicle-to-Grid (V2G) émerge en 2026, permettant aux véhicules électriques de restituer de l'électricité au réseau. Cette innovation transforme les véhicules en unités de stockage mobile et renforce l'intérêt des infrastructures de recharge intelligentes.",
+    "url": "https://www.dbf-autos.fr/infrastructures-recharge-2026/",
+    "source": "DEF Automobiles",
+    "category": "borne",
+    "date_found": "2026-08-24"
+  },
+  {
+    "id": "e3e9d2c79eda",
+    "title": "IONITY ouvre son premier hub urbain à Londres avec des bornes 400 kW",
+    "summary": "IONITY a ouvert en août 2026 son premier centre de recharge urbain à Greenwich Shopping Park à Londres, proposant 12 bornes de recharge ultra-rapide pouvant délivrer jusqu'à 400 kW.",
+    "url": "https://greentechlead.com/electric-vehicle/global-ev-charging-projects-accelerate-in-2026-as-india-approves-4874-chargers-and-uk-us-australia-step-up-investment-54868",
+    "source": "GreentechLead",
+    "category": "entreprise",
+    "date_found": "2026-08-24"
+  },
+  {
+    "id": "baf45b07ccdd",
+    "title": "Californie approuve un plan d'investissement de 95,2 millions de dollars pour l'infrastructure de recharge",
+    "summary": "La California Energy Commission a approuvé un plan d'investissement de 95,2 millions de dollars pour l'année 2026-2027, comprenant 48 millions de dollars pour la recharge des véhicules légers et 30,2 millions pour l'infrastructure lourde.",
+    "url": "https://www.energy.ca.gov/news/2026-08/cec-approves-95-million-plan-expand-zev-infrastructure",
+    "source": "California Energy Commission",
+    "category": "entreprise",
+    "date_found": "2026-08-24"
+  },
+  {
+    "id": "46b99f8016ec",
+    "title": "New York débloque 35 millions de dollars pour les projets de recharge publics",
+    "summary": "La NYSERDA rend disponibles 35 millions de dollars pour les entités publiques afin de développer des projets de recharge de véhicules électriques, avec un délai de candidature au 20 octobre 2026.",
+    "url": "https://www.nyserda.ny.gov/About/Newsroom/2026-Announcements/2026-08-14-Governor-Hochul-Announces-35-Mill-Now-Avail-For-Public-Entities-EV-Charges-NYS",
+    "source": "NYSERDA",
+    "category": "entreprise",
+    "date_found": "2026-08-24"
+  },
+  {
+    "id": "7444c117993e",
+    "title": "RAW Charging s'associe à ChargePoint pour étendre l'infrastructure rapide au Royaume-Uni",
+    "summary": "RAW Charging a choisi ChargePoint Holdings Inc. comme partenaire pour déployer 300 nouvelles stations de recharge rapide en courant continu à travers le Royaume-Uni d'ici 2026.",
+    "url": "https://autotechinsight.spglobal.com/news/5286958/raw-charging-collaborates-with-chargepoint-to-expand-uks-fast-charging-infrastructure-for-evs",
+    "source": "S&P Global AutoTechInsight",
+    "category": "entreprise",
+    "date_found": "2026-08-24"
+  },
+  {
+    "id": "fabda81c3bbc",
+    "title": "Quota de verdissement des flottes d'entreprise à 18 % en 2026, avec taxe incitative",
+    "summary": "Les flottes de plus de 100 véhicules doivent atteindre un quota de 18 % de véhicules à faibles émissions en 2026, montant progressivement à 48 % en 2030. Le non-respect déclenche une taxe annuelle incitative (TAI) s'allouirdissant chaque année.",
+    "url": "https://www.go-electra.com/fr/newsroom/corporate-electric-vehicle-mandate/",
+    "source": "Electra",
+    "category": "reglementation",
+    "date_found": "2026-08-24"
+  },
+  {
     "id": "fd802b762d7a",
     "title": "France franchit les 200 000 bornes de recharge publiques",
     "summary": "Fin juillet 2026, la France a dépassé le cap des 200 000 points de charge ouverts au public. Ce seuil marque un tournant symbolique atteint trois ans après le passage des 100 000 bornes en mai 2023.",
