@@ -1,5 +1,23 @@
 [
   {
+    "id": "dc5fad56022d",
+    "title": "Borne de recharge : nécessité d'améliorer l'ergonomie des interfaces",
+    "summary": "Un article dénonce les défauts ergonomiques des bornes de recharge actuelles, notamment le positionnement des écrans difficiles à lire en plein soleil ou exigeant une contorsion pour être accessibles. Les modèles plus récents corrigent progressivement ces problèmes de conception.",
+    "url": "https://www.automobile-propre.com/articles/bornes-de-recharge-il-est-temps-de-faire-plus-simple/",
+    "source": "Automobile Propre",
+    "category": "borne",
+    "date_found": "2026-08-31"
+  },
+  {
+    "id": "ee7d2180d45c",
+    "title": "Accélération du financement NEVI aux États-Unis pour 2026",
+    "summary": "Le programme NEVI des États-Unis accélère le déploiement en 2026 avec 885 millions de dollars alloués pour l'année fiscale. ChargePoint et Blink Charging ont obtenu des contrats d'achat coopératif, facilitant les acquisitions par les collectivités locales.",
+    "url": "https://civiciq.com/blog/government-ev-charging-infrastructure-where-the-money-is-going-in-2026",
+    "source": "Civic IQ",
+    "category": "entreprise",
+    "date_found": "2026-08-31"
+  },
+  {
     "id": "a10019a118d9",
     "title": "Simplification de la recharge en 2026 : tarifs transparents et paiement universel",
     "summary": "2026 marque une nouvelle étape dans la simplification de l'expérience utilisateur avec des tarifs plus transparents en euros/kWh, un paiement universel par carte bancaire ou application unique, et une meilleure fiabilité grâce à des normes minimales. La V2G (recharge bidirectionnelle) se démocratise progressivement.",
