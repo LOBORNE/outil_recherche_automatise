@@ -1,5 +1,50 @@
 [
   {
+    "id": "a10019a118d9",
+    "title": "Simplification de la recharge en 2026 : tarifs transparents et paiement universel",
+    "summary": "2026 marque une nouvelle étape dans la simplification de l'expérience utilisateur avec des tarifs plus transparents en euros/kWh, un paiement universel par carte bancaire ou application unique, et une meilleure fiabilité grâce à des normes minimales. La V2G (recharge bidirectionnelle) se démocratise progressivement.",
+    "url": "https://www.chezswitch.fr/actualites/bornes-de-recharge-en-france-quelles-projections-pour-2026",
+    "source": "Chez Switch",
+    "category": "borne",
+    "date_found": "2026-08-31"
+  },
+  {
+    "id": "899122447594",
+    "title": "Objectif gouvernemental : 400 000 bornes publiques d'ici 2030",
+    "summary": "Le gouvernement français vise 400 000 points de recharge ouverts au public d'ici 2030, dont 50 000 en recharge rapide. Des contrats cadres entre opérateurs et grandes surfaces doivent générer plusieurs milliers de points supplémentaires et des gares pilotes s'équipent progressivement.",
+    "url": "https://www.economie.gouv.fr/actualites/les-bornes-de-recharge-se-deploient-sur-le-territoire",
+    "source": "Ministère de l'Économie",
+    "category": "borne",
+    "date_found": "2026-08-31"
+  },
+  {
+    "id": "0494894a1051",
+    "title": "WiTricity déploie son système de charge sans fil Halo pour véhicules électriques",
+    "summary": "WiTricity lance son système de recharge par induction Halo pour utilisation commerciale, notamment avec des véhicules E-Z-GO et ICON. Le système délivre 11 kW permettant une autonomie de 56 km par heure de charge via transfert d'énergie électromagnétique.",
+    "url": "https://bolt.earth/blog/top-5-ev-charging-innovations-of-2026-set-to-solve-range-anxiety",
+    "source": "Bolt.Earth",
+    "category": "technologie",
+    "date_found": "2026-08-31"
+  },
+  {
+    "id": "0e0b0d33f270",
+    "title": "Porsche Cayenne lancera la recharge sans fil par induction en 2026",
+    "summary": "Porsche introduit la recharge par induction pour le nouveau Cayenne électrique, qui sera le premier véhicule de production à offrir cette technologie. Le système d'11 kW intégré à l'application My Porsche sera lancé en Europe en 2026.",
+    "url": "https://evchargingstations.com/chargingnews/porsche-to-launch-11-kw-wireless-charging-option-in-2026/",
+    "source": "EV Charging Stations",
+    "category": "technologie",
+    "date_found": "2026-08-31"
+  },
+  {
+    "id": "1d3cc69ee435",
+    "title": "Systèmes de charge par induction dynamique intégrés aux routes et parkings",
+    "summary": "Les villes américaines intègrent des bobines d'induction sous le bitume des autoroutes et routes urbaines pour permettre la charge pendant la circulation. Des technologies stationnaires de 300+ kW chargeant les bus électriques en quelques minutes sont en déploiement commercial.",
+    "url": "https://kentshield.online/wireless-ev-charging-in-2026/",
+    "source": "Kent Shield EV",
+    "category": "technologie",
+    "date_found": "2026-08-31"
+  },
+  {
     "id": "0cfebcad661b",
     "title": "Émergence du Vehicle-to-Grid (V2G) dans les infrastructures 2026",
     "summary": "La technologie Vehicle-to-Grid (V2G) émerge en 2026, permettant aux véhicules électriques de restituer de l'électricité au réseau. Cette innovation transforme les véhicules en unités de stockage mobile et renforce l'intérêt des infrastructures de recharge intelligentes.",
