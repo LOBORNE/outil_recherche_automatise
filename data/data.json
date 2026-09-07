@@ -1,5 +1,59 @@
 [
   {
+    "id": "03afd99a9941",
+    "title": "État du réseau de recharge publique : 185 501 points de charge en France au 31 décembre 2025",
+    "summary": "Le réseau français de recharge a connu une croissance de 20% en 2025 avec l'ajout de 30 807 points, portant le total à 185 501 points ouverts au public. Cette expansion représente une moyenne de 275 points pour 100 000 habitants, répondant aux besoins croissants des propriétaires de véhicules électriques.",
+    "url": "https://www.futura-sciences.com/automobile/actualites/voiture-electrique-voiture-electrique-ce-revelent-nouveaux-chiffres-reseau-recharge-france-131252/",
+    "source": "Futura Sciences",
+    "category": "borne",
+    "date_found": "2026-09-07"
+  },
+  {
+    "id": "27c5de32494b",
+    "title": "Ralentissement du déploiement des bornes au premier semestre 2026",
+    "summary": "Seulement 12 000 nouveaux points de recharge publics ont été installés au premier semestre 2026, révélant un ralentissement du déploiement. De plus, la fiabilité du réseau s'est détériorée, avec les taux de disponibilité des bornes DC tombant à 84,7% pour les modèles de moins de 150 kW.",
+    "url": "https://www.automobile-propre.com/articles/bornes-de-recharge-le-deploiement-reste-trop-lent-pour-atteindre-lobjectif-du-gouvernement/",
+    "source": "Automobile Propre",
+    "category": "borne",
+    "date_found": "2026-09-07"
+  },
+  {
+    "id": "b0d2247ca381",
+    "title": "Ze-Watt confirme sa croissance avec 22M€ de chiffre d'affaires et vise 20 000 bornes",
+    "summary": "Ze-Watt, acteur français indépendant de la mobilité électrique, a réalisé 22 millions d'euros de chiffre d'affaires en 2025 (+25%) et exploite plus de 16 000 points de charge. L'entreprise vise une croissance de 15% en 2026 et le cap des 20 000 points de charge.",
+    "url": "https://ze-watt.com/article/mobilite-electrique-ze-watt-20000-bornes-croissance/",
+    "source": "Ze-Watt",
+    "category": "entreprise",
+    "date_found": "2026-09-07"
+  },
+  {
+    "id": "e188a4219f64",
+    "title": "ChargerHelp triple le nombre de stations sous gestion",
+    "summary": "ChargerHelp a annoncé en janvier 2026 avoir triplé le nombre de stations de recharge sous gestion selon son modèle Reliability-as-a-Service. La plateforme a accumulé plus de 300 millions de points de données à partir des opérations d'infrastructures de recharge.",
+    "url": "https://www.landbase.com/blog/fastest-growing-ev-charging-companies-startups",
+    "source": "Landbase",
+    "category": "entreprise",
+    "date_found": "2026-09-07"
+  },
+  {
+    "id": "7ae62476478a",
+    "title": "Grizzl-E Club atteint 20 000 membres en août 2026",
+    "summary": "Le Grizzl-E Club au Canada a atteint le 11 août 2026 le cap de 20 000 membres adhérents, doublant le nombre depuis 10 000 membres en l'espace de seulement trois mois.",
+    "url": "https://evchargingstations.com/",
+    "source": "EV Charging Stations With Tom Moloughney",
+    "category": "entreprise",
+    "date_found": "2026-09-07"
+  },
+  {
+    "id": "1e721775acd9",
+    "title": "Aide aux taxis électriques lancée le 1er septembre 2026",
+    "summary": "À compter du 1er septembre 2026, un dispositif spécifique d'aide aux taxis électriques est annoncé autour de 3 500€ à 5 500€ (montant majoré si le véhicule et sa batterie sont fabriqués en Europe).",
+    "url": "https://www.delivauto.fr/voiture-electrique-quest-ce-qui-change-vraiment-en-2026/",
+    "source": "Delivauto",
+    "category": "reglementation",
+    "date_found": "2026-09-07"
+  },
+  {
     "id": "dc5fad56022d",
     "title": "Borne de recharge : nécessité d'améliorer l'ergonomie des interfaces",
     "summary": "Un article dénonce les défauts ergonomiques des bornes de recharge actuelles, notamment le positionnement des écrans difficiles à lire en plein soleil ou exigeant une contorsion pour être accessibles. Les modèles plus récents corrigent progressivement ces problèmes de conception.",
