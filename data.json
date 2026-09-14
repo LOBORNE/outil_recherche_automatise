@@ -1,5 +1,77 @@
 [
   {
+    "id": "198041833212",
+    "title": "Cergy déploie six nouvelles bornes de recharge en septembre 2026",
+    "summary": "La ville de Cergy lance le déploiement de six nouvelles bornes de recharge pour véhicules électriques dès septembre 2026, dont une borne de 36 kW en courant continu qui sera mise en service après octobre 2026. Le tarif de recharge a été fixé à 0,36 €/kWh.",
+    "url": "https://presseagence.fr/cergy-mobilite-electrique-six-nouvelles-bornes-de-recharge-deployees-des-la-rentree/",
+    "source": "Presse Agence",
+    "category": "borne",
+    "date_found": "2026-09-14"
+  },
+  {
+    "id": "6448f537e07f",
+    "title": "APRR accélère le déploiement de bornes ultrarapides sur 36 aires autoroutières",
+    "summary": "Le concessionnaire autoroutier APRR s'engage à installer des bornes de recharge ultrarapides (jusqu'à 300 kW) sur 36 aires de repos et de service à partir de mai 2027. Les premiers déploiements concerneront 20 aires sur les autoroutes A5, A6, A31, A36 et A39.",
+    "url": "https://www.lagazettefrance.fr/article/aprr-accelere-le-deploiement-de-la-recharge-electrique-sur-ses-aires-autoroutieres",
+    "source": "La Gazette France",
+    "category": "borne",
+    "date_found": "2026-09-14"
+  },
+  {
+    "id": "b0686f05838a",
+    "title": "France : plus de 180 000 points de charge publics et amélioration de la disponibilité",
+    "summary": "La France compte désormais plus de 180 000 points de charge publics pour véhicules électriques avec un taux de disponibilité des bornes atteignant environ 99% selon l'Observatoire de la qualité de recharge publique de l'Avere-France.",
+    "url": "https://www.charge-elec.leclerc/actualite/le-reseau-de-bornes-publiques-en-france-bilan-2025-et-perspectives-2026",
+    "source": "E.Leclerc",
+    "category": "borne",
+    "date_found": "2026-09-14"
+  },
+  {
+    "id": "f8be1d9d54bb",
+    "title": "Renault accélère son déploiement de stations de recharge",
+    "summary": "Renault prévoit d'atteindre 94 stations de recharge d'ici fin 2026, soit l'équivalent de 470 points de charge. Les stations proposent des services premium comme des lounges avec toilettes et zones de travail, avec un taux de disponibilité moyen de 99%.",
+    "url": "https://www.lagazettefrance.fr/article/coquelles-renault-accelere-le-deploiement-de-ses-stations-de-recharge-electrique",
+    "source": "La Gazette France",
+    "category": "borne",
+    "date_found": "2026-09-14"
+  },
+  {
+    "id": "a6a6f0360f19",
+    "title": "Recharge par induction : projets pilotes en Suède et Allemagne",
+    "summary": "Plusieurs pays ont lancé des initiatives pilotes pour la recharge par induction. La Suède a mis en place un tronçon de 2 km rechargeant en continu des véhicules légers, tandis que l'Allemagne teste cette technologie pour voitures et camions sur routes équipées. La technologie reste encore en phase d'expérimentation mais progresse.",
+    "url": "https://particuliers.engie.fr/electricite/conseils-electricite/conseils-mobilite-electrique/recharge-induction-voiture.html",
+    "source": "ENGIE",
+    "category": "technologie",
+    "date_found": "2026-09-14"
+  },
+  {
+    "id": "1e2cf4ad59bd",
+    "title": "Standardisation SAE J2954 et expérimentations sur flottes professionnelles",
+    "summary": "Plusieurs projets avancent vers une harmonisation internationale de la recharge par induction avec la norme SAE J2954, standardisant les puissances et protocoles. Des expérimentations sont menées en pays nordiques et en Allemagne sur des taxis électriques et flottes professionnelles, montrant un intérêt croissant des collectivités.",
+    "url": "https://www.auto-pour-vous.fr/2026/02/25/recharge-sans-cable-la-revolution-de-la-voiture-electrique-par-induction/",
+    "source": "Auto pour vous",
+    "category": "technologie",
+    "date_found": "2026-09-14"
+  },
+  {
+    "id": "f26767979da1",
+    "title": "Decade Energy lève 22 millions d'euros pour les infrastructures de recharge en dépôt",
+    "summary": "Decade Energy a finalisé une levée de fonds de 22 millions d'euros auprès du groupe Eiffel Investment pour accélérer le développement d'infrastructures de recharge en dépôt en Europe, destinées à l'électrification des camions.",
+    "url": "https://independant.io/top-levees-fonds-france-2026/",
+    "source": "Independant.io",
+    "category": "entreprise",
+    "date_found": "2026-09-14"
+  },
+  {
+    "id": "7218797a1897",
+    "title": "Electra déploie des bornes de recharge ultra-rapides en France",
+    "summary": "Electra, startup française, a déployé des centaines de points de charge ultra-rapides (150-300 kW) en France, notamment sur des parkings de supermarchés et de centres commerciaux, permettant de recharger 80% d'une batterie en moins de 30 minutes.",
+    "url": "https://www.captain-drive.com/startup-auto/",
+    "source": "CaptainDrive",
+    "category": "entreprise",
+    "date_found": "2026-09-14"
+  },
+  {
     "id": "03afd99a9941",
     "title": "État du réseau de recharge publique : 185 501 points de charge en France au 31 décembre 2025",
     "summary": "Le réseau français de recharge a connu une croissance de 20% en 2025 avec l'ajout de 30 807 points, portant le total à 185 501 points ouverts au public. Cette expansion représente une moyenne de 275 points pour 100 000 habitants, répondant aux besoins croissants des propriétaires de véhicules électriques.",
@@ -825,51 +897,6 @@
     "url": "https://www.automobile-propre.com/articles/infrastructures-de-recharge-en-copropriete-ou-en-sommes-nous-en-france-en-2026/",
     "source": "Automobile Propre",
     "category": "borne",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "18beb2f8deab",
-    "title": "Bornes à très haute puissance 600 kW déployées en Europe en 2026",
-    "summary": "L'année 2026 marque l'émergence de bornes à très haute puissance (jusqu'à 600 kW) et de stations de grande capacité en Europe, avec des opérateurs comme Electra développant des installations adaptées aux usages intensifs et aux flottes professionnelles.",
-    "url": "https://chargemap.com/fr-fr/blog/articles/recharge-electrique-europe-analyse-2026",
-    "source": "Chargemap",
-    "category": "borne",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "9ecc20d20eca",
-    "title": "Electra lance sa carte de recharge universelle à moins de 5 euros",
-    "summary": "Electra, leader français de la recharge ultra rapide, devient fournisseur de services de mobilité (eMSP) en lançant le 29 juin 2026 une carte RFID universelle à 4,99€ donnant accès à plus de 800 000 points de recharge en Europe. Cette carte est gratuite pour les abonnés Electra+ Essential et Smart.",
-    "url": "https://www.presse-citron.net/voiture-electrique-electra-lance-carte-recharge-universelle-moins-5-euros/",
-    "source": "Presse-Citron",
-    "category": "entreprise",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "5925a31e700c",
-    "title": "Marché mondial de la recharge atteindra 238,82 milliards USD d'ici 2033",
-    "summary": "Selon Grand View Research (22 juin 2026), le marché global des infrastructures de recharge automobile électrique atteindra 238,82 milliards USD en 2033 avec un taux de croissance annuel composé de 25%, contre 40,22 milliards USD en 2025.",
-    "url": "https://www.theautochannel.com/news/2026/06/22/1683568-ev-charging-infrastructure-market-projected-to-reach-usd-238-82.html",
-    "source": "The Auto Channel",
-    "category": "entreprise",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "eb73b91ede59",
-    "title": "ChargePoint annonce sa nouvelle borne Express Solo et croissance de 4% des revenus",
-    "summary": "ChargePoint (3 juin 2026) a lancé la borne Express Solo, présentée comme la plus rapide du marché pour les véhicules de masse. Les revenus ont augmenté de 4% à 102 millions USD au dernier trimestre avec une croissance de 7% des revenus d'abonnement.",
-    "url": "https://greenstocknews.com/stocks/ev-charging-stocks",
-    "source": "Green Stock News",
-    "category": "entreprise",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "439e19724ca1",
-    "title": "Infrastructure de recharge aux États-Unis : croissance de 1 400 bornes rapides en mai 2026",
-    "summary": "Le réseau américain de recharge rapide a connu en mai 2026 une croissance record de plus de 1 400 points rapides, portant le total à près de 75 000 bornes. Tesla reste le leader avec 37 736 ports mais sa part de marché diminue à 51%.",
-    "url": "https://evchargingstations.com/chargingnews/dc-fast-charging-june-2026/",
-    "source": "EV Charging Stations",
-    "category": "entreprise",
     "date_found": "2026-07-01"
   }
 ]
