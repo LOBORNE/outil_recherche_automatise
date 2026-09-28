@@ -1,5 +1,41 @@
 [
   {
+    "id": "6cd52c091bee",
+    "title": "Xpeng G9 établit des records de recharge ultra-rapide en Europe",
+    "summary": "Le SUV électrique chinois Xpeng G9 (2026) a impressionné le marché européen en établissant des records de recharge ultra-rapide. Avec sa batterie de 93,1 kWh et son architecture 800V, il atteint un pic de 453 kW, dominant ainsi le classement des véhicules les plus rapides à recharger du marché.",
+    "url": "https://www.abrablog.net/fr/category/automotive/voitures-electriques-a-charge-rapide-en-2026-le-classement-ultime",
+    "source": "Abrablog",
+    "category": "technologie",
+    "date_found": "2026-09-28"
+  },
+  {
+    "id": "1b937448d3dc",
+    "title": "Architecture 800V : nouvelle norme pour les performances de recharge",
+    "summary": "L'architecture électrique à 800 volts devient la norme pour les performances en 2026, avec les constructeurs déployant massivement des systèmes 800V voire 900V sur certains segments premium. Cette tension doublée permet d'encaisser des pics de charge phénoménaux et réduit les temps de recharge de 10 à 80 % à moins de 20 minutes sur les véhicules compatibles.",
+    "url": "https://lautomobiliste.fr/13/09/2026/voitures-electriques-recharge-trajets/",
+    "source": "L'Automobiliste",
+    "category": "technologie",
+    "date_found": "2026-09-28"
+  },
+  {
+    "id": "05dc70575680",
+    "title": "Eranovum lève 16 millions d'euros pour renforcer son réseau européen de recharge",
+    "summary": "Eranovum, principal opérateur d'infrastructure de recharge pour véhicule électrique en Europe, a levé 16 millions d'euros, dont 5 millions alloués spécifiquement au marché français. Cette levée soutient la stratégie de croissance de l'entreprise en Europe.",
+    "url": "https://www.auto-infos.fr/levee-de-fonds/",
+    "source": "Auto-Infos",
+    "category": "entreprise",
+    "date_found": "2026-09-28"
+  },
+  {
+    "id": "437f6494f752",
+    "title": "Obligations légales de paiement par carte aux stations publiques au 1er janvier 2027",
+    "summary": "Au 1er janvier 2027, les stations de recharge ouvertes au public doivent proposer le paiement à l'acte par terminal de carte bancaire. Cette évolution s'ajoute aux obligations existantes depuis 2024 concernant la recharge à l'acte et renforce l'accessibilité pour les usagers.",
+    "url": "https://kohenavocats.fr/2026/09/17/station-recharge-voiture-electrique-paiement-carte-obligations-entreprise-2027/",
+    "source": "Cabinet Kohen Avocats",
+    "category": "reglementation",
+    "date_found": "2026-09-28"
+  },
+  {
     "id": "e8aefda2fdd4",
     "title": "Nouvelles obligations de recharge dès janvier 2027 : norme ISO 15118-20 et paiement direct",
     "summary": "À partir du 1er janvier 2027, la norme EN ISO 15118-20:2022 devient obligatoire pour tous les nouveaux points de recharge en mode 3. Les bornes rapides des grands axes devront proposer des terminaux de paiement direct obligatoires.",
@@ -861,42 +897,6 @@
     "url": "https://www.avere-france.org/ce-qui-change-en-2026-pour-la-mobilite-electrique/",
     "source": "Avere-France",
     "category": "reglementation",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "2c99ff3f59e8",
-    "title": "Renforcement des obligations et contrôles en entreprise 2026",
-    "summary": "En 2026, les contrôles renforcés commencent à s'appliquer : les bâtiments non résidentiels de plus de 20 places doivent être conformes aux obligations LOM, avec des sanctions de 7 500€ par an et par parking non conforme.",
-    "url": "https://www.btp-consultants.fr/blog/expertise/norme-installation-bornes-recharge-vehicule-electrique-irve/",
-    "source": "BTP Consultants",
-    "category": "reglementation",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "d71357e9aae0",
-    "title": "Suppression du crédit d'impôt borne 2026 et fin URSSAF favorable",
-    "summary": "Le crédit d'impôt borne a été supprimé au 1er janvier 2026 pour les maisons individuelles. En revanche, la réglementation URSSAF reste favorable pour les recharges en entreprise jusqu'au 31 décembre 2027.",
-    "url": "https://www.freshmile.com/articles/reglementation-urssaf-et-avantages-en-nature-pour-la-recharge-ve-en-entreprise/",
-    "source": "Freshmile",
-    "category": "reglementation",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "1253ea410225",
-    "title": "Plan d'électrification du gouvernement : 30 000 bornes sur autoroutes d'ici 2035",
-    "summary": "Le gouvernement français a présenté le 23 avril 2026 un plan d'électrification en 22 mesures doté de 10 milliards d'euros par an d'ici 2030, visant à déployer 30 000 points de recharge sur les grands axes routiers et environ 8 000 pour les poids lourds sur 560 aires.",
-    "url": "https://www.economie.gouv.fr/actualites/presentation-du-plan-delectrification-des-usages",
-    "source": "economie.gouv.fr",
-    "category": "borne",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "71bc9c44e1c1",
-    "title": "Le Plein devient le meilleur réseau de recharge en France en 2026",
-    "summary": "Selon le classement Chargemap 2026, Le Plein signe une ascension spectaculaire en montant à la première place du classement général des réseaux de recharge français, distingué pour son expérience utilisateur simple et fiable.",
-    "url": "https://www.automobile-propre.com/articles/recharge-electrique-quels-sont-les-meilleurs-reseaux-en-france-en-2026-selon-chargemap/",
-    "source": "Automobile Propre",
-    "category": "borne",
     "date_found": "2026-07-01"
   }
 ]
