@@ -1,5 +1,86 @@
 [
   {
+    "id": "6fb1a5a9ec63",
+    "title": "ChargeGuru et Zeplug fusionnent sous la marque Tohmo",
+    "summary": "À compter du 1er octobre 2026, les marques ChargeGuru et Zeplug, spécialisées dans les solutions de recharge pour véhicules électriques en zone privée, se réunissent sous une nouvelle appellation unique : Tohmo.",
+    "url": "https://journalauto.com/tag/borne-de-recharge/",
+    "source": "Journal Auto",
+    "category": "borne",
+    "date_found": "2026-10-05"
+  },
+  {
+    "id": "4aa71c4dec30",
+    "title": "Borne de recharge ultra-rapide de 640 kW en Amérique du Nord",
+    "summary": "Zone Énergie a installé une borne de recharge ultra-rapide de 640 kW chez Dupont Ford à Saint-Jean-sur-Richelieu, la plus puissante d'Amérique du Nord selon les informations du 1er octobre 2026.",
+    "url": "https://www.aveq.ca/fr/actualites/category/bornes-de-recharge/5",
+    "source": "AVEQ",
+    "category": "borne",
+    "date_found": "2026-10-05"
+  },
+  {
+    "id": "5a629deb5fad",
+    "title": "Compétition féroce sur les tarifs des bornes en grande surface",
+    "summary": "Des bornes de recharge apparaissent sur les parkings des grandes surfaces en France, où les distributeurs se livrent à une concurrence acharnée sur les prix pour attirer les clients électromobilistes.",
+    "url": "https://franceinfo.fr/economie/supermarches-la-bataille-des-bornes-de-recharge_8221204.html",
+    "source": "France Info",
+    "category": "borne",
+    "date_found": "2026-10-05"
+  },
+  {
+    "id": "ce6b5357b3df",
+    "title": "Honda teste la recharge sans fil par induction sur autoroute",
+    "summary": "Honda prévoit de tester une infrastructure de recharge sans fil par induction sur autoroute, utilisant des bobines intégrées à l'asphalte. Le système cible prioritairement les camions électriques pour éliminer les arrêts fréquents aux bornes et accélérer l'électrification du transport lourd, avec des tests prévus en 2027.",
+    "url": "https://www.generation-nt.com/actualites/honda-charge-sans-fil-camion-electrique-infrastructure-2082227",
+    "source": "Génération NT",
+    "category": "technologie",
+    "date_found": "2026-10-05"
+  },
+  {
+    "id": "bf359f8c48a7",
+    "title": "Porsche commercialise un système de recharge par induction pour ses véhicules électriques",
+    "summary": "Porsche devient le premier constructeur automobile à commercialiser un système de recharge par induction de 11 kW en 2026. Le nouveau Cayenne 100% électrique sera le premier modèle compatible, avec une efficacité de transfert énergétique de 90% et une installation simplifiée sans borne murale.",
+    "url": "https://newsroom.porsche.com/fr/ppdb/2025/09/porsche-wireless-charging--recharge-par-induction-pour-une-recharge-lectrique-pratique.html",
+    "source": "Porsche Newsroom",
+    "category": "technologie",
+    "date_found": "2026-10-05"
+  },
+  {
+    "id": "5da9f8f040da",
+    "title": "L'A10 confirme la faisabilité de la recharge par induction dynamique en roulant",
+    "summary": "L'expérimentation « Charge as you drive » sur 1,5 km de l'autoroute A10 près d'Angervilliers démontre la faisabilité technique de la recharge par induction en mouvement avec 900 bobines de cuivre. Le premier test réussi en octobre 2025 avec un poids lourd électrique ouvre des perspectives pour réduire les tailles de batterie et les arrêts recharge.",
+    "url": "https://www.encharge.fr/recharge-induction-roulant-autoroute-a10/",
+    "source": "Encharge",
+    "category": "technologie",
+    "date_found": "2026-10-05"
+  },
+  {
+    "id": "44750f21fd76",
+    "title": "Ionna double son réseau de recharge rapide aux États-Unis",
+    "summary": "L'opérateur Ionna, soutenu par Hyundai, Mercedes-Benz, BMW et General Motors, a plus que doublé son réseau à 180 sites aux États-Unis avec plus de 40 Rechargeries en partenariat avec Circle K. La plateforme déploie Plug & Charge en octobre pour Volvo, Toyota et Lexus.",
+    "url": "https://www.pathtopark.fr/le-reseau-de-recharge-rapide-des-vehicules-electriques-soutenu-par-les-constructeurs-automobiles-a-plus-que-double-en-2026/",
+    "source": "Path to Park",
+    "category": "entreprise",
+    "date_found": "2026-10-05"
+  },
+  {
+    "id": "6e69552320a3",
+    "title": "VoltaBack lève 2,8 millions d'euros pour le remboursement de recharge à domicile",
+    "summary": "VoltaBack, solution innovante de remboursement des frais de recharge à domicile, boucle une levée de 2,8 millions d'euros auprès de Serena et business angels en semaine 40 de 2026.",
+    "url": "https://multeam.substack.com/p/les-levees-de-fonds-de-la-semaine-563",
+    "source": "Multeam Substack",
+    "category": "entreprise",
+    "date_found": "2026-10-05"
+  },
+  {
+    "id": "1a67666a1a38",
+    "title": "Revalorisation du programme Advenir en 2026 pour les copropriétés et entreprises",
+    "summary": "Le programme Advenir demeure la principale aide à l'installation de bornes en 2026, avec un périmètre recentré. Pour les copropriétés, l'aide couvre 50 % des dépenses d'achat et d'installation, avec des plafonds revalorisés selon le type d'installation (600 € pour solution individuelle, 1 660 € pour solution partagée).",
+    "url": "https://www.zeplug.com/news/recharge-vehicule-electrique-aide-advenir-et-subventions",
+    "source": "Zeplug",
+    "category": "reglementation",
+    "date_found": "2026-10-05"
+  },
+  {
     "id": "6cd52c091bee",
     "title": "Xpeng G9 établit des records de recharge ultra-rapide en Europe",
     "summary": "Le SUV électrique chinois Xpeng G9 (2026) a impressionné le marché européen en établissant des records de recharge ultra-rapide. Avec sa batterie de 93,1 kWh et son architecture 800V, il atteint un pic de 453 kW, dominant ainsi le classement des véhicules les plus rapides à recharger du marché.",
@@ -817,86 +898,5 @@
     "source": "OHM Energie",
     "category": "reglementation",
     "date_found": "2026-07-02"
-  },
-  {
-    "id": "f745ed1f772b",
-    "title": "Revalorisation du programme ADVENIR dès avril 2026",
-    "summary": "À partir du 1er avril 2026, les montants des primes ADVENIR ont été revalorisés pour les copropriétés : jusqu'à 1 000 € HT par borne individuelle. Le programme continue de soutenir l'installation de bornes en habitat collectif et les entreprises via les parkings ouverts au public et les infrastructures partagées.",
-    "url": "https://www.les-energies-renouvelables.eu/conseils/borne-de-recharge-irve/les-aides-et-subventions-pour-linstallation-de-bornes-de-recharge/",
-    "source": "ECOinfos",
-    "category": "borne",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "cb921e9c2569",
-    "title": "Nouvelle aide pour les bornes poids lourds en aires logistiques",
-    "summary": "Depuis novembre 2025, ADVENIR propose une nouvelle prime pour les points de recharge poids lourds ouverts au public dans les aires logistiques, couvrant jusqu'à 50% du coût HT pour les déploiements <500 kVA et jusqu'à 960 000 € HT pour les projets supérieurs.",
-    "url": "https://www.myelectricity.fr/tout-savoir-aides-borne-recharge/",
-    "source": "MyElectricity",
-    "category": "borne",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "00ddc3432eec",
-    "title": "Vinci Autoroutes : 284 nouveaux points de charge en 2025",
-    "summary": "Vinci Autoroutes a déployé 284 nouveaux points de charge en 2025, portant le total à plus de 2 400 points sur le réseau autoroutier français. De nouveaux déploiements sont annoncés pour 2026 sur plusieurs aires des autoroutes A10 et A11.",
-    "url": "https://radio.vinci-autoroutes.com/article/longs-trajets-en-electrique-le-reseau-de-recharge-se-densifie-sur-autoroute-17845",
-    "source": "Vinci Autoroutes",
-    "category": "borne",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "3b08591af702",
-    "title": "BMW iX3 2026 : charge ultra-rapide 400 kW et 800 km d'autonomie",
-    "summary": "BMW lance en mars 2026 le nouvel iX3 basé sur la plateforme révolutionnaire Neue Klasse. Ce modèle offre plus de 800 km d'autonomie WLTP et une charge ultra-rapide à 400 kW permettant de récupérer des centaines de kilomètres en moins de 15 minutes. L'énergie volumétrique des batteries augmente de 30 % grâce à une nouvelle chimie développée en interne.",
-    "url": "https://www.go-electra.com/en/newsroom/new-electric-cars-2026/",
-    "source": "Go Electra",
-    "category": "technologie",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "ca83987f7e76",
-    "title": "Up&Charge : borne de recharge par induction en phase pilote",
-    "summary": "La startup française Up&Charge lance la phase pilote de sa borne Plug&Play de recharge par induction dès octobre 2026. Cette technologie sans fil simplifie la recharge et réduit les pertes énergétiques de 6 à 28 % comparées aux systèmes câblés, offrant une solution économique pour les entreprises et collectivités.",
-    "url": "https://www.auto-infos.fr/article/voitures-electriques-up-charge-fait-de-la-recharge-par-induction-une-realite-demonstration.273157",
-    "source": "Auto Infos",
-    "category": "technologie",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "854b98bbd786",
-    "title": "Standardisation complète du CCS en Europe en 2026",
-    "summary": "En 2026, le standard CHAdeMO asiatique a presque entièrement disparu au profit du connecteur Combo CCS, devenu la norme absolue en Europe. Les nouveaux hubs ultra-rapides délivrent des puissances dépassant les 350 kW, tandis que les véhicules adoptent massivement l'architecture 800-900 volts pour encaisser des pics de charge phénoménaux.",
-    "url": "https://avegreen.fr/recharge-rapide-des-vehicules-electriques-tout-ce-quil-faut-savoir/",
-    "source": "Avegreen",
-    "category": "technologie",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "8264d70f0b46",
-    "title": "Renault Mégane E-Tech 2026 : nouvelles batteries AESC et charge améliorée",
-    "summary": "La Renault Mégane E-Tech 2026 reçoit des batteries AESC produites en France remplaçant les anciennes batteries LG, avec une capacité potentielle de 87 kWh permettant plus de 600 km d'autonomie WLTP. La compacte bénéficie également d'un chargeur à induction compatible Qi2 (Magsafe) pour une recharge plus rapide des accessoires.",
-    "url": "https://www.automobile-propre.com/articles/renault-megane-e-tech-2026-ce-quil-faut-savoir-sur-la-compacte-electrique-restylee-aux-500-km-dautonomie/",
-    "source": "Automobile Propre",
-    "category": "technologie",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "e483dd977958",
-    "title": "Revalorisation barèmes ADVENIR copropriétés depuis avril 2026",
-    "summary": "Les barèmes du programme ADVENIR ont été revalorisés à compter du 1er avril 2026, avec des plafonds renforcés pour les installations individuelles, partagées et les infrastructures collectives, notamment pour les parkings extérieurs.",
-    "url": "https://www.les-energies-renouvelables.eu/conseils/borne-de-recharge-irve/reglementation-borne-de-recharge-loi-lom/",
-    "source": "ECOInfos",
-    "category": "reglementation",
-    "date_found": "2026-07-01"
-  },
-  {
-    "id": "65d6d72a2d55",
-    "title": "Norme EN ISO 15118 obligatoire depuis janvier 2026",
-    "summary": "À compter du 8 janvier 2026, tous les points de recharge ouverts au public installés ou rénovés doivent être conformes à la série de normes EN ISO 15118, qui encadre la communication entre le véhicule et l'infrastructure de recharge.",
-    "url": "https://www.avere-france.org/ce-qui-change-en-2026-pour-la-mobilite-electrique/",
-    "source": "Avere-France",
-    "category": "reglementation",
-    "date_found": "2026-07-01"
   }
 ]
