@@ -1,5 +1,140 @@
 [
   {
+    "id": "294ea11f3a47",
+    "title": "Ionity prévoit d'installer des systèmes de stockage par batteries dans 50 stations en 2027",
+    "summary": "L'opérateur de recharge rapide Ionity accélère le déploiement de son réseau en Europe en installant des systèmes de stockage par batteries dans une cinquantaine de stations dès 2027. Cette solution permet de contourner les limites du réseau électrique et de multiplier les bornes sans attendre plusieurs années pour renforcer les raccordements électriques.",
+    "url": "https://www.automobile-propre.com/articles/davantage-de-bornes-de-recharge-sans-renforcer-le-reseau-electrique-ionity-a-une-solution/",
+    "source": "Automobile-Propre",
+    "category": "borne",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "aee5b5a8532f",
+    "title": "BYD va installer ses premières bornes Flash Charging ultra-rapides en France",
+    "summary": "BYD développe son propre réseau de recharge ultra-rapide en Europe avec sa technologie Flash Charging capable d'atteindre 1500 kW. Les premières installations françaises sont prévues à Saint-Ouen-l'Aumône dans le Val-d'Oise, avec une centaine de chargeurs en Europe avant la fin de l'année.",
+    "url": "https://www.automobile-propre.com/articles/recharge-en-5-minutes-byd-va-installer-ses-premieres-bornes-en-france/",
+    "source": "Automobile-Propre",
+    "category": "borne",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "7bf7b0cd6b7f",
+    "title": "La France dépasse 202 000 points de recharge publics fin septembre 2026",
+    "summary": "Selon le baromètre Avere-France d'octobre 2026, la France comptait 202 804 points de recharge publics fin septembre 2026, atteignant pour la première fois 300 points pour 100 000 habitants. Cet équilibre rassurant correspond à une borne publique pour environ 9 voitures électriques.",
+    "url": "https://www.avem.fr/2026/10/27/barometre-avere-plus-de-200-000-points-de-recharge-en-france/",
+    "source": "AVEM",
+    "category": "borne",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "4477e8847c6a",
+    "title": "Le réseau Eborn franchit le cap du million de recharges en 2026",
+    "summary": "Le 7 octobre 2026, le réseau Eborn du Sud-Est de la France a enregistré sa millionième session de recharge depuis le 1er janvier 2026. En 280 jours, les plus de 3 400 points de charge ont délivré 19,7 millions de kWh aux conducteurs de véhicules électriques.",
+    "url": "https://www.avem.fr/2026/10/28/le-reseau-eborn-depasse-le-million-de-recharges-en-2026/",
+    "source": "AVEM",
+    "category": "borne",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "ba1e768d1ae9",
+    "title": "Renault et EDF s'allient pour industrialiser la recharge bidirectionnelle en France",
+    "summary": "Renault et EDF lancent une offre intégrée combinant véhicule électrique, borne domestique et pilotage intelligent de la recharge à compter de l'été 2027. Cette solution permettra aux véhicules Alpine et Dacia de restituer une partie de l'électricité de leur batterie au réseau.",
+    "url": "https://pv-magazine.fr/2026/10/28/renault-et-edf-font-passer-la-recharge-bidirectionnelle-a-lechelle-industrielle-en-france",
+    "source": "PV Magazine France",
+    "category": "borne",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "4a5cd7cf57e4",
+    "title": "Standard SAE J2954 mis à jour pour couvrir la recharge par induction en mouvement",
+    "summary": "Le standard international SAE J2954 pour l'interopérabilité des systèmes de charge par induction a été actualisé en début 2026 pour inclure les usages en mouvement. Des systèmes commerciaux comme le « Lite DOT » d'Electreon sont également présentés, délivrant jusqu'à 11 kW via des plaques de surface.",
+    "url": "https://www.jbmm.fr/actu2677/recharge-sans-fil-voiture-electrique-parking/",
+    "source": "JBMM",
+    "category": "technologie",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "49bfaebaa105",
+    "title": "Batteries CATL Shenxing LFP 3ème génération : charge 10-98% en 6 minutes 27 secondes",
+    "summary": "CATL a présenté en avril 2026 sa batterie Shenxing LFP 3ème génération offrant la plus basse résistance interne du secteur (0,25 milliohm). Cette batterie ultra-rapide permet une charge de 10 à 98% en environ 6 minutes 27 secondes, marquant un progrès majeur dans la technologie de charge ultra-rapide.",
+    "url": "https://www.eniplenitude.fr/en-lumiere/mobilite/bornes-de-recharges/batterie-recharge-ultra-rapide",
+    "source": "Eni Plenitude",
+    "category": "technologie",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "ccf4d1e96ec1",
+    "title": "Premiers véhicules suisses équipés de recharge par induction homologués pour la circulation",
+    "summary": "En Suisse, les premiers véhicules électriques équipés de systèmes de recharge par induction ont été homologués pour un usage routier quotidien. Le projet, soutenu par des cantons et l'Office fédéral de l'énergie, démontre la faisabilité d'une recharge inductive sans câble tout en conservant la compatibilité avec les chargeurs classiques.",
+    "url": "https://www.wbf.admin.ch/fr/newnsb/o5fonSOUW42rNq9aPn25M",
+    "source": "WBF Administration suisse",
+    "category": "technologie",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "b36847cb9b25",
+    "title": "Hyundai Ioniq 6 et Kia EV6 GT : recharge 80% en 18 minutes grâce à l'architecture 800V",
+    "summary": "Les modèles Hyundai Ioniq 6 et Kia EV6 GT, dotés d'une architecture 800V, offrent des performances de recharge exceptionnelles atteignant 80% de batterie en seulement 18 minutes. Cette technologie représente une percée importante pour les véhicules électriques commercialisés en 2026.",
+    "url": "https://automobile-electrique.com/top-10-voitures-electriques-recharge-plus-rapide-2026/",
+    "source": "Salon de l'automobile électrique",
+    "category": "technologie",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "edee8651ac01",
+    "title": "EVgo rachetée par LS Power pour 2 dollars par action",
+    "summary": "La société américaine de recharge EVgo est en passe d'être rachetée par le groupe privé LS Power Equity Advisors. Le titre progresse de 45,2% en pré-ouverture suite à cette annonce d'acquisition.",
+    "url": "https://boursorama.com/bourse/actualites/evgo-en-forte-hausse-apres-l-offre-de-rachat-de-ls-power-54faaebfe4d63be6788746dcd6a7053a",
+    "source": "Boursorama",
+    "category": "entreprise",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "a7cac229e9e8",
+    "title": "Ionity déploie 50 systèmes de stockage par batterie en Europe en 2027",
+    "summary": "Ionity installe des systèmes de stockage fournis par Sungrow dans ses stations de recharge pour contourner les limitations du réseau électrique. Le premier exemple à Wertheim en Allemagne dispose d'une capacité de 1 028 kWh, permettant d'ajouter deux bornes supplémentaires.",
+    "url": "https://bevolt.com/fr-fr/automobile/actualites/batterie/344397-davantage-de-bornes-de-recharge-sans-renforcer-le-reseau-electrique-ionity-a-une-solution",
+    "source": "Bevolt",
+    "category": "entreprise",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "7f35114be86e",
+    "title": "Chargepoly lève 23 millions d'euros et rejoint le réseau Alphya",
+    "summary": "La société aixoise Chargepoly annonce une levée de fonds de 23 millions d'euros menée par Meridiam Green Impact Growth Fund. Elle rejoint également l'écosystème d'Alphya, la coopérative construisant un réseau national de recharge pour poids lourds électriques.",
+    "url": "https://polesocietes.com/actualites/levee-de-fonds?page=3",
+    "source": "Pole Societes",
+    "category": "entreprise",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "3956fb15874c",
+    "title": "Norme EN ISO 15118 obligatoire depuis janvier 2026",
+    "summary": "Depuis le 8 janvier 2026, tous les points de recharge ouverts au public (AC ou DC) installés ou rénovés doivent respecter la série de normes EN ISO 15118 pour garantir l'interopérabilité entre le véhicule et l'infrastructure, notamment pour le Plug & Charge.",
+    "url": "https://www.sireclimelec.com/actualites/bornes-de-recharge-irve-normes-renforcees-et-fin-de-certaines-aides.html",
+    "source": "SIREC",
+    "category": "reglementation",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "699aba0bb2f0",
+    "title": "Contrôles renforcés sur les IRVE ouvertes au public en 2026",
+    "summary": "En 2026, l'administration renforce les contrôles sur les infrastructures de recharge ouvertes au public conformément au règlement AFIR, notamment concernant l'information, le paiement, et la transmission des données.",
+    "url": "https://www.freshmile.com/articles/loi-lom-bornes-de-recharge-electriques/",
+    "source": "Freshmile",
+    "category": "reglementation",
+    "date_found": "2026-11-02"
+  },
+  {
+    "id": "8d0930e5ed93",
+    "title": "Électrification des flottes publiques : 40% de véhicules bas-carbone en 2026",
+    "summary": "Les collectivités gérant plus de 20 véhicules doivent respecter un taux de 40% de véhicules à faibles émissions lors du renouvellement, dont au moins 37,4% à très faibles émissions (électriques) parmi les acquisitions de l'année.",
+    "url": "https://maborneauto.com/pro/bornes-recharge-flotte-collectivite-commune/",
+    "source": "Ma Borne Auto",
+    "category": "reglementation",
+    "date_found": "2026-11-02"
+  },
+  {
     "id": "4a034e876b3f",
     "title": "Nouveau plan d'électrification français : transparence tarifaire et prime pour les bornes domestiques",
     "summary": "Le 15 octobre, Bercy présente 17 mesures pour accélérer l'électrification, incluant l'harmonisation des tarifs de recharge sur les bornes rapides et une prime de 500 € pour installer une borne à domicile. Ces mesures visent à améliorer la transparence des prix et encourager la recharge programmée aux heures creuses.",
@@ -763,140 +898,5 @@
     "source": "AVEM - Association pour l'Avenir du Véhicule Electro-Mobile",
     "category": "entreprise",
     "date_found": "2026-08-03"
-  },
-  {
-    "id": "2dca17a10917",
-    "title": "StarCharge annonce un partenariat stratégique avec SolarJuice au SNEC 2026",
-    "summary": "StarCharge, leader mondial des solutions de recharge, a présenté au salon SNEC 2026 un écosystème énergétique intégré et annoncé un partenariat stratégique avec l'entreprise australienne SolarJuice pour accélérer la transition énergétique mondiale.",
-    "url": "http://www.prnewswire.com/news-releases/starcharge-devoile-ses-solutions-energetiques-de-nouvelle-generation-et-son-partenariat-strategique-anz-au-snec-2026-302792184.html",
-    "source": "PRNewswire",
-    "category": "entreprise",
-    "date_found": "2026-08-03"
-  },
-  {
-    "id": "793cb8708ce3",
-    "title": "DBT crée une plateforme de recharge ultra-rapide avec 50 millions d'euros d'investissement",
-    "summary": "Le groupe DBT, expert français des infrastructures de recharge, a conclu un partenariat avec Amundi Transition Énergétique et la Banque des Territoires pour construire 300 bornes ultra-rapides en trois ans via sa filiale Réseau Recharge Rapide.",
-    "url": "https://www.cfnewsinfra.net/Les-Alertes-de-CFNEWS-INFRA/Une-nouvelle-plateforme-pour-la-recharge-electrique-en-France-487073",
-    "source": "CFNEWSINFRA",
-    "category": "entreprise",
-    "date_found": "2026-08-03"
-  },
-  {
-    "id": "0edcd8370601",
-    "title": "Prime CEE remplace le bonus écologique : jusqu'à 5 700 € en 2026",
-    "summary": "Le bonus écologique a été remplacé par la prime Coup de Pouce Véhicules Particuliers Électriques financée via les Certificats d'Économies d'Énergie. En 2026, cette aide peut atteindre jusqu'à 5 700 € selon les revenus du foyer et la qualité environnementale du véhicule.",
-    "url": "https://www.aide-sociale.fr/bonus-ecologique/",
-    "source": "Aide Sociale",
-    "category": "reglementation",
-    "date_found": "2026-08-03"
-  },
-  {
-    "id": "011b01901bfc",
-    "title": "Prime Advenir 2026 : jusqu'à 50 % du coût d'installation de bornes",
-    "summary": "La prime ADVENIR continue en 2026 de financer une partie du coût d'installation de points de charge, couvrant jusqu'à 50 % du coût total des travaux selon les conditions d'éligibilité. Les demandes s'effectuent via le portail advenir.mobi.",
-    "url": "https://www.automobile-propre.com/dossiers-categories/cout-aides-et-taxes/",
-    "source": "Automobile-Propre",
-    "category": "reglementation",
-    "date_found": "2026-08-03"
-  },
-  {
-    "id": "3d915e22e769",
-    "title": "Crédits d'impôt pour bornes domestiques supprimés en 2026",
-    "summary": "Le crédit d'impôt pour l'installation d'une borne de recharge à domicile n'est plus en vigueur en 2026. Les particuliers ayant engagé des travaux avant fin 2025 peuvent en bénéficier sous conditions, mais aucune nouvelle demande n'est acceptée.",
-    "url": "https://particuliers.engie.fr/electricite/conseils-electricite/conseils-mobilite-electrique/nouvelles-aides-pour-une-mobilite-plus-verte.html",
-    "source": "ENGIE",
-    "category": "borne",
-    "date_found": "2026-07-27"
-  },
-  {
-    "id": "816256f97770",
-    "title": "VINCI remporte un contrat de recharge pour poids lourds en Allemagne",
-    "summary": "VINCI a annoncé le 9 juillet 2026 avoir remporté un contrat de huit ans avec l'Allemagne pour installer et exploiter 25 stations de recharge pour camions électriques, comprenant jusqu'à 180 bornes de recharge.",
-    "url": "https://media24.fr/2026/07/26/le-geant-francais-vinci-batit-un-empire-qui-pourrait-bientot-emailler-toute-leurope-les-points-de-recharge-pour-camion-electrique/",
-    "source": "media24.fr",
-    "category": "entreprise",
-    "date_found": "2026-07-27"
-  },
-  {
-    "id": "c1577bdecfdb",
-    "title": "CUBOS acquiert l'activité de recharge B2B de TotalEnergies en Allemagne",
-    "summary": "TotalEnergies a cédé son activité de recharge commerciale B2B à CUBOS. Cette opération reflète une consolidation du secteur des infrastructures de recharge pour véhicules électriques en Allemagne.",
-    "url": "https://proplace.co/actualites/fusions-acquisitions-et-levee-de-fonds-france-2026-07-22/",
-    "source": "proplace.co",
-    "category": "entreprise",
-    "date_found": "2026-07-27"
-  },
-  {
-    "id": "f20cca64fe05",
-    "title": "Loi APER : obligations de couverture des parkings par ombrières photovoltaïques 2026-2028",
-    "summary": "La loi d'accélération de la production d'énergies renouvelables (APER) impose aux parkings extérieurs de plus de 1 500 m² de s'équiper d'ombrières photovoltaïques sur au moins la moitié de leur surface, avec des échéances s'étalant entre 2026 et 2028 selon la taille. Cette obligation se combine avec les exigences de bornes de recharge de la loi LOM.",
-    "url": "https://www.sunethic.fr/loi-lom-et-bornes-de-recharge-quelles-obligations-et-si-vous-en-profitiez-pour-passer-au-solaire/",
-    "source": "Sunethic",
-    "category": "reglementation",
-    "date_found": "2026-07-27"
-  },
-  {
-    "id": "3a9d48c8f140",
-    "title": "Victoriaville augmente son réseau de recharge avec 60 nouveaux connecteurs",
-    "summary": "La ville de Victoriaville bonifie son infrastructure avec l'ajout de 60 nouveaux connecteurs de recharge, dont 12 connecteurs de charge rapide (niveau 3). Ces installations prévues en 2026-2027 répondent à la demande croissante de véhicules électriques.",
-    "url": "https://monvicto.com/2026/07/07/le-reseau-de-bornes-de-recharge-pour-vehicules-electriques-sagrandira-a-victoriaville/",
-    "source": "Mon Victo",
-    "category": "borne",
-    "date_found": "2026-07-21"
-  },
-  {
-    "id": "c8457dfe43a5",
-    "title": "La France vise 30 000 bornes de recharge sur les grands axes d'ici 2035",
-    "summary": "Le gouvernement français a annoncé en avril 2026 une stratégie nationale pour déployer 30 000 points de recharge sur autoroutes et routes nationales d'ici 2035, destinés aux véhicules légers et aux poids lourds, transformant la recharge en infrastructure nationale.",
-    "url": "https://www.aet-energy.fr/2026/06/03/bornes-de-recharge-electrique-la-france-accelere-sur-les-grands-axes/",
-    "source": "AE-T",
-    "category": "borne",
-    "date_found": "2026-07-21"
-  },
-  {
-    "id": "bbcfcb6b2439",
-    "title": "Impact énergétique du leasing social avec architecture 800V",
-    "summary": "La troisième vague du leasing social lancée le 16 juillet 2026 introduit 50 000 véhicules électriques supplémentaires équipés d'architecture 800 volts. Cette demande additionnelle de 127,5 GWh annuels soulève des questions sur la capacité du réseau français et la concentration sur des plages horaires spécifiques.",
-    "url": "https://lenergeek.com/2026/07/18/recharge-electrique-ultra-rapide/",
-    "source": "L'EnerGeek",
-    "category": "technologie",
-    "date_found": "2026-07-21"
-  },
-  {
-    "id": "bba429c861cc",
-    "title": "Expansion des bornes ultra-rapides sur autoroutes françaises",
-    "summary": "Le réseau de recharge ultra-rapide sur autoroutes se développe massivement en 2026, avec plusieurs projets prévoyant l'installation de dizaines de milliers de bornes à très haute puissance. Ces infrastructures permettent de récupérer 150 km d'autonomie en 15 minutes sur véhicules compatibles.",
-    "url": "https://les-perles-du-net.fr/la-montee-en-puissance-des-points-de-recharge-tres-haute-puissance-sur-autoroute-en-2026/",
-    "source": "Les Perles du Net",
-    "category": "technologie",
-    "date_found": "2026-07-21"
-  },
-  {
-    "id": "85f9640040f3",
-    "title": "Généralisation de l'architecture 800V pour la recharge ultra-rapide",
-    "summary": "Les constructeurs déploient massivement des systèmes fonctionnant sous 800 volts (voire 900V pour les segments premium) pour remplacer les anciens systèmes 400 volts. Cette tension doublée permet d'encaisser des pics de charge phénoménaux et de passer de 10 à 80% en moins de 30 minutes.",
-    "url": "https://borne-recharge-electrique-byadlan.fr/2026/01/14/nouvelles-voitures-electriques-2026/",
-    "source": "AD LAN",
-    "category": "technologie",
-    "date_found": "2026-07-21"
-  },
-  {
-    "id": "38fb27c7a10d",
-    "title": "Electra lance une application unifiée intégrant 800 000 bornes européennes",
-    "summary": "L'opérateur français Electra a mis à jour son application mobile pour intégrer l'ensemble du parc de recharge européen, regroupant plus de 800 000 points de tous opérateurs confondus. Les utilisateurs peuvent trier par critères prioritaires et une nouvelle carte de recharge physique est proposée à 4,99 euros.",
-    "url": "https://www.cridutroll.fr/800-000-bornes-en-un-clic-finie-la-galere-des-ve-en-vacances-2026/",
-    "source": "Cri du Troll",
-    "category": "borne",
-    "date_found": "2026-07-06"
-  },
-  {
-    "id": "fdcc6f382c88",
-    "title": "Wallbox, Hager et Schneider dominent le marché français des bornes domestiques",
-    "summary": "Le marché des bornes de recharge domestiques en 2026 est dominé par Wallbox, Hager et Schneider qui proposent des modèles éprouvés et conformes aux exigences françaises. La wallbox 7,4 kW monophasée représente le choix le plus pertinent pour un compromis entre confort, coût et simplicité.",
-    "url": "https://www.les-energies-renouvelables.eu/conseils/borne-de-recharge-irve/comparatif/",
-    "source": "ECOinfos",
-    "category": "borne",
-    "date_found": "2026-07-06"
   }
 ]
