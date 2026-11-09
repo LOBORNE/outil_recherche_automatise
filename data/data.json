@@ -1,5 +1,95 @@
 [
   {
+    "id": "4ac287b6cbfd",
+    "title": "Appels d'offres publics pour déploiement de bornes de recharge (Paris, Lille, Le Havre)",
+    "summary": "Huit appels d'offres publics sont ouverts aux installateurs pour la fourniture et maintenance de bornes de recharge, dont ceux des villes de Paris, Lille et Le Havre, avec des dates limites entre fin octobre et le 20 novembre 2026.",
+    "url": "https://www.tesla-mag.com/appels-offres-irve-bornes-recharge-novembre-2026/",
+    "source": "Tesla Mag",
+    "category": "borne",
+    "date_found": "2026-11-09"
+  },
+  {
+    "id": "d7d65bbb7a77",
+    "title": "Plan d'électrification du gouvernement français : 400 000 bornes d'ici 2030",
+    "summary": "Le gouvernement français renforce son plan d'électrification avec un objectif de 400 000 points de recharge publics en 2030, dont 50 000 en recharge rapide, et lance un programme de déploiement sur les grands axes routiers avec 22 000 bornes pour véhicules légers.",
+    "url": "https://www.ecologie.gouv.fr/presse/plan-electrification-bornes-tous-grands-trajets-dici-2035",
+    "source": "Ministère de l'Écologie",
+    "category": "borne",
+    "date_found": "2026-11-09"
+  },
+  {
+    "id": "480680de8c7d",
+    "title": "Opérateurs français s'engagent à déployer 240 000 bornes supplémentaires d'ici 2030",
+    "summary": "Les opérateurs de recharge se sont engagés à déployer 240 000 bornes supplémentaires pour les véhicules électriques d'ici 2030, dont 60 000 points de charge rapide et ultra-rapide, pour atteindre l'objectif de 400 000 bornes en service.",
+    "url": "https://www.franceinfo.fr/economie/automobile/les-operateurs-s-engagent-a-deployer-240-000-bornes-de-recharge-de-vehicules-electriques-supplementaires-d-ici-a-2030-annonce-emmanuel-macron_8029169.html",
+    "source": "France Info",
+    "category": "borne",
+    "date_found": "2026-11-09"
+  },
+  {
+    "id": "a96a54915e2e",
+    "title": "Canada finance 55 000 nouvelles bornes de recharge pour 587 millions de dollars",
+    "summary": "Le gouvernement fédéral canadien annonce un investissement de 587 millions de dollars pour financer le déploiement de plus de 55 000 bornes de recharge, via le renouvellement du Programme d'infrastructure pour véhicules à émission zéro (PIVEZ).",
+    "url": "https://annuelauto.ca/budget-2026-55000-bornes-recharge-canada/",
+    "source": "Année Auto Canada",
+    "category": "borne",
+    "date_found": "2026-11-09"
+  },
+  {
+    "id": "3f2c4182c517",
+    "title": "UPandCHARGE présente de nouvelles bornes de recharge par induction au Mondial de l'Auto 2026",
+    "summary": "La startup française UPandCHARGE a annoncé au Mondial de l'Auto 2026 deux nouvelles bornes de recharge par induction de 7 et 100 kW, qui compléteront son modèle actuel de 24 kW. Ces bornes doivent être commercialisées respectivement en juin et décembre 2027.",
+    "url": "https://www.flotauto.com/upandcharge-recharge-induction/",
+    "source": "FlotAuto",
+    "category": "technologie",
+    "date_found": "2026-11-09"
+  },
+  {
+    "id": "57f58cbc0a01",
+    "title": "BYD Flash Charging : recharge ultra-rapide à 1500 kW lancée en mars 2026",
+    "summary": "BYD a lancé sa deuxième génération de Flash Charging avec une puissance de 1500 kW permettant de charger de 10 à 70% en 5 minutes. L'entreprise vise 20 000 stations en Chine et 6 000 en Europe et autres régions d'ici fin 2026.",
+    "url": "https://en.wikipedia.org/wiki/BYD_Flash_Charging",
+    "source": "Wikipedia",
+    "category": "technologie",
+    "date_found": "2026-11-09"
+  },
+  {
+    "id": "fca102128fc3",
+    "title": "Orève et ABB E-mobility ouvrent 12 nouvelles stations de recharge pour camions d'ici 2028",
+    "summary": "Le réseau Orève (du groupe Ortec) étend son partenariat avec ABB E-mobility. Le déploiement inclura une centaine de points de charge supplémentaires et un premier site compatible avec la recharge au mégawatt dès 2027.",
+    "url": "https://bevolt.com/fr-fr/entreprises/actualites/camions-electriques/351151-camions-electriques-oreve-et-abb-vont-ouvrir-12-nouvelles-stations-en-france-dici-2028",
+    "source": "Bevolt",
+    "category": "entreprise",
+    "date_found": "2026-11-09"
+  },
+  {
+    "id": "271a871adb2a",
+    "title": "Voltaback lève 2,8 millions d'euros pour automatiser la facturation de recharge de voitures de fonction",
+    "summary": "La startup française Voltaback a levé 2,8 millions d'euros pour simplifier le remboursement des charges de voitures électriques de fonction. Sa plateforme automatise le calcul des coûts réels en croisant les données des factures d'électricité et des véhicules connectés.",
+    "url": "https://automobile-propre.com/articles/voltaback-levee-fonds-recharge-voitures-electriques-fonction",
+    "source": "Automobile Propre",
+    "category": "entreprise",
+    "date_found": "2026-11-09"
+  },
+  {
+    "id": "41ca40ac918e",
+    "title": "Hausse spectaculaire des utilisations de bornes rapides sur autoroutes françaises pendant la Toussaint",
+    "summary": "Entre le 17 octobre et le 1er novembre 2026, les bornes de recharge rapide sur autoroutes françaises ont enregistré des augmentations de fréquentation remarquables : +32% chez Ionity, +22% chez Fastned, +16% chez Allego, portées par l'afflux touristique et la croissance des ventes de véhicules électriques.",
+    "url": "https://www.economiematin.fr/voitures-electriques-bornes-recharge",
+    "source": "Économie Matin",
+    "category": "entreprise",
+    "date_found": "2026-11-09"
+  },
+  {
+    "id": "0a60fd7986e4",
+    "title": "Obligations renforcées pour les entreprises : 1 borne par 20 places depuis janvier 2025",
+    "summary": "Depuis le 1er janvier 2025, tout bâtiment tertiaire de plus de 20 places de parking doit installer au moins un point de recharge fonctionnel. En cas de non-conformité, une sanction administrative de 7 500 € par an et par site est appliquée, reconductible tant que la situation perdure.",
+    "url": "https://ze-watt.com/article/bornes-de-recharge-et-pre-equipement-tout-ce-quil-faut-savoir-sur-les-obligations-legales/",
+    "source": "Ze-Watt",
+    "category": "reglementation",
+    "date_found": "2026-11-09"
+  },
+  {
     "id": "294ea11f3a47",
     "title": "Ionity prévoit d'installer des systèmes de stockage par batteries dans 50 stations en 2027",
     "summary": "L'opérateur de recharge rapide Ionity accélère le déploiement de son réseau en Europe en installant des systèmes de stockage par batteries dans une cinquantaine de stations dès 2027. Cette solution permet de contourner les limites du réseau électrique et de multiplier les bornes sans attendre plusieurs années pour renforcer les raccordements électriques.",
@@ -808,95 +898,5 @@
     "source": "ElectroMob",
     "category": "reglementation",
     "date_found": "2026-08-17"
-  },
-  {
-    "id": "b9823590b4b5",
-    "title": "Obligations strictes pour les parkings : 5 % minimum de bornes de recharge",
-    "summary": "Depuis le 1er janvier 2025 et renforcé en 2026, tout bâtiment tertiaire avec un parking de plus de 20 places doit proposer au moins 5 % de places équipées de bornes de recharge. Cette obligation s'applique aux bureaux, commerces et entrepôts.",
-    "url": "https://www.annumoteurs.net/bornes-de-recharge-en-entreprise-ce-que-la-loi-impose-vraiment-en-2026/",
-    "source": "Annu Moteurs",
-    "category": "reglementation",
-    "date_found": "2026-08-17"
-  },
-  {
-    "id": "b25494176ce9",
-    "title": "86 nouvelles bornes de recharge électrique à Nice",
-    "summary": "La Métropole Nice Côte d'Azur a ouvert 86 nouveaux points de charge publics le 17 juillet 2026, suite au retrait du service d'autopartage Mobilize Share. Cette expansion répond à la forte demande avec plus de 410 000 sessions de recharge effectuées en 2025 sur le réseau « Prise de Nice ».",
-    "url": "https://www.nicecotedazur.org/actualites/86-nouvelles-bornes-de-recharge-electrique-sur-le-reseau-prisedenice/",
-    "source": "Métropole Nice Côte d'Azur",
-    "category": "borne",
-    "date_found": "2026-08-10"
-  },
-  {
-    "id": "deec2e07f69c",
-    "title": "Classement 2026 des meilleurs réseaux de recharge en France",
-    "summary": "Selon Chargemap, qui s'appuie sur plus de 433 000 avis utilisateurs, « Le Plein » arrive en première position en 2026, suivi par des réseaux comme Mobilize Fast Charge et Fastned. Le classement montre une maturité croissante du marché français avec une expérience utilisateur devenue critère déterminant.",
-    "url": "https://chargemap.com/fr-fr/blog/articles/classement-2026-meilleurs-reseaux-recharge",
-    "source": "Chargemap",
-    "category": "borne",
-    "date_found": "2026-08-10"
-  },
-  {
-    "id": "a9411109e23e",
-    "title": "Baromètre Advenir Q2 2026 : hausse de la fréquentation des bornes de recharge",
-    "summary": "L'Observatoire de la recharge a publié le 6 août 2026 son bilan du deuxième trimestre 2026. Le baromètre montre une progression continue de la fréquentation des points de charge français, mesurant l'énergie délivrée et les habitudes de recharge des utilisateurs.",
-    "url": "https://www.automobile-propre.com/articles/recharge-des-voitures-electriques-la-frequentation-des-bornes-poursuit-sa-hausse-en-2026/",
-    "source": "Automobile Propre",
-    "category": "entreprise",
-    "date_found": "2026-08-10"
-  },
-  {
-    "id": "b60914abdaf7",
-    "title": "Hausse des tarifs d'électricité du 1er août 2026 : impact sur la recharge à domicile",
-    "summary": "Au 1er août 2026, le tarif réglementé de l'électricité augmente de 2,5%, affectant le coût de recharge à domicile. Parallèlement, la CRE élargit l'option Heures creuses aux abonnements de 3 kVA pour inciter les consommateurs à décaler leurs usages.",
-    "url": "https://media.roole.fr/transition/voiture-propre/voiture-electrique-quel-impact-aura-la-hausse-de-lelectricite-du-1-aout-sur-votre-recharge",
-    "source": "Roole",
-    "category": "entreprise",
-    "date_found": "2026-08-10"
-  },
-  {
-    "id": "4ecfd0c52339",
-    "title": "Uber multiplie les partenariats de recharge : accords avec Electra et Allego",
-    "summary": "Uber a conclu deux partenariats stratégiques en 2026 : un accord fin février avec le réseau Electra et un partenariat en mars avec Allego, destinés à proposer des tarifs préférentiels en itinérance pour ses chauffeurs VTC.",
-    "url": "https://www.flotauto.com/uber-recharge-partenariats/",
-    "source": "Flotauto",
-    "category": "entreprise",
-    "date_found": "2026-08-10"
-  },
-  {
-    "id": "fa990d8ce62c",
-    "title": "Bonus transformé en prime 'coup de pouce' avec mécanisme CEE",
-    "summary": "Depuis juillet 2025, le bonus écologique traditionnel a été remplacé par une prime 'coup de pouce' basée sur les Certificats d'Économies d'Énergie (CEE). Cette nouvelle aide est recentrée en fonction des revenus du foyer et privilégie les véhicules moins polluants et plus légers.",
-    "url": "https://francevolt.com/aides-mobilite-electrique-subventions-2026/",
-    "source": "FranceVolt",
-    "category": "reglementation",
-    "date_found": "2026-08-10"
-  },
-  {
-    "id": "1802c622b585",
-    "title": "Record historique de fréquentation des bornes de recharge en juillet-août",
-    "summary": "La fréquentation des bornes publiques atteint des records avec plus de 33 sessions mensuelles par point en moyenne. L'été 2026 s'annonce critique avec une augmentation attendue de 71% durant les mois de juillet-août, similaire à 2025, générant des risques d'engorgement.",
-    "url": "https://www.automag.fr/vehicules-electriques/bornes-recharge-france.html",
-    "source": "Automag",
-    "category": "borne",
-    "date_found": "2026-08-03"
-  },
-  {
-    "id": "de3fac9b6ca8",
-    "title": "Technologies 800V et bornes connectées deviennent standard en 2026",
-    "summary": "Les bornes connectées avec pilotage intelligent sont devenues le standard en 2026. La technologie 800V permet une recharge ultra-rapide (10-80% en moins de 30 minutes) et améliore l'efficience énergétique sur certains modèles de véhicules.",
-    "url": "https://www.quelleenergie.fr/economies-energie/borne-recharge",
-    "source": "Quelle Energie",
-    "category": "borne",
-    "date_found": "2026-08-03"
-  },
-  {
-    "id": "a11a1857d523",
-    "title": "Chargepoly lève 23 millions d'euros pour l'électrification des transports lourds",
-    "summary": "La startup française Chargepoly a levé 23 millions d'euros pour accélérer l'électrification du transport lourd avec ses solutions de recharge. Cette levée de fonds marque un investissement majeur dans l'infrastructure de charge pour poids lourds.",
-    "url": "https://www.avem.fr/",
-    "source": "AVEM - Association pour l'Avenir du Véhicule Electro-Mobile",
-    "category": "entreprise",
-    "date_found": "2026-08-03"
   }
 ]
