@@ -1,5 +1,86 @@
 [
   {
+    "id": "9610cc1763e3",
+    "title": "Vols de câbles de bornes : 21 millions d'euros de pertes en 2026",
+    "summary": "Les vols de câbles des bornes de recharge pour récupérer le cuivre deviennent un problème majeur en France. Depuis le début 2026, les exploitants ont subi 21 millions d'euros de pertes avec 800 plaintes déposées, et des députés proposent de classer certaines stations comme infrastructures critiques.",
+    "url": "https://www.macg.co/mobilites/2026/11/bornes-de-recharge-les-vols-de-cables-explosent-et-les-automobilistes-trinquent-312177",
+    "source": "MacGeneration",
+    "category": "borne",
+    "date_found": "2026-11-16"
+  },
+  {
+    "id": "913064367dce",
+    "title": "Données de recharge : problème de visibilité sur l'état réel des bornes",
+    "summary": "Une étude publiée par Entrebranchés le 12 novembre 2026 révèle que seulement 65% des points de recharge apparaissent dans le flux dynamique national, créant une divergence entre les données disponibles dans les applications et l'état réel des infrastructures.",
+    "url": "https://rouleur-electrique.fr/votre-appli-naffiche-pas-letat-dune-borne-elle-nest-pas-forcement-en-panne",
+    "source": "Rouleur Électrique",
+    "category": "borne",
+    "date_found": "2026-11-16"
+  },
+  {
+    "id": "4754ea349d68",
+    "title": "R3 : record de déploiement avec 24 nouvelles stations au premier semestre 2026",
+    "summary": "Le réseau R3 a mis en service 24 nouvelles stations de recharge rapide entre janvier et juillet 2026, dont 14 rien qu'en juillet. Ce semestre record comprend 120 000 recharges, 3,5 GWh d'énergie délivrée et 108 nouvelles places de recharge créées.",
+    "url": "https://www.dbt.fr/bilan-r3-premier-semestre-2026/",
+    "source": "DBT France",
+    "category": "borne",
+    "date_found": "2026-11-16"
+  },
+  {
+    "id": "0cdbc1efa594",
+    "title": "Canada : 103 nouvelles stations de recharge au T3 2026",
+    "summary": "Le Canada a ajouté 103 nouvelles stations de recharge et 391 nouveaux ports de charge rapide au troisième trimestre 2026, avec le Québec et l'Ontario en tête de la croissance, tandis que la part Tesla diminue au profit des opérateurs non-Tesla.",
+    "url": "https://chargenews.ca/fr/blog/canada-built-nearly-100-ev-charging-stations-q3-2026",
+    "source": "ChargeNews",
+    "category": "borne",
+    "date_found": "2026-11-16"
+  },
+  {
+    "id": "a11a1857d523",
+    "title": "Zaptec franchit le cap du million de bornes de recharge installées",
+    "summary": "Le fournisseur de solutions de recharge Zaptec a atteint le jalon historique d'un million de bornes de recharge installées à travers ses différents réseaux et partenaires.",
+    "url": "https://www.avem.fr/",
+    "source": "AVEM",
+    "category": "entreprise",
+    "date_found": "2026-11-16"
+  },
+  {
+    "id": "bf6b1aa6dd46",
+    "title": "Budget fédéral canadien 2026 : 587 millions pour 55 000 bornes de recharge",
+    "summary": "Le gouvernement canadien alloue 587 millions de dollars pour le déploiement de 55 000 bornes de recharge, avec 45 millions supplémentaires pour la recherche et développement en technologies de recharge.",
+    "url": "https://china-ev.ca/news/budget-2026-ev-chargers-zevip-587-million-no-new-rebate-canada",
+    "source": "China EV",
+    "category": "entreprise",
+    "date_found": "2026-11-16"
+  },
+  {
+    "id": "929fcb3378ad",
+    "title": "Norme Euro 7 : durabilité des batteries pour véhicules électriques dès le 29 novembre 2026",
+    "summary": "La norme Euro 7 s'appliquera aux nouveaux modèles de voitures à partir du 29 novembre 2026. Elle introduit pour la première fois des exigences de durabilité des batteries pour les véhicules électriques et hybrides rechargeables, régulant ainsi des critères de performance jusqu'alors non encadrés.",
+    "url": "https://www.largus.fr/actualite-automobile/calendrier-contenu-ce-que-la-norme-euro-7-impose-aux-voitures-et-utilitaires-30033639.html",
+    "source": "L'Argus",
+    "category": "reglementation",
+    "date_found": "2026-11-16"
+  },
+  {
+    "id": "3a452588cc61",
+    "title": "Loi LOM 2026 : obligations de verdissement de flotte à 18 % et équipement en bornes pour les entreprises",
+    "summary": "En 2026, la loi LOM impose aux entreprises de 100 véhicules minimum un objectif de 18 % de véhicules à faibles émissions et une tarification d'aide à l'innovation (TAI) de 4 000 € par écart. Les entreprises doivent également équiper leurs parkings en points de recharge.",
+    "url": "https://www.beev.co/blog/voitures-electriques/loi-lom-2025-quelles-sont-les-nouvelles-normes-pour-les-bornes-de-recharge-en-entreprise/",
+    "source": "Beev",
+    "category": "reglementation",
+    "date_found": "2026-11-16"
+  },
+  {
+    "id": "03bb2aa0150e",
+    "title": "Certificats d'Économies d'Énergie (CEE) pour bornes : fin depuis le 1er janvier 2026",
+    "summary": "Le dispositif des Certificats d'Économies d'Énergie pour l'installation de bornes de recharge n'est plus en vigueur depuis le 1er janvier 2026. Les particuliers ne disposent désormais que de la TVA réduite à 5,5 % comme aide fiscale résiduelle pour ces installations.",
+    "url": "https://www.automobile-propre.com/dossiers-categories/recharge/",
+    "source": "Automobile Propre / Bevolt",
+    "category": "reglementation",
+    "date_found": "2026-11-16"
+  },
+  {
     "id": "4ac287b6cbfd",
     "title": "Appels d'offres publics pour déploiement de bornes de recharge (Paris, Lille, Le Havre)",
     "summary": "Huit appels d'offres publics sont ouverts aux installateurs pour la fourniture et maintenance de bornes de recharge, dont ceux des villes de Paris, Lille et Le Havre, avec des dates limites entre fin octobre et le 20 novembre 2026.",
@@ -816,87 +897,6 @@
     "url": "https://stephanelarue.com/voitures-electriques-bornes-recharge-saturees-15-aout-2026/",
     "source": "StéphaneLarue.com",
     "category": "borne",
-    "date_found": "2026-08-17"
-  },
-  {
-    "id": "dde2564b76b6",
-    "title": "Engagement des opérateurs pour 240 000 bornes supplémentaires d'ici 2030",
-    "summary": "Le 28 juillet 2026, le président de la République a annoncé l'engagement des principaux opérateurs français pour installer 240 000 bornes supplémentaires d'ici 2030. L'objectif est de porter le réseau national à près de 650 000 points de recharge.",
-    "url": "https://www.innovation24.news/2026/08/03/bornes-de-recharge-electrique-la-france-et-leurope-accelerent-le-deploiement-pour-accompagner-la-transition-vers-la-mobilite-electrique/",
-    "source": "Innovation24.news",
-    "category": "borne",
-    "date_found": "2026-08-17"
-  },
-  {
-    "id": "9adafb3cd2bb",
-    "title": "Pics d'affluence records aux bornes sur les autoroutes",
-    "summary": "Le 13 août 2026, des pics d'affluence records ont été enregistrés sur les bornes d'autoroutes avec une demande qui explose lors des grands départs en vacances. Le réseau français compte près de 200 000 points de recharge accessibles au public mais seules quelques milliers sont sur autoroutes.",
-    "url": "https://www.auto-mag.fr/actualites/recharge-voitures-electriques-des-pics-daffluence-records-aux-bornes-electriques",
-    "source": "AUTO MAG",
-    "category": "borne",
-    "date_found": "2026-08-17"
-  },
-  {
-    "id": "fb91ef7203fc",
-    "title": "Standard SAE J2954 actualisé pour la charge par induction en 2026",
-    "summary": "Le standard SAE J2954, publié début 2026, couvre désormais les applications statiques, quasi-dynamiques et dynamiques de recharge par induction pour véhicules électriques. Cette normalisation doit permettre l'interopérabilité entre n'importe quel véhicule compatible et les infrastructures de recharge sans fil.",
-    "url": "https://www.tesla-mag.com/recharge-sans-fil-pour-vehicules-electriques-ou-en-est-la-technologie-en-2026/",
-    "source": "Tesla Mag",
-    "category": "technologie",
-    "date_found": "2026-08-17"
-  },
-  {
-    "id": "c8516f8feeb4",
-    "title": "EVgo ouvre une station de recharge flagship à Détroit et prévoit plus de 100 stations d'ici fin 2026",
-    "summary": "EVgo, l'un des plus grands réseaux publics de recharge rapide américains, a inauguré sa nouvelle station flagship de recharge à Détroit en partenariat avec le détaillant Meijer. Avec plus de 40 stations flagship actuellement ouvertes, l'entreprise table sur un déploiement de plus de 100 stations d'ici la fin de 2026.",
-    "url": "https://www.globenewswire.com/news-release/2026/08/11/3342605/0/en/evgo-and-gm-enhance-the-charging-experience-with-new-flagship-sites.html",
-    "source": "Globe Newswire",
-    "category": "entreprise",
-    "date_found": "2026-08-17"
-  },
-  {
-    "id": "94dd44095f82",
-    "title": "EVgo annonce des plans pour ses propres Superchargeurs V4 en partenariat avec Tesla",
-    "summary": "EVgo a annoncé des plans pour installer ses propres « EVgo Superchargers » compatibles NACS à travers le pays, renforçant ses capacités de recharge rapide. Le partenariat stratégique avec Tesla et l'ajout de 500 nouveaux points de recharge aux centres commerciaux Brixmor font partie de cette expansion.",
-    "url": "https://chargedevs.com/",
-    "source": "Charged EVs",
-    "category": "entreprise",
-    "date_found": "2026-08-17"
-  },
-  {
-    "id": "b56f6441de48",
-    "title": "Ionna accélère son déploiement avec un objectif de 30 000 points de recharge haute vitesse d'ici 2030",
-    "summary": "Le réseau de recharge soutenu par des constructeurs automobiles Ionna accélère son expansion aux États-Unis, visant 30 000 baies de recharge haute vitesse d'ici 2030. Cette approche reflète une tendance où les constructeurs traitent la recharge fiable comme partie intégrante de l'expérience d'achat et de possession du véhicule.",
-    "url": "https://electrificationcoalition.org/ev-news-august-2026/",
-    "source": "Electrification Coalition",
-    "category": "entreprise",
-    "date_found": "2026-08-17"
-  },
-  {
-    "id": "806adb8c1adf",
-    "title": "BYD prévoit une recharge ultra-rapide de 1 000 kW tandis que Huawei déploie 100 000 stations",
-    "summary": "Les constructeurs asiatiques accélèrent le déploiement de l'infrastructure de recharge : BYD prépare des capacités de 1 000 kW et Huawei procède au lancement de 100 000 stations de recharge ultra-rapide. Ces développements s'inscrivent dans une tendance globale de croissance du marché, projeté à 120,85 milliards de dollars d'ici 2033.",
-    "url": "https://www.globenewswire.com/news-release/2026/08/04/3338537/28124/en/EV-Charging-Station-Market-to-Reach-120-85-Billion-by-2033-Driven-by-High-Power-Infrastructure-and-Grid-Modernization.html",
-    "source": "Globe Newswire",
-    "category": "entreprise",
-    "date_found": "2026-08-17"
-  },
-  {
-    "id": "d4ea34a2c142",
-    "title": "Orange EV sécurise 100 millions de dollars pour le camionnage électrique et la recharge intégrée aux batteries",
-    "summary": "Orange EV a levé 100 millions de dollars pour financer ses solutions de camionnage électrique avec recharge intégrée aux systèmes de stockage d'énergie (ESS). Cette levée de fonds soutient l'expansion du fournisseur dans le secteur critique du transport lourd électrifié.",
-    "url": "https://www.evinfrastructurenews.com/latest-news",
-    "source": "EV Infrastructure News",
-    "category": "entreprise",
-    "date_found": "2026-08-17"
-  },
-  {
-    "id": "a6314a69b803",
-    "title": "Suppression du crédit d'impôt pour les bornes de recharge en 2026",
-    "summary": "Le crédit d'impôt permettant un bonus jusqu'à 500 € par borne pour l'installation de bornes de recharge est supprimé dès 2026 pour les dépenses après le 31 décembre 2025. Les aides sont désormais limitées au programme Advenir et aux aides locales.",
-    "url": "https://www.electro-mob.com/loi-de-finances-2026-ce-qui-change-pour-les-bornes-de-recharge",
-    "source": "ElectroMob",
-    "category": "reglementation",
     "date_found": "2026-08-17"
   }
 ]
