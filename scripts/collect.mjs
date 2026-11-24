@@ -25,7 +25,7 @@ if (!MISTRAL_API_KEY) {
 
 // Si tu veux changer le modèle utilisé, vérifie le nom exact sur
 // https://docs.mistral.ai/getting-started/models/
-const MODEL = "mistral-medium-latest";
+const MODEL = "mistral-large-2512";
 
 // ---------- Utilitaires ----------
 
@@ -106,8 +106,8 @@ const today = new Date().toISOString().slice(0, 10);
 
 const systemPrompt = `Tu es un assistant de veille technologique francophone, spécialisé dans les infrastructures de recharge pour véhicules électriques et les technologies de charge associées.`;
 
-// On découpe la veille en plusieurs thèmes. Chaque thème = un appel API
-// séparé, espacé dans le temps, pour rester sous la limite de tokens/minute.
+// Thèmes de la veille. Ils sont tous traités dans UNE seule requête : la
+// recherche web Mistral a un quota propre, vite épuisé avec un appel par thème.
 const THEMES = [
   {
     category: "borne",
@@ -131,18 +131,20 @@ const THEMES = [
   },
 ];
 
-// Délai entre deux appels (en millisecondes). La recherche web Mistral a sa
-// propre limite de débit ("web_search rate limit reached") : on espace large.
-const DELAY_BETWEEN_CALLS_MS = 90_000;
-
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-function buildPrompt(focus) {
-  return `Recherche sur le web les actualités des 7 à 10 derniers jours (nous sommes le ${today}) concernant ${focus}.
+const CATEGORIES = THEMES.map((t) => t.category);
+const MAX_PER_CATEGORY = 4;
+
+function buildPrompt() {
+  const themesList = THEMES.map((t) => `- "${t.category}" : ${t.focus}`).join("\n");
+  return `Recherche sur le web les actualités des 7 à 10 derniers jours (nous sommes le ${today}) sur les thèmes suivants (identifiant de catégorie entre guillemets) :
+${themesList}
 
 Réponds UNIQUEMENT avec un tableau JSON valide, sans texte avant ou après, sans balises markdown. Chaque élément doit avoir exactement ces champs :
 [
   {
+    "category": "un des identifiants : ${CATEGORIES.join(", ")}",
     "title": "titre court et clair",
     "summary": "résumé factuel en 2-3 phrases, en français",
     "url": "URL directe et réelle de la source (trouvée via la recherche web)",
@@ -153,8 +155,8 @@ Réponds UNIQUEMENT avec un tableau JSON valide, sans texte avant ou après, san
 Consignes :
 - N'invente jamais d'URL : n'inclus que des sources réellement trouvées par la recherche web.
 - Privilégie la diversité des sujets et des sources plutôt que plusieurs articles sur le même événement.
-- Maximum 5 éléments.
-- Si tu ne trouves rien de pertinent, réponds avec un tableau vide [].`;
+- Maximum ${MAX_PER_CATEGORY} éléments par catégorie.
+- Si tu ne trouves rien de pertinent pour une catégorie, n'en mets pas ; si rien du tout, réponds [].`;
 }
 
 // Attente avant nouvelle tentative après un 429 : 60 s, puis 120 s, puis 180 s.
@@ -217,7 +219,7 @@ async function urlExists(url) {
   }
 }
 
-async function fetchTheme(theme, attempt = 1) {
+async function fetchNews(attempt = 1) {
   const response = await fetch("https://api.mistral.ai/v1/conversations", {
     method: "POST",
     headers: {
@@ -227,7 +229,7 @@ async function fetchTheme(theme, attempt = 1) {
     body: JSON.stringify({
       model: MODEL,
       instructions: systemPrompt,
-      inputs: buildPrompt(theme.focus),
+      inputs: buildPrompt(),
       tools: [{ type: "web_search" }],
       completion_args: { temperature: 0.3 },
       store: false,
@@ -240,10 +242,10 @@ async function fetchTheme(theme, attempt = 1) {
     if (response.status === 429 && attempt <= MAX_RETRIES) {
       const waitMs = RETRY_BASE_MS * attempt;
       console.log(
-        `  [${theme.category}] erreur 429 reçu, nouvelle tentative dans ${waitMs / 1000}s (essai ${attempt + 1})`
+        `  erreur 429 reçu (${errText.slice(0, 120)}), nouvelle tentative dans ${waitMs / 1000}s (essai ${attempt + 1})`
       );
       await sleep(waitMs);
-      return fetchTheme(theme, attempt + 1);
+      return fetchNews(attempt + 1);
     }
     throw new Error(`Erreur API Mistral (${response.status}): ${errText}`);
   }
@@ -255,51 +257,34 @@ async function fetchTheme(theme, attempt = 1) {
   try {
     items = extractJsonArray(text);
   } catch (err) {
-    console.error(`[${theme.category}] JSON illisible. Extrait :`);
+    console.error("JSON illisible. Extrait :");
     console.error(text.slice(-1000));
-    return []; // on n'interrompt pas toute la veille pour un thème raté
+    return [];
   }
 
   // Garde-fou contre les URL inventées : un article est retenu si son site
   // figure parmi les sources de la recherche web, ou sinon si son URL mène
   // réellement à une page.
   const referenceHosts = new Set(references.map(hostOf).filter(Boolean));
-  console.log(`  [${theme.category}] ${items.length} article(s) proposé(s), ${referenceHosts.size} site(s) source renvoyé(s) par la recherche`);
+  console.log(`${items.length} article(s) proposé(s), ${referenceHosts.size} site(s) source renvoyé(s) par la recherche`);
   const verified = [];
+  const perCategory = {};
   for (const it of items) {
     if (!it || !it.url) continue;
+    if (!CATEGORIES.includes(it.category)) {
+      console.log(`  écarté (catégorie inconnue "${it.category}") : ${it.url}`);
+      continue;
+    }
+    if ((perCategory[it.category] || 0) >= MAX_PER_CATEGORY) continue;
     if (referenceHosts.has(hostOf(it.url)) || (await urlExists(it.url))) {
       verified.push(it);
+      perCategory[it.category] = (perCategory[it.category] || 0) + 1;
     } else {
-      console.log(`  [${theme.category}] écarté (lien introuvable) : ${it.url}`);
+      console.log(`  écarté (lien introuvable) : ${it.url}`);
     }
   }
-
-  // On rattache la catégorie du thème à chaque élément.
-  return verified.map((it) => ({ ...it, category: theme.category }));
-}
-
-// Récupère tous les thèmes séquentiellement, avec une pause entre chacun.
-async function fetchNews() {
-  const all = [];
-  for (let i = 0; i < THEMES.length; i++) {
-    const theme = THEMES[i];
-    console.log(`Recherche du thème : ${theme.category}...`);
-    try {
-      const items = await fetchTheme(theme);
-      console.log(`  → ${items.length} résultat(s) pour ${theme.category}`);
-      all.push(...items);
-    } catch (err) {
-      console.error(`  → Échec du thème ${theme.category} : ${err.message}`);
-    }
-
-    // Pause avant le thème suivant (sauf après le dernier).
-    if (i < THEMES.length - 1) {
-      console.log(`  … pause de ${DELAY_BETWEEN_CALLS_MS / 1000}s avant le thème suivant`);
-      await sleep(DELAY_BETWEEN_CALLS_MS);
-    }
-  }
-  return all;
+  for (const c of CATEGORIES) console.log(`  → ${perCategory[c] || 0} résultat(s) pour ${c}`);
+  return verified;
 }
 
 // ---------- Programme principal ----------
@@ -310,6 +295,7 @@ async function main() {
 
   let candidates = [];
   try {
+    console.log(`Recherche des actualités (${CATEGORIES.join(", ")})...`);
     candidates = await fetchNews();
   } catch (err) {
     console.error("Échec de la récupération des actualités :", err.message);
