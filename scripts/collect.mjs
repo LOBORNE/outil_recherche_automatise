@@ -25,7 +25,7 @@ if (!MISTRAL_API_KEY) {
 
 // Si tu veux changer le modèle utilisé, vérifie le nom exact sur
 // https://docs.mistral.ai/getting-started/models/
-const MODEL = "mistral-large-2512";
+const MODEL = "mistral-medium-latest";
 
 // ---------- Utilitaires ----------
 
