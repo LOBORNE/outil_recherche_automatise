@@ -1,6 +1,6 @@
 // scripts/collect.mjs
 //
-// Interroge l'API Claude (avec l'outil de recherche web) pour trouver les
+// Interroge l'API Mistral (avec l'outil de recherche web) pour trouver les
 // actualités récentes sur les bornes de recharge / technologies de charge /
 // entreprises du secteur, dédoublonne par rapport aux données existantes,
 // et met à jour data/data.json.
@@ -17,15 +17,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, "..", "data", "data.json");
 const NEW_ENTRIES_PATH = path.join(__dirname, "..", "data", "new-entries.json");
 
-const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
-if (!ANTHROPIC_API_KEY) {
-  console.error("ANTHROPIC_API_KEY manquant.");
+const MISTRAL_API_KEY = process.env.MISTRAL_API_KEY;
+if (!MISTRAL_API_KEY) {
+  console.error("MISTRAL_API_KEY manquant.");
   process.exit(1);
 }
 
 // Si tu veux changer le modèle utilisé, vérifie le nom exact sur
-// https://docs.claude.com/en/docs/about-claude/models
-const MODEL = "claude-haiku-4-5";
+// https://docs.mistral.ai/getting-started/models/
+const MODEL = "mistral-medium-latest";
 
 // ---------- Utilitaires ----------
 
@@ -100,7 +100,7 @@ function extractJsonArray(text) {
   }
 }
 
-// ---------- Appel à l'API Claude ----------
+// ---------- Appel à l'API Mistral ----------
 
 const today = new Date().toISOString().slice(0, 10);
 
@@ -131,9 +131,9 @@ const THEMES = [
   },
 ];
 
-// Délai entre deux appels (en millisecondes). La limite de tokens/minute
-// étant basse, on espace largement pour laisser la fenêtre glissante se vider.
-const DELAY_BETWEEN_CALLS_MS = 120_000;
+// Délai entre deux appels (en millisecondes), pour rester sous la limite
+// de requêtes de l'API.
+const DELAY_BETWEEN_CALLS_MS = 30_000;
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -158,28 +158,55 @@ Consignes :
 }
 
 const waitMs = 30_000;
+
+function hostOf(url) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "").toLowerCase();
+  } catch {
+    return "";
+  }
+}
+
+// Extrait d'une réponse /v1/conversations le texte final et les sources
+// réellement consultées par l'outil web_search (chunks "tool_reference").
+function parseConversation(data) {
+  const texts = [];
+  const references = [];
+  for (const entry of data.outputs || []) {
+    if (entry.type !== "message.output") continue;
+    const content = entry.content;
+    if (typeof content === "string") {
+      texts.push(content);
+      continue;
+    }
+    for (const chunk of content || []) {
+      if (chunk.type === "text" && chunk.text) texts.push(chunk.text);
+      if (chunk.type === "tool_reference" && chunk.url) references.push(chunk.url);
+    }
+  }
+  return { text: texts.join(""), references };
+}
+
 async function fetchTheme(theme, attempt = 1) {
-  const response = await fetch("https://api.anthropic.com/v1/messages", {
+  const response = await fetch("https://api.mistral.ai/v1/conversations", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      "x-api-key": ANTHROPIC_API_KEY,
-      "anthropic-version": "2023-06-01",
+      Authorization: `Bearer ${MISTRAL_API_KEY}`,
     },
     body: JSON.stringify({
       model: MODEL,
-      max_tokens: 4096,
-      system: systemPrompt,
-      messages: [{ role: "user", content: buildPrompt(theme.focus) }],
-      tools: [
-        { type: "web_search_20250305", name: "web_search", max_uses: 2 },
-      ],
+      instructions: systemPrompt,
+      inputs: buildPrompt(theme.focus),
+      tools: [{ type: "web_search" }],
+      completion_args: { temperature: 0.3 },
+      store: false,
     }),
   });
 
   if (!response.ok) {
     const errText = await response.text();
-    // En cas de 429, on attend puis on réessaie une fois.
+    // En cas de 429, on attend puis on réessaie (2 fois max).
     if (response.status === 429 && attempt <= 2) {
       console.warn(
         `  [${theme.category}] erreur 429 reçu, nouvelle tentative dans ${waitMs / 1000}s (essai ${attempt + 1})`
@@ -187,33 +214,33 @@ async function fetchTheme(theme, attempt = 1) {
       await sleep(waitMs);
       return fetchTheme(theme, attempt + 1);
     }
-    throw new Error(`Erreur API Claude (${response.status}): ${errText}`);
+    throw new Error(`Erreur API Mistral (${response.status}): ${errText}`);
   }
 
   const data = await response.json();
-
-  if (data.stop_reason === "max_tokens") {
-    console.warn(
-      `[${theme.category}] Réponse coupée (max_tokens). JSON possiblement incomplet.`
-    );
-  }
-
-  const textBlocks = (data.content || [])
-    .filter((block) => block.type === "text")
-    .map((block) => block.text)
-    .join("\n");
+  const { text, references } = parseConversation(data);
 
   let items;
   try {
-    items = extractJsonArray(textBlocks);
+    items = extractJsonArray(text);
   } catch (err) {
     console.error(`[${theme.category}] JSON illisible. Extrait :`);
-    console.error(textBlocks.slice(-1000));
+    console.error(text.slice(-1000));
     return []; // on n'interrompt pas toute la veille pour un thème raté
   }
 
+  // Garde-fou contre les URL inventées : on ne garde que les articles dont le
+  // site fait partie des sources effectivement renvoyées par la recherche web.
+  const referenceHosts = new Set(references.map(hostOf).filter(Boolean));
+  const verified = items.filter((it) => it && it.url && referenceHosts.has(hostOf(it.url)));
+  if (verified.length < items.length) {
+    console.warn(
+      `  [${theme.category}] ${items.length - verified.length} élément(s) écarté(s) : source absente des résultats de recherche`
+    );
+  }
+
   // On rattache la catégorie du thème à chaque élément.
-  return items.map((it) => ({ ...it, category: theme.category }));
+  return verified.map((it) => ({ ...it, category: theme.category }));
 }
 
 // Récupère tous les thèmes séquentiellement, avec une pause entre chacun.

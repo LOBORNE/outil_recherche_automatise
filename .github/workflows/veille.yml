@@ -23,7 +23,7 @@ jobs:
 
       - name: Collecter les actualités
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.RECHERCHE_AUTOMATISE }}
+          MISTRAL_API_KEY: ${{ secrets.RECHERCHE_AUTOMATISE }}
         run: node scripts/collect.mjs
 
       - name: Committer les nouvelles données
