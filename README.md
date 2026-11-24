@@ -24,7 +24,7 @@ Dans **Settings → Secrets and variables → Actions** du repo, ajoute :
 
 | Secret | Description |
 |---|---|
-| `ANTHROPIC_API_KEY` | Ta clé API Anthropic (console.anthropic.com) |
+| `RECHERCHE_AUTOMATISE` | Ta clé API Anthropic (console.anthropic.com), exposée au script sous `ANTHROPIC_API_KEY` |
 | `RESEND_API_KEY` | Clé API Resend pour l'envoi d'email (voir ci-dessous) |
 | `TO_EMAIL` | L'adresses email qui doivent recevoir la notification séparé par une virgule |
 | `FROM_EMAIL` | Depuis quel mail (pas forcement existant) |
