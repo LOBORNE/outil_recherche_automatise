@@ -92,7 +92,7 @@ function extractJsonArray(text) {
   } catch (err) {
     // Réponse probablement tronquée (max_tokens atteint) : on essaie de
     // récupérer les éléments complets en coupant au dernier "}," valide.
-    console.warn("JSON invalide, tentative de récupération partielle...");
+    console.log("JSON invalide, tentative de récupération partielle...");
     const lastCompleteObject = cleaned.lastIndexOf("},");
     if (lastCompleteObject === -1) throw err;
     const salvaged = cleaned.slice(0, lastCompleteObject + 1) + "]";
@@ -131,9 +131,9 @@ const THEMES = [
   },
 ];
 
-// Délai entre deux appels (en millisecondes), pour rester sous la limite
-// de requêtes de l'API.
-const DELAY_BETWEEN_CALLS_MS = 30_000;
+// Délai entre deux appels (en millisecondes). La recherche web Mistral a sa
+// propre limite de débit ("web_search rate limit reached") : on espace large.
+const DELAY_BETWEEN_CALLS_MS = 90_000;
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -157,7 +157,9 @@ Consignes :
 - Si tu ne trouves rien de pertinent, réponds avec un tableau vide [].`;
 }
 
-const waitMs = 30_000;
+// Attente avant nouvelle tentative après un 429 : 60 s, puis 120 s, puis 180 s.
+const RETRY_BASE_MS = 60_000;
+const MAX_RETRIES = 3;
 
 function hostOf(url) {
   try {
@@ -167,11 +169,23 @@ function hostOf(url) {
   }
 }
 
+// Collecte récursivement toutes les URL présentes dans les sorties de l'API
+// (chunks "tool_reference", résultats d'exécution de web_search...), quel que
+// soit l'endroit exact où Mistral les place.
+function collectUrls(node, out) {
+  if (Array.isArray(node)) {
+    for (const child of node) collectUrls(child, out);
+  } else if (node && typeof node === "object") {
+    if (typeof node.url === "string") out.push(node.url);
+    for (const value of Object.values(node)) collectUrls(value, out);
+  }
+  return out;
+}
+
 // Extrait d'une réponse /v1/conversations le texte final et les sources
-// réellement consultées par l'outil web_search (chunks "tool_reference").
+// renvoyées par l'outil web_search.
 function parseConversation(data) {
   const texts = [];
-  const references = [];
   for (const entry of data.outputs || []) {
     if (entry.type !== "message.output") continue;
     const content = entry.content;
@@ -181,10 +195,26 @@ function parseConversation(data) {
     }
     for (const chunk of content || []) {
       if (chunk.type === "text" && chunk.text) texts.push(chunk.text);
-      if (chunk.type === "tool_reference" && chunk.url) references.push(chunk.url);
     }
   }
-  return { text: texts.join(""), references };
+  return { text: texts.join(""), references: collectUrls(data.outputs || [], []) };
+}
+
+// Vérifie qu'une URL mène à une vraie page. 401/403/429 = page existante mais
+// protégée contre les robots : on l'accepte. 404, erreur DNS, timeout : rejet.
+async function urlExists(url) {
+  try {
+    const res = await fetch(url, {
+      method: "GET",
+      redirect: "follow",
+      signal: AbortSignal.timeout(10_000),
+      headers: { "User-Agent": "Mozilla/5.0 (compatible; veille-recharge/1.0)" },
+    });
+    res.body?.cancel().catch(() => {});
+    return res.status < 400 || [401, 403, 429].includes(res.status);
+  } catch {
+    return false;
+  }
 }
 
 async function fetchTheme(theme, attempt = 1) {
@@ -206,9 +236,10 @@ async function fetchTheme(theme, attempt = 1) {
 
   if (!response.ok) {
     const errText = await response.text();
-    // En cas de 429, on attend puis on réessaie (2 fois max).
-    if (response.status === 429 && attempt <= 2) {
-      console.warn(
+    // En cas de 429, on attend de plus en plus longtemps puis on réessaie.
+    if (response.status === 429 && attempt <= MAX_RETRIES) {
+      const waitMs = RETRY_BASE_MS * attempt;
+      console.log(
         `  [${theme.category}] erreur 429 reçu, nouvelle tentative dans ${waitMs / 1000}s (essai ${attempt + 1})`
       );
       await sleep(waitMs);
@@ -229,14 +260,19 @@ async function fetchTheme(theme, attempt = 1) {
     return []; // on n'interrompt pas toute la veille pour un thème raté
   }
 
-  // Garde-fou contre les URL inventées : on ne garde que les articles dont le
-  // site fait partie des sources effectivement renvoyées par la recherche web.
+  // Garde-fou contre les URL inventées : un article est retenu si son site
+  // figure parmi les sources de la recherche web, ou sinon si son URL mène
+  // réellement à une page.
   const referenceHosts = new Set(references.map(hostOf).filter(Boolean));
-  const verified = items.filter((it) => it && it.url && referenceHosts.has(hostOf(it.url)));
-  if (verified.length < items.length) {
-    console.warn(
-      `  [${theme.category}] ${items.length - verified.length} élément(s) écarté(s) : source absente des résultats de recherche`
-    );
+  console.log(`  [${theme.category}] ${items.length} article(s) proposé(s), ${referenceHosts.size} site(s) source renvoyé(s) par la recherche`);
+  const verified = [];
+  for (const it of items) {
+    if (!it || !it.url) continue;
+    if (referenceHosts.has(hostOf(it.url)) || (await urlExists(it.url))) {
+      verified.push(it);
+    } else {
+      console.log(`  [${theme.category}] écarté (lien introuvable) : ${it.url}`);
+    }
   }
 
   // On rattache la catégorie du thème à chaque élément.
