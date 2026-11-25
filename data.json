@@ -1,5 +1,113 @@
 [
   {
+    "id": "412b665bb248",
+    "title": "Marseille : ENGIE Vianeo et INDIGO inaugurent deux stations ultra-rapides au Vieux-Port",
+    "summary": "ENGIE Vianeo et INDIGO ont mis en service deux nouveaux hubs de recharge ultra-rapide dans les parkings souterrains du Vieux-Port de Marseille, avec 12 points de charge pouvant atteindre 400 kW. Le réseau ENGIE Vianeo compte désormais 212 stations sur la Métropole Aix-Marseille-Provence, dont 15 ultra-rapides.",
+    "url": "https://maritima.fr/actualites/transport/marseille/17013/marseille-12-bornes-de-recharge-electrique-ultra-rapide-installees-dans-les-parkings-du-vieux-port-mucem-et-la-criee",
+    "source": "Maritima",
+    "category": "borne",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "570ecf4c2ff3",
+    "title": "Villers-la-Ville : installation de quatre bornes doubles dans le cadre du plan EZ Charge",
+    "summary": "Dans le cadre du plan régional 'EZ Charge', Villers-la-Ville accueillera quatre bornes doubles de recharge lente en Wallonie. Ces équipements visent à proposer des infrastructures adaptées aux villages, distinctes des bornes rapides réservées aux autoroutes.",
+    "url": "https://lavenir.net/regions/brabantwallon/villers-la-ville/2026/11/25/villers-la-ville-va-accueillir-quatre-bornes-doubles-pour-recharger-les-voitures-electriques-SDUETQ2J4FEQHMHYMXQVSQTVSA",
+    "source": "L'Avenir",
+    "category": "borne",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "ab041289ea92",
+    "title": "Mouscron : ENGIE Vianeo installe plusieurs bornes de recharge en attente d'activation",
+    "summary": "Plusieurs bornes de recharge ENGIE Vianeo ont été installées à Mouscron, notamment au Nouveau-Monde, rue du Christ et à la Rénovation urbaine. Ces équipements, encore bâchés, devraient être mis en service dans les prochains jours.",
+    "url": "https://www.dhnet.be/regions/tournai-ath-mouscron/mouscron-comines/2026/11/22/de-nouvelles-bornes-de-recharge-electrique-installees-a-mouscron-leur-mise-en-service-est-attendue-dans-les-prochains-jours-4I5VPOIJP5GNTLTMG7YZK4NWXQ/",
+    "source": "La DH/Les Sports+",
+    "category": "borne",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "dba1acdc106c",
+    "title": "Réseau français : hausse des indisponibilités et vol de câbles sur les bornes de recharge",
+    "summary": "Le taux des points de charge indisponibles plus de 7 jours consécutifs atteint 10% en octobre 2026, un record. Depuis le début de l'année, le vol de câbles sur les bornes rapides s'est intensifié, touchant plus de 850 sites en 2026.",
+    "url": "https://www.bevolt.com/fr-fr/automobile/actualites/actualites-recharge/353590-reseau-de-bornes-de-recharge-un-nouveau-record-peu-rejouissant/",
+    "source": "Bevolt",
+    "category": "borne",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "af4805d43a40",
+    "title": "Batterie semi-conductrice et recharge ultra-rapide redéfinissent le secteur en 2026",
+    "summary": "Les batteries à semi-conducteurs promettent une densité énergétique accrue et une sécurité renforcée, permettant des chargements plus rapides. Les bornes ultra-rapides équipées en 2026 atteignent 300 kW et permettent des charges complètes en moins de 20 minutes pour la majorité des véhicules.",
+    "url": "https://motor24.net/fr/2026/09/30/les-innovations-disruptives-qui-redefinissent-lautonomie-et-la-recharge-des-vehicules-electriques-en-2026/",
+    "source": "Motor24",
+    "category": "technologie",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "8650b0b7fa57",
+    "title": "CCS Combo 2 : le standard européen imposé pour la recharge rapide",
+    "summary": "Le CCS Combo 2 est devenu le connecteur de référence imposé par la réglementation européenne pour la recharge DC rapide sur pratiquement tous les nouveaux véhicules et bornes publiques. Ce standard prend en charge à la fois la charge AC et DC sur un seul connecteur, simplifiant considérablement l'infrastructure.",
+    "url": "https://www.belinus.com/post/liste-des-technologies-de-charge-ev-en-2026",
+    "source": "Belinus",
+    "category": "technologie",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "07c20a4b5e86",
+    "title": "Electreon déploie la recharge sans fil haute puissance pour transports lourds",
+    "summary": "Electreon exploite des systèmes de recharge sans fil à haute puissance jusqu'à 450 kW pour autobus électriques et camions lourds en Europe et aux États-Unis. D'ici fin 2026, la moitié des autobus électriques de l'État de Washington devraient utiliser ces systèmes installés en cours de route.",
+    "url": "https://roulezelectrique.com/recharge-sans-fil-pour-ve-ou-en-est-on-vraiment-en-2026/",
+    "source": "Roulez Électrique",
+    "category": "technologie",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "db810c626652",
+    "title": "Anyos lève 5,5 millions d'euros pour accélérer son développement",
+    "summary": "Le fabricant français de bornes de recharge pour véhicules électriques Anyos finalise une levée de fonds de 5,5 millions d'euros, composée de 4 millions de fonds propres et 1,5 million de dette. La société compte environ 200 clients et 3 500 points de charge déployés auprès d'entreprises et de collectivités.",
+    "url": "https://www.obliginfos.fr/2026/11/20/bornes-electriques-anyos-boucle-une-levee-de-fonds-et-ouvre-son-capital-au-grand-public/",
+    "source": "Obliginfos",
+    "category": "entreprise",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "092a81fc2a63",
+    "title": "Auchan et Le Plein lancent une opération promotionnelle de recharge à 0,09 €/kWh",
+    "summary": "Du 24 novembre 2026 au 13 janvier 2027, Auchan et l'opérateur Le Plein proposent une opération spéciale avec des prix de recharge réduits à 0,09 €/kWh pour la recharge lente. Cette campagne concerne 394 points de charge en France dans les stations Le Plein des magasins Auchan.",
+    "url": "https://www.bevolt.com/fr-fr/automobile/actualites/actualites-recharge/353316-9-centimes-le-kwh-auchan-casse-les-prix-de-la-recharge-pour-les-voitures-electriques-mais-attention-aux-conditions/",
+    "source": "Bevolt",
+    "category": "entreprise",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "eefdcc152cd5",
+    "title": "Une startup de bornes modulables lève 3 millions d'euros",
+    "summary": "Une entreprise du secteur des bornes de recharge modulaires et évolutives a levé 3 millions d'euros auprès de NMP Développement (Crédit Agricole Nord-Midi-Pyrénées) et Région Sud Investissement, selon le récapitulatif des levées de fonds de la semaine 47 de 2026.",
+    "url": "https://multeam.substack.com/p/les-levees-de-fonds-de-la-semaine-57b",
+    "source": "Multeam's Substack",
+    "category": "entreprise",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "d71357e9aae0",
+    "title": "Réglementation URSSAF sur la recharge en entreprise en 2026",
+    "summary": "La réglementation URSSAF 2026 couvre trois situations de recharge en entreprise : sur site (la plus favorable), au domicile du salarié et en itinérance. La recharge sur le lieu de travail bénéficie du cadre le plus avantageux d'un point de vue fiscal.",
+    "url": "https://www.freshmile.com/articles/reglementation-urssaf-et-avantages-en-nature-pour-la-recharge-ve-en-entreprise/",
+    "source": "Freshmile",
+    "category": "reglementation",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "9c4167d6f100",
+    "title": "Évolution des subventions et orientation vers les infrastructures publiques en 2026",
+    "summary": "À partir de 2026, la France privilégie les infrastructures de recharge pour entreprises et collectivités plutôt que les subventions directes aux particuliers. Le programme Advenir continue pour le résidentiel collectif et les poids lourds.",
+    "url": "https://www.injetenergy.com/fr/blog/frances-electric-mobility-outlook-key-policy-updates-for-2026/",
+    "source": "InJet Energy",
+    "category": "reglementation",
+    "date_found": "2026-11-25"
+  },
+  {
     "id": "fa9dcceb0018",
     "title": "L’Europe simplifie les procédures d’autorisation pour les bornes de recharge",
     "summary": "Le 18 novembre 2026, le Parlement européen et le Conseil ont conclu un accord provisoire pour simplifier les procédures d’autorisation et de raccordement des bornes de recharge. Les stations de moins de 1 MW installées sur des structures artificielles pourraient être dispensées d’autorisation, et les délais de raccordement devraient être réduits à trois mois maximum.",
@@ -790,113 +898,5 @@
     "source": "CaptainDrive",
     "category": "entreprise",
     "date_found": "2026-09-14"
-  },
-  {
-    "id": "03afd99a9941",
-    "title": "État du réseau de recharge publique : 185 501 points de charge en France au 31 décembre 2025",
-    "summary": "Le réseau français de recharge a connu une croissance de 20% en 2025 avec l'ajout de 30 807 points, portant le total à 185 501 points ouverts au public. Cette expansion représente une moyenne de 275 points pour 100 000 habitants, répondant aux besoins croissants des propriétaires de véhicules électriques.",
-    "url": "https://www.futura-sciences.com/automobile/actualites/voiture-electrique-voiture-electrique-ce-revelent-nouveaux-chiffres-reseau-recharge-france-131252/",
-    "source": "Futura Sciences",
-    "category": "borne",
-    "date_found": "2026-09-07"
-  },
-  {
-    "id": "27c5de32494b",
-    "title": "Ralentissement du déploiement des bornes au premier semestre 2026",
-    "summary": "Seulement 12 000 nouveaux points de recharge publics ont été installés au premier semestre 2026, révélant un ralentissement du déploiement. De plus, la fiabilité du réseau s'est détériorée, avec les taux de disponibilité des bornes DC tombant à 84,7% pour les modèles de moins de 150 kW.",
-    "url": "https://www.automobile-propre.com/articles/bornes-de-recharge-le-deploiement-reste-trop-lent-pour-atteindre-lobjectif-du-gouvernement/",
-    "source": "Automobile Propre",
-    "category": "borne",
-    "date_found": "2026-09-07"
-  },
-  {
-    "id": "b0d2247ca381",
-    "title": "Ze-Watt confirme sa croissance avec 22M€ de chiffre d'affaires et vise 20 000 bornes",
-    "summary": "Ze-Watt, acteur français indépendant de la mobilité électrique, a réalisé 22 millions d'euros de chiffre d'affaires en 2025 (+25%) et exploite plus de 16 000 points de charge. L'entreprise vise une croissance de 15% en 2026 et le cap des 20 000 points de charge.",
-    "url": "https://ze-watt.com/article/mobilite-electrique-ze-watt-20000-bornes-croissance/",
-    "source": "Ze-Watt",
-    "category": "entreprise",
-    "date_found": "2026-09-07"
-  },
-  {
-    "id": "e188a4219f64",
-    "title": "ChargerHelp triple le nombre de stations sous gestion",
-    "summary": "ChargerHelp a annoncé en janvier 2026 avoir triplé le nombre de stations de recharge sous gestion selon son modèle Reliability-as-a-Service. La plateforme a accumulé plus de 300 millions de points de données à partir des opérations d'infrastructures de recharge.",
-    "url": "https://www.landbase.com/blog/fastest-growing-ev-charging-companies-startups",
-    "source": "Landbase",
-    "category": "entreprise",
-    "date_found": "2026-09-07"
-  },
-  {
-    "id": "7ae62476478a",
-    "title": "Grizzl-E Club atteint 20 000 membres en août 2026",
-    "summary": "Le Grizzl-E Club au Canada a atteint le 11 août 2026 le cap de 20 000 membres adhérents, doublant le nombre depuis 10 000 membres en l'espace de seulement trois mois.",
-    "url": "https://evchargingstations.com/",
-    "source": "EV Charging Stations With Tom Moloughney",
-    "category": "entreprise",
-    "date_found": "2026-09-07"
-  },
-  {
-    "id": "1e721775acd9",
-    "title": "Aide aux taxis électriques lancée le 1er septembre 2026",
-    "summary": "À compter du 1er septembre 2026, un dispositif spécifique d'aide aux taxis électriques est annoncé autour de 3 500€ à 5 500€ (montant majoré si le véhicule et sa batterie sont fabriqués en Europe).",
-    "url": "https://www.delivauto.fr/voiture-electrique-quest-ce-qui-change-vraiment-en-2026/",
-    "source": "Delivauto",
-    "category": "reglementation",
-    "date_found": "2026-09-07"
-  },
-  {
-    "id": "dc5fad56022d",
-    "title": "Borne de recharge : nécessité d'améliorer l'ergonomie des interfaces",
-    "summary": "Un article dénonce les défauts ergonomiques des bornes de recharge actuelles, notamment le positionnement des écrans difficiles à lire en plein soleil ou exigeant une contorsion pour être accessibles. Les modèles plus récents corrigent progressivement ces problèmes de conception.",
-    "url": "https://www.automobile-propre.com/articles/bornes-de-recharge-il-est-temps-de-faire-plus-simple/",
-    "source": "Automobile Propre",
-    "category": "borne",
-    "date_found": "2026-08-31"
-  },
-  {
-    "id": "ee7d2180d45c",
-    "title": "Accélération du financement NEVI aux États-Unis pour 2026",
-    "summary": "Le programme NEVI des États-Unis accélère le déploiement en 2026 avec 885 millions de dollars alloués pour l'année fiscale. ChargePoint et Blink Charging ont obtenu des contrats d'achat coopératif, facilitant les acquisitions par les collectivités locales.",
-    "url": "https://civiciq.com/blog/government-ev-charging-infrastructure-where-the-money-is-going-in-2026",
-    "source": "Civic IQ",
-    "category": "entreprise",
-    "date_found": "2026-08-31"
-  },
-  {
-    "id": "a10019a118d9",
-    "title": "Simplification de la recharge en 2026 : tarifs transparents et paiement universel",
-    "summary": "2026 marque une nouvelle étape dans la simplification de l'expérience utilisateur avec des tarifs plus transparents en euros/kWh, un paiement universel par carte bancaire ou application unique, et une meilleure fiabilité grâce à des normes minimales. La V2G (recharge bidirectionnelle) se démocratise progressivement.",
-    "url": "https://www.chezswitch.fr/actualites/bornes-de-recharge-en-france-quelles-projections-pour-2026",
-    "source": "Chez Switch",
-    "category": "borne",
-    "date_found": "2026-08-31"
-  },
-  {
-    "id": "899122447594",
-    "title": "Objectif gouvernemental : 400 000 bornes publiques d'ici 2030",
-    "summary": "Le gouvernement français vise 400 000 points de recharge ouverts au public d'ici 2030, dont 50 000 en recharge rapide. Des contrats cadres entre opérateurs et grandes surfaces doivent générer plusieurs milliers de points supplémentaires et des gares pilotes s'équipent progressivement.",
-    "url": "https://www.economie.gouv.fr/actualites/les-bornes-de-recharge-se-deploient-sur-le-territoire",
-    "source": "Ministère de l'Économie",
-    "category": "borne",
-    "date_found": "2026-08-31"
-  },
-  {
-    "id": "0494894a1051",
-    "title": "WiTricity déploie son système de charge sans fil Halo pour véhicules électriques",
-    "summary": "WiTricity lance son système de recharge par induction Halo pour utilisation commerciale, notamment avec des véhicules E-Z-GO et ICON. Le système délivre 11 kW permettant une autonomie de 56 km par heure de charge via transfert d'énergie électromagnétique.",
-    "url": "https://bolt.earth/blog/top-5-ev-charging-innovations-of-2026-set-to-solve-range-anxiety",
-    "source": "Bolt.Earth",
-    "category": "technologie",
-    "date_found": "2026-08-31"
-  },
-  {
-    "id": "0e0b0d33f270",
-    "title": "Porsche Cayenne lancera la recharge sans fil par induction en 2026",
-    "summary": "Porsche introduit la recharge par induction pour le nouveau Cayenne électrique, qui sera le premier véhicule de production à offrir cette technologie. Le système d'11 kW intégré à l'application My Porsche sera lancé en Europe en 2026.",
-    "url": "https://evchargingstations.com/chargingnews/porsche-to-launch-11-kw-wireless-charging-option-in-2026/",
-    "source": "EV Charging Stations",
-    "category": "technologie",
-    "date_found": "2026-08-31"
   }
 ]
