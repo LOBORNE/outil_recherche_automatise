@@ -1,5 +1,86 @@
 [
   {
+    "id": "fa9dcceb0018",
+    "title": "L’Europe simplifie les procédures d’autorisation pour les bornes de recharge",
+    "summary": "Le 18 novembre 2026, le Parlement européen et le Conseil ont conclu un accord provisoire pour simplifier les procédures d’autorisation et de raccordement des bornes de recharge. Les stations de moins de 1 MW installées sur des structures artificielles pourraient être dispensées d’autorisation, et les délais de raccordement devraient être réduits à trois mois maximum.",
+    "url": "https://www.bevolt.com/fr-fr/automobile/actualites/actualites-recharge/353136-bornes-de-recharge-leurope-saccorde-pour-lever-un-obstacle-majeur-a-leur-installation/",
+    "source": "Bevolt",
+    "category": "borne",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "c3a7b20e5bca",
+    "title": "Enedis recense plus de 600 bornes pour camions électriques en projet dans le Nord-Pas-de-Calais",
+    "summary": "En septembre 2026, Enedis a identifié dans le Nord-Pas-de-Calais des projets totalisant plus de 600 bornes de recharge pour poids lourds et près de 80 MW de puissance. Une station de 2 MW est déjà raccordée à Méricourt, permettant de recharger jusqu’à cinq camions simultanément.",
+    "url": "https://lenergeek.com/2026/11/22/enedis-600-bornes-camions-electriques-nord-pas-de-calais-80-mw-2026/",
+    "source": "L'EnerGeek",
+    "category": "borne",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "d7d558392e63",
+    "title": "Villers-la-Ville va accueillir quatre bornes doubles pour véhicules électriques",
+    "summary": "Dans le cadre du plan régional « EZ Charge », quatre bornes doubles de recharge lente seront installées à Villers-la-Ville. D’autres bornes suivront dans la région, s’inscrivant dans une dynamique locale de déploiement des infrastructures de recharge.",
+    "url": "https://www.lavenir.net/regions/brabantwallon/villers-la-ville/2026/11/25/villers-la-ville-va-accueillir-quatre-bornes-doubles-pour-recharger-les-voitures-electriques-SDUETQ2J4FEQHMHYMXQVSQTVSA/",
+    "source": "L'Avenir",
+    "category": "borne",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "3a1357c1694d",
+    "title": "Changement d’opérateur pour les bornes de recharge à Orléans",
+    "summary": "À partir du 9 novembre 2026, l’exploitation du réseau de bornes de recharge d’Orléans Métropole est confiée à Electromaps. La tarification est alignée sur celle des parkings en ouvrage, avec un forfait unique de 25 € TTC au-delà de 2 heures de charge pour dissuader le stationnement longue durée.",
+    "url": "https://www.orleans-metropole.fr/actualites/detail/changement-doperateur-pour-les-bornes-de-recharges",
+    "source": "Orléans Métropole",
+    "category": "borne",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "13d2023b231b",
+    "title": "L’Europe veut accélérer l’ouverture des nouvelles stations de recharge",
+    "summary": "Le 18 novembre 2026, le Conseil de l’Union européenne et le Parlement européen ont annoncé un accord politique provisoire pour simplifier les procédures d’autorisation et de raccordement des bornes de recharge, afin de faciliter leur déploiement et leur mise en service.",
+    "url": "https://rouleur-electrique.fr/bornes-de-recharge-leurope-veut-accelerer-louverture-des-nouvelles-stations/",
+    "source": "Rouleur Électrique",
+    "category": "borne",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "27cd3d90594b",
+    "title": "UP&CHARGE annonce une borne de recharge par induction à 100 kW DC pour fin 2027",
+    "summary": "La start-up française UP&CHARGE, spécialisée dans la recharge par induction, prépare une levée de fonds pour développer une borne capable d’atteindre 100 kW DC d’ici fin 2027. Cette technologie, déjà déployée à 24 kW, vise à simplifier la recharge pour les flottes professionnelles en supprimant l’usage des câbles. L’installation est rapide et ne nécessite pas de génie civil lourd.",
+    "url": "https://www.avem.fr/2026/11/18/upandcharge-cap-sur-la-recharge-par-induction-a-100-kw-dc-et-sur-une-levee-de-fonds/",
+    "source": "AVEM",
+    "category": "technologie",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "89c62383794d",
+    "title": "Plug & Charge et paiement par carte obligatoires sur les bornes européennes dès 2027",
+    "summary": "À partir du 1er janvier 2027, les nouvelles bornes publiques de recharge en Europe devront intégrer le Plug & Charge (norme EN ISO 15118-20), permettant une reconnaissance automatique du véhicule sans badge ni application. Le paiement par carte bancaire ou sans contact sera aussi obligatoire sur les bornes rapides de 50 kW et plus, déjà installées ou rénovées.",
+    "url": "https://www.enerzine.com/recharge-electrique-paiement-par-carte-et-plug-charge-obligatoires-des-2027/200971-2026-11",
+    "source": "Enerzine",
+    "category": "technologie",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "be701f0f618a",
+    "title": "Découverte d’un phénomène limitant la recharge ultra-rapide des batteries lithium-ion",
+    "summary": "Des chercheurs de l’université du Maryland ont identifié un phénomène d’appauvrissement en solvant dans certaines zones de la batterie lors de recharges à très haute puissance, freinant la circulation des ions lithium. Une modification de l’électrolyte avec des groupes chimiques fluorés a permis d’atteindre 80 % de charge en 12,8 minutes sur une cellule expérimentale.",
+    "url": "https://www.bevolt.com/fr-fr/automobile/actualites/actualites-recharge/352510-des-chercheurs-decouvrent-un-phenomene-meconnu-qui-freine-la-recharge-des-batteries/",
+    "source": "Bevolt",
+    "category": "technologie",
+    "date_found": "2026-11-25"
+  },
+  {
+    "id": "d4effb3828ea",
+    "title": "Adoption lente du connecteur NACS dans les stations de recharge au Québec",
+    "summary": "Malgré l’adoption du standard NACS par la plupart des constructeurs pour les modèles 2026-2027, les réseaux Circuit Électrique et FLO au Québec peinent à déployer des pistolets NACS dans leurs stations. Les utilisateurs de véhicules équipés de ce connecteur doivent encore recourir à des adaptateurs, faute de bornes compatibles.",
+    "url": "https://roulezelectrique.com/ou-diable-sont-les-pistolets-nacs-dans-les-stations-de-recharge-circuit-electrique-et-flo/",
+    "source": "Roulez Électrique",
+    "category": "technologie",
+    "date_found": "2026-11-25"
+  },
+  {
     "id": "9610cc1763e3",
     "title": "Vols de câbles de bornes : 21 millions d'euros de pertes en 2026",
     "summary": "Les vols de câbles des bornes de recharge pour récupérer le cuivre deviennent un problème majeur en France. Depuis le début 2026, les exploitants ont subi 21 millions d'euros de pertes avec 800 plaintes déposées, et des députés proposent de classer certaines stations comme infrastructures critiques.",
@@ -817,86 +898,5 @@
     "source": "EV Charging Stations",
     "category": "technologie",
     "date_found": "2026-08-31"
-  },
-  {
-    "id": "1d3cc69ee435",
-    "title": "Systèmes de charge par induction dynamique intégrés aux routes et parkings",
-    "summary": "Les villes américaines intègrent des bobines d'induction sous le bitume des autoroutes et routes urbaines pour permettre la charge pendant la circulation. Des technologies stationnaires de 300+ kW chargeant les bus électriques en quelques minutes sont en déploiement commercial.",
-    "url": "https://kentshield.online/wireless-ev-charging-in-2026/",
-    "source": "Kent Shield EV",
-    "category": "technologie",
-    "date_found": "2026-08-31"
-  },
-  {
-    "id": "0cfebcad661b",
-    "title": "Émergence du Vehicle-to-Grid (V2G) dans les infrastructures 2026",
-    "summary": "La technologie Vehicle-to-Grid (V2G) émerge en 2026, permettant aux véhicules électriques de restituer de l'électricité au réseau. Cette innovation transforme les véhicules en unités de stockage mobile et renforce l'intérêt des infrastructures de recharge intelligentes.",
-    "url": "https://www.dbf-autos.fr/infrastructures-recharge-2026/",
-    "source": "DEF Automobiles",
-    "category": "borne",
-    "date_found": "2026-08-24"
-  },
-  {
-    "id": "e3e9d2c79eda",
-    "title": "IONITY ouvre son premier hub urbain à Londres avec des bornes 400 kW",
-    "summary": "IONITY a ouvert en août 2026 son premier centre de recharge urbain à Greenwich Shopping Park à Londres, proposant 12 bornes de recharge ultra-rapide pouvant délivrer jusqu'à 400 kW.",
-    "url": "https://greentechlead.com/electric-vehicle/global-ev-charging-projects-accelerate-in-2026-as-india-approves-4874-chargers-and-uk-us-australia-step-up-investment-54868",
-    "source": "GreentechLead",
-    "category": "entreprise",
-    "date_found": "2026-08-24"
-  },
-  {
-    "id": "baf45b07ccdd",
-    "title": "Californie approuve un plan d'investissement de 95,2 millions de dollars pour l'infrastructure de recharge",
-    "summary": "La California Energy Commission a approuvé un plan d'investissement de 95,2 millions de dollars pour l'année 2026-2027, comprenant 48 millions de dollars pour la recharge des véhicules légers et 30,2 millions pour l'infrastructure lourde.",
-    "url": "https://www.energy.ca.gov/news/2026-08/cec-approves-95-million-plan-expand-zev-infrastructure",
-    "source": "California Energy Commission",
-    "category": "entreprise",
-    "date_found": "2026-08-24"
-  },
-  {
-    "id": "46b99f8016ec",
-    "title": "New York débloque 35 millions de dollars pour les projets de recharge publics",
-    "summary": "La NYSERDA rend disponibles 35 millions de dollars pour les entités publiques afin de développer des projets de recharge de véhicules électriques, avec un délai de candidature au 20 octobre 2026.",
-    "url": "https://www.nyserda.ny.gov/About/Newsroom/2026-Announcements/2026-08-14-Governor-Hochul-Announces-35-Mill-Now-Avail-For-Public-Entities-EV-Charges-NYS",
-    "source": "NYSERDA",
-    "category": "entreprise",
-    "date_found": "2026-08-24"
-  },
-  {
-    "id": "7444c117993e",
-    "title": "RAW Charging s'associe à ChargePoint pour étendre l'infrastructure rapide au Royaume-Uni",
-    "summary": "RAW Charging a choisi ChargePoint Holdings Inc. comme partenaire pour déployer 300 nouvelles stations de recharge rapide en courant continu à travers le Royaume-Uni d'ici 2026.",
-    "url": "https://autotechinsight.spglobal.com/news/5286958/raw-charging-collaborates-with-chargepoint-to-expand-uks-fast-charging-infrastructure-for-evs",
-    "source": "S&P Global AutoTechInsight",
-    "category": "entreprise",
-    "date_found": "2026-08-24"
-  },
-  {
-    "id": "fabda81c3bbc",
-    "title": "Quota de verdissement des flottes d'entreprise à 18 % en 2026, avec taxe incitative",
-    "summary": "Les flottes de plus de 100 véhicules doivent atteindre un quota de 18 % de véhicules à faibles émissions en 2026, montant progressivement à 48 % en 2030. Le non-respect déclenche une taxe annuelle incitative (TAI) s'allouirdissant chaque année.",
-    "url": "https://www.go-electra.com/fr/newsroom/corporate-electric-vehicle-mandate/",
-    "source": "Electra",
-    "category": "reglementation",
-    "date_found": "2026-08-24"
-  },
-  {
-    "id": "fd802b762d7a",
-    "title": "France franchit les 200 000 bornes de recharge publiques",
-    "summary": "Fin juillet 2026, la France a dépassé le cap des 200 000 points de charge ouverts au public. Ce seuil marque un tournant symbolique atteint trois ans après le passage des 100 000 bornes en mai 2023.",
-    "url": "https://media.roole.fr/transition/voiture-propre/recharge-electrique-la-france-franchit-le-cap-des-200-000-bornes-publiques",
-    "source": "Roole",
-    "category": "borne",
-    "date_found": "2026-08-17"
-  },
-  {
-    "id": "40f81fcda980",
-    "title": "Saturation des bornes autoroutières le 15 août 2026",
-    "summary": "Les bornes de recharge pour voitures électriques ont été saturées sur les autoroutes françaises le 15 août avec jusqu'à 20 minutes d'attente. Des agents ont été déployés pour conseiller aux conducteurs de charger à 80% afin de libérer les places plus rapidement.",
-    "url": "https://stephanelarue.com/voitures-electriques-bornes-recharge-saturees-15-aout-2026/",
-    "source": "StéphaneLarue.com",
-    "category": "borne",
-    "date_found": "2026-08-17"
   }
 ]
