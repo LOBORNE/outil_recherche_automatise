@@ -1,6 +1,6 @@
 // scripts/collect.mjs
 //
-// Interroge l'API Mistral (avec l'outil de recherche web) pour trouver les
+// Interroge l'API Claude (avec l'outil de recherche web) pour trouver les
 // actualités récentes sur les bornes de recharge / technologies de charge /
 // entreprises du secteur, dédoublonne par rapport aux données existantes,
 // et met à jour data/data.json.
@@ -17,15 +17,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_PATH = path.join(__dirname, "..", "data", "data.json");
 const NEW_ENTRIES_PATH = path.join(__dirname, "..", "data", "new-entries.json");
 
-const MISTRAL_API_KEY = process.env.MISTRAL_API_KEY;
-if (!MISTRAL_API_KEY) {
-  console.error("MISTRAL_API_KEY manquant.");
+const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
+if (!ANTHROPIC_API_KEY) {
+  console.error("ANTHROPIC_API_KEY manquant.");
   process.exit(1);
 }
 
 // Si tu veux changer le modèle utilisé, vérifie le nom exact sur
-// https://docs.mistral.ai/getting-started/models/
-const MODEL = "mistral-medium-latest";
+// https://docs.claude.com/en/docs/about-claude/models
+const MODEL = "claude-haiku-4-5";
 
 // ---------- Utilitaires ----------
 
@@ -92,7 +92,7 @@ function extractJsonArray(text) {
   } catch (err) {
     // Réponse probablement tronquée (max_tokens atteint) : on essaie de
     // récupérer les éléments complets en coupant au dernier "}," valide.
-    console.log("JSON invalide, tentative de récupération partielle...");
+    console.warn("JSON invalide, tentative de récupération partielle...");
     const lastCompleteObject = cleaned.lastIndexOf("},");
     if (lastCompleteObject === -1) throw err;
     const salvaged = cleaned.slice(0, lastCompleteObject + 1) + "]";
@@ -100,7 +100,7 @@ function extractJsonArray(text) {
   }
 }
 
-// ---------- Appel à l'API Mistral ----------
+// ---------- Appel à l'API Claude ----------
 
 const today = new Date().toISOString().slice(0, 10);
 
@@ -131,9 +131,9 @@ const THEMES = [
   },
 ];
 
-// Délai entre deux appels (en millisecondes). La recherche web Mistral a sa
-// propre limite de débit ("web_search rate limit reached") : on espace large.
-const DELAY_BETWEEN_CALLS_MS = 90_000;
+// Délai entre deux appels (en millisecondes). La limite de tokens/minute
+// étant basse, on espace largement pour laisser la fenêtre glissante se vider.
+const DELAY_BETWEEN_CALLS_MS = 120_000;
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -157,126 +157,63 @@ Consignes :
 - Si tu ne trouves rien de pertinent, réponds avec un tableau vide [].`;
 }
 
-// Attente avant nouvelle tentative après un 429 : 60 s, puis 120 s, puis 180 s.
-const RETRY_BASE_MS = 60_000;
-const MAX_RETRIES = 3;
-
-function hostOf(url) {
-  try {
-    return new URL(url).hostname.replace(/^www\./, "").toLowerCase();
-  } catch {
-    return "";
-  }
-}
-
-// Collecte récursivement toutes les URL présentes dans les sorties de l'API
-// (chunks "tool_reference", résultats d'exécution de web_search...), quel que
-// soit l'endroit exact où Mistral les place.
-function collectUrls(node, out) {
-  if (Array.isArray(node)) {
-    for (const child of node) collectUrls(child, out);
-  } else if (node && typeof node === "object") {
-    if (typeof node.url === "string") out.push(node.url);
-    for (const value of Object.values(node)) collectUrls(value, out);
-  }
-  return out;
-}
-
-// Extrait d'une réponse /v1/conversations le texte final et les sources
-// renvoyées par l'outil web_search.
-function parseConversation(data) {
-  const texts = [];
-  for (const entry of data.outputs || []) {
-    if (entry.type !== "message.output") continue;
-    const content = entry.content;
-    if (typeof content === "string") {
-      texts.push(content);
-      continue;
-    }
-    for (const chunk of content || []) {
-      if (chunk.type === "text" && chunk.text) texts.push(chunk.text);
-    }
-  }
-  return { text: texts.join(""), references: collectUrls(data.outputs || [], []) };
-}
-
-// Vérifie qu'une URL mène à une vraie page. 401/403/429 = page existante mais
-// protégée contre les robots : on l'accepte. 404, erreur DNS, timeout : rejet.
-async function urlExists(url) {
-  try {
-    const res = await fetch(url, {
-      method: "GET",
-      redirect: "follow",
-      signal: AbortSignal.timeout(10_000),
-      headers: { "User-Agent": "Mozilla/5.0 (compatible; veille-recharge/1.0)" },
-    });
-    res.body?.cancel().catch(() => {});
-    return res.status < 400 || [401, 403, 429].includes(res.status);
-  } catch {
-    return false;
-  }
-}
-
+const waitMs = 30_000;
 async function fetchTheme(theme, attempt = 1) {
-  const response = await fetch("https://api.mistral.ai/v1/conversations", {
+  const response = await fetch("https://api.anthropic.com/v1/messages", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${MISTRAL_API_KEY}`,
+      "x-api-key": ANTHROPIC_API_KEY,
+      "anthropic-version": "2023-06-01",
     },
     body: JSON.stringify({
       model: MODEL,
-      instructions: systemPrompt,
-      inputs: buildPrompt(theme.focus),
-      tools: [{ type: "web_search" }],
-      completion_args: { temperature: 0.3 },
-      store: false,
+      max_tokens: 4096,
+      system: systemPrompt,
+      messages: [{ role: "user", content: buildPrompt(theme.focus) }],
+      tools: [
+        { type: "web_search_20250305", name: "web_search", max_uses: 2 },
+      ],
     }),
   });
 
   if (!response.ok) {
     const errText = await response.text();
-    // En cas de 429, on attend de plus en plus longtemps puis on réessaie.
-    if (response.status === 429 && attempt <= MAX_RETRIES) {
-      const waitMs = RETRY_BASE_MS * attempt;
-      console.log(
+    // En cas de 429, on attend puis on réessaie une fois.
+    if (response.status === 429 && attempt <= 2) {
+      console.warn(
         `  [${theme.category}] erreur 429 reçu, nouvelle tentative dans ${waitMs / 1000}s (essai ${attempt + 1})`
       );
       await sleep(waitMs);
       return fetchTheme(theme, attempt + 1);
     }
-    throw new Error(`Erreur API Mistral (${response.status}): ${errText}`);
+    throw new Error(`Erreur API Claude (${response.status}): ${errText}`);
   }
 
   const data = await response.json();
-  const { text, references } = parseConversation(data);
+
+  if (data.stop_reason === "max_tokens") {
+    console.warn(
+      `[${theme.category}] Réponse coupée (max_tokens). JSON possiblement incomplet.`
+    );
+  }
+
+  const textBlocks = (data.content || [])
+    .filter((block) => block.type === "text")
+    .map((block) => block.text)
+    .join("\n");
 
   let items;
   try {
-    items = extractJsonArray(text);
+    items = extractJsonArray(textBlocks);
   } catch (err) {
     console.error(`[${theme.category}] JSON illisible. Extrait :`);
-    console.error(text.slice(-1000));
+    console.error(textBlocks.slice(-1000));
     return []; // on n'interrompt pas toute la veille pour un thème raté
   }
 
-  // Garde-fou contre les URL inventées : un article est retenu si son site
-  // figure parmi les sources de la recherche web, ou sinon si son URL mène
-  // réellement à une page.
-  const referenceHosts = new Set(references.map(hostOf).filter(Boolean));
-  console.log(`  [${theme.category}] ${items.length} article(s) proposé(s), ${referenceHosts.size} site(s) source renvoyé(s) par la recherche`);
-  const verified = [];
-  for (const it of items) {
-    if (!it || !it.url) continue;
-    if (referenceHosts.has(hostOf(it.url)) || (await urlExists(it.url))) {
-      verified.push(it);
-    } else {
-      console.log(`  [${theme.category}] écarté (lien introuvable) : ${it.url}`);
-    }
-  }
-
   // On rattache la catégorie du thème à chaque élément.
-  return verified.map((it) => ({ ...it, category: theme.category }));
+  return items.map((it) => ({ ...it, category: theme.category }));
 }
 
 // Récupère tous les thèmes séquentiellement, avec une pause entre chacun.

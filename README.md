@@ -7,7 +7,7 @@ Veille automatisée hebdomadaire (GitHub Actions) sur :
 - la réglementation
 
 Chaque semaine :
-1. Un script interroge l'API Mistral (avec recherche web) et récupère les actualités récentes.
+1. Un script interroge l'API Claude (avec recherche web) et récupère les actualités récentes.
 2. Les résultats sont dédoublonnés (par URL et par similarité de titre) par rapport à ce qui a déjà été collecté, puis ajoutés à `data/data.json`. Au-delà de 100 entrées, les plus anciennes sont automatiquement supprimées.
 3. Une page web (`site/index.html`, filtrable par catégorie et mot-clé) est publiée sur GitHub Pages. Les entrées jamais consultées sur ce navigateur apparaissent dans une section "Nouveautés" séparée (suivi via `localStorage`, propre à chaque navigateur).
 4. Un email récapitulatif est envoyé, listant uniquement les nouveautés de la semaine.
@@ -24,7 +24,7 @@ Dans **Settings → Secrets and variables → Actions** du repo, ajoute :
 
 | Secret | Description |
 |---|---|
-| `RECHERCHE_AUTOMATISE` | Ta clé API Mistral (console.mistral.ai), exposée au script sous `MISTRAL_API_KEY` |
+| `RECHERCHE_AUTOMATISE` | Ta clé API Anthropic (console.anthropic.com), exposée au script sous `ANTHROPIC_API_KEY` |
 | `RESEND_API_KEY` | Clé API Resend pour l'envoi d'email (voir ci-dessous) |
 | `TO_EMAIL` | L'adresses email qui doivent recevoir la notification séparé par une virgule |
 | `FROM_EMAIL` | Depuis quel mail (pas forcement existant) |
@@ -51,7 +51,7 @@ Avant d'attendre le lundi, tu peux déclencher le workflow à la main :
 Tu peux aussi tester en local :
 
 ```bash
-export MISTRAL_API_KEY=...
+export ANTHROPIC_API_KEY=sk-ant-...
 node scripts/collect.mjs
 # vérifie data/data.json et data/new-entries.json
 
@@ -66,7 +66,7 @@ node scripts/send-email.mjs
 veille-recharge/
 ├── .github/workflows/veille.yml   # cron hebdo + orchestration
 ├── scripts/
-│   ├── collect.mjs                # appel API Mistral + dédoublonnage
+│   ├── collect.mjs                # appel API Claude + dédoublonnage
 │   └── send-email.mjs             # email des nouveautés (Resend)
 ├── data/
 │   └── data.json                  # base de données (source de vérité)
